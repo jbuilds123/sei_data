@@ -1,0 +1,33 @@
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Logs and databases
+*.log
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+anon.session
