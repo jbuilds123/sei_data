@@ -15,6 +15,6 @@ Qeury events
 
 seid query txs --events 'wasm.action=create_pair' --height 49599356 --chain-id pacific-1 --node https://sei-rpc.brocha.in/ --limit 1
 
-seid query txs --events 'message.sender=cosmos1...&message.action=withdraw_delegator_reward' --page 1 --limit 30 --chain-id pacific-1 --node https://sei-rpc.brocha.in/
+seid query txs --events 'message.sender=cosmos1...&message.action=withdraw_delegator_reward' --page 1 --limit 30 --chain-id pacific-1 --node https://sei-rpc.brocha.in/ --output json
 
 </div>
