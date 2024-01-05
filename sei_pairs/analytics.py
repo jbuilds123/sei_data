@@ -7,13 +7,28 @@ def load_pairs(file_path):
 
 
 def calculate_volatility(ohlcv):
-    # Volatility is defined as the difference between high and low prices
-    return float(ohlcv["high"]) - float(ohlcv["low"])
+    # Volatility is now calculated as the percentage difference between high and low prices relative to the open price
+    open_price = float(ohlcv["open"])
+    if open_price > 0:
+        return ((float(ohlcv["high"]) - float(ohlcv["low"])) / open_price) * 100
+    else:
+        return 0.0
 
 
-def has_low_volume_first_5_candles(ohlcv_list, min_volume=100):
+def has_low_volume_first_5_candles(ohlcv_list, min_volume=10):
     # Check if any of the first 5 candles has volume less than or equal to min_volume
     return any(float(candle["volume"]) <= min_volume for candle in ohlcv_list[:5])
+
+
+def has_excessive_gain_between_candles(ohlcv_list, max_gain=12000):
+    for i in range(len(ohlcv_list) - 1):
+        open_price = float(ohlcv_list[i]["open"])
+        next_close_price = float(ohlcv_list[i + 1]["close"])
+        if open_price > 0:
+            gain = (next_close_price - open_price) / open_price * 100
+            if gain > max_gain:
+                return True
+    return False
 
 
 def find_similar_pairs(all_pairs, top_pairs, summary_stats, threshold=0.1):
@@ -50,7 +65,8 @@ def find_similar_pairs(all_pairs, top_pairs, summary_stats, threshold=0.1):
 
         if is_similar:
             first_open = float(data["ohlcv"][0]["open"])
-            highest_close = max(float(candle["close"]) for candle in data["ohlcv"])
+            highest_close = max(float(candle["close"])
+                                for candle in data["ohlcv"])
             gain = (highest_close - first_open) / first_open * 100
             similar_pairs[pair] = {"gain": gain, "ohlcv": data["ohlcv"]}
 
@@ -62,6 +78,10 @@ def calculate_summary_statistics(top_pairs):
     volatility_stats = [[], [], []]  # For first 3 candles
 
     for _, data in top_pairs:
+        # Check if there are at least 3 candles
+        if len(data["ohlcv"]) < 3:
+            continue
+
         for i in range(3):
             ohlcv = data["ohlcv"][i]
             volume = float(ohlcv["volume"])
@@ -89,15 +109,16 @@ def main():
 
     for pair, data in pairs.items():
         if "ohlcv" in data and data["ohlcv"]:
-            if has_low_volume_first_5_candles(data["ohlcv"]):
-                continue  # Disqualify pairs with low volume in first 5 candles
+            if has_low_volume_first_5_candles(data["ohlcv"]) or has_excessive_gain_between_candles(data["ohlcv"]):
+                continue  # Disqualify pairs with low volume or excessive gain
 
             first_open = 1.1 * float(data["ohlcv"][0]["open"])
-            highest_close = max(float(candle["close"]) for candle in data["ohlcv"])
+            highest_close = max(float(candle["close"])
+                                for candle in data["ohlcv"])
             gain = (highest_close - first_open) / first_open * 100
 
             # Disqualify pairs with gains larger than 5,000,000%
-            if gain <= 5000000:
+            if gain <= 4000000:
                 gain_pairs[pair] = {
                     "gain": gain,
                     "ohlcv": data["ohlcv"],
@@ -108,6 +129,9 @@ def main():
     top_10_pairs = sorted(gain_pairs.items(), key=lambda x: x[1]["gain"], reverse=True)[
         :10
     ]
+
+    top_3_pairs = sorted(gain_pairs.items(),
+                         key=lambda x: x[1]["gain"], reverse=True)[:3]
 
     for pair, data in top_10_pairs:
         print(f"Pair: {pair}")
@@ -122,28 +146,28 @@ def main():
             print(f"  Low: {ohlcv['low']}")
             print(f"  Close: {ohlcv['close']}")
             print(f"  Volume: {ohlcv['volume']}")
-            print(f"  Volatility: {calculate_volatility(ohlcv):.18f}")
+            print(f"  Volatility: {calculate_volatility(ohlcv):.2f}%")
             print()
         print("-" * 40)
 
     # Calculating and printing summary statistics
-    summary_stats = calculate_summary_statistics(top_10_pairs)
-    print("Summary Statistics for Top 10 Pairs:")
+    summary_stats = calculate_summary_statistics(top_3_pairs)
+    print("Summary Statistics for Top 3 Pairs:")
     for i in range(3):
         stats = summary_stats[f"candle_{i+1}"]
         print(f"Candle {i+1}:")
         print(f"  Average Volume: {stats['average_volume']:.2f}")
         print(f"  Highest Volume: {stats['highest_volume']:.2f}")
         print(f"  Lowest Volume: {stats['lowest_volume']:.2f}")
-        print(f"  Average Volatility: {stats['average_volatility']:.18f}")
-        print(f"  Highest Volatility: {stats['highest_volatility']:.18f}")
-        print(f"  Lowest Volatility: {stats['lowest_volatility']:.18f}")
+        print(f"  Average Volatility: {stats['average_volatility']:.2f}")
+        print(f"  Highest Volatility: {stats['highest_volatility']:.2f}")
+        print(f"  Lowest Volatility: {stats['lowest_volatility']:.2f}")
         print()
 
     # Finding similar pairs based on average volume and volatility
-    similar_pairs = find_similar_pairs(pairs, top_10_pairs, summary_stats)
+    similar_pairs = find_similar_pairs(pairs, top_3_pairs, summary_stats)
 
-    print("\nPairs Similar to Top 10 based on Volume and Volatility:")
+    print("\nPairs Similar to Top 3 based on Volume and Volatility:")
     if similar_pairs:
         for pair, data in similar_pairs.items():
             print(f"Pair: {pair}")
