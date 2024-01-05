@@ -10,6 +10,7 @@ Pyrogram==2.0.106
 PySocks==1.7.1
 python-dotenv==1.0.0
 rsa==4.9
+schedule==1.2.1
 Telethon==1.29.3
 TgCrypto==1.2.5
 yarl==1.9.4
