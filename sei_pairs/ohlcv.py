@@ -33,7 +33,8 @@ async def fetch_ohlcv(pool_address):
                     data = await response.json()
 
                     pool_data = (
-                        data.get("data", {}).get("attributes", {}).get("ohlcv_list", [])
+                        data.get("data", {}).get(
+                            "attributes", {}).get("ohlcv_list", [])
                     )
                     if not pool_data:
                         return ohlcv_list
@@ -62,11 +63,12 @@ async def main():
     total_pairs_skipped = 0
 
     current_timestamp = time.time()
+    six_hours_in_seconds = 6 * 3600
     sixteen_hours_in_seconds = 16 * 3600
 
     for pool_address, pair_info in pairs_data.items():
         pair_age = current_timestamp - pair_info["created_at"]
-        if pair_age < sixteen_hours_in_seconds and (
+        if six_hours_in_seconds < pair_age < sixteen_hours_in_seconds and (
             "ohlcv" not in pair_info or not pair_info["ohlcv"]
         ):
             ohlcv_data = await fetch_ohlcv(pool_address)
