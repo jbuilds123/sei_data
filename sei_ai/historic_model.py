@@ -166,8 +166,8 @@ def calculate_performance_metrics(
     total_buy_in_fees = 0
     total_sell_fees = 0
     wins = 0
-    buy_in_fee = 15
-    sell_fee = 15
+    buy_in_fee = 0.07
+    sell_fee = 0.07
     trades_made = 0
 
     pair_addresses_list = pair_addresses.tolist()
@@ -214,14 +214,14 @@ def calculate_performance_metrics(
 
                 # Check if gain percentage is over 5 million
                 if gain_loss_percent > 5000000:
-                    dollar_gain_loss = -30  # $30 loss
+                    dollar_gain_loss = -(trade_size + buy_in_fee)
                     gain_loss_percent = -100  # -100% gain
                 else:
                     potential_dollar_gain_loss = (
                         gain_loss_percent / 100) * trade_size
                     net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
 
-                    if net_dollar_gain_loss >= 25:
+                    if net_dollar_gain_loss >= 2 * (trade_size + buy_in_fee):
                         dollar_gain_loss = net_dollar_gain_loss - sell_fee
                         total_sell_fees += sell_fee
                         # Only increment total_spent by trade_size and buy_in_fee, sell_fee added later
@@ -328,7 +328,7 @@ train_new_model = False
 model_version = 1
 
 # Position size
-trade_size = 25
+trade_size = 5
 
 # Main execution
 (
