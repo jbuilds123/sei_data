@@ -11,7 +11,7 @@ def calculate_volatility(ohlcv):
     return float(ohlcv["high"]) - float(ohlcv["low"])
 
 
-def has_low_volume_first_5_candles(ohlcv_list, min_volume=200):
+def has_low_volume_first_5_candles(ohlcv_list, min_volume=100):
     # Check if any of the first 5 candles has volume less than or equal to min_volume
     return any(float(candle["volume"]) <= min_volume for candle in ohlcv_list[:5])
 
