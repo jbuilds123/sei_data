@@ -104,7 +104,7 @@ def calculate_summary_statistics(top_pairs):
 
 
 def main():
-    pairs = load_pairs("sei_pairs/new_pairs.json")
+    pairs = load_pairs("sei_pairs/historic_pairs.json")
     gain_pairs = {}
 
     for pair, data in pairs.items():
@@ -130,11 +130,8 @@ def main():
         :10
     ]
 
-    top_3_pairs = sorted(gain_pairs.items(),
-                         key=lambda x: x[1]["gain"], reverse=True)[:3]
-
-    for pair, data in top_10_pairs:
-        print(f"Pair: {pair}")
+    for rank, (pair, data) in enumerate(top_10_pairs, start=1):
+        print(f"Pair {rank}: {pair}")
         print(f"Percentage Gain: {data['gain']:.2f}%")
         print(f"First Open Price: {data['first_open']:.18f}")
         print(f"Highest Close Price: {data['highest_close']:.18f}")
@@ -151,7 +148,7 @@ def main():
         print("-" * 40)
 
     # Calculating and printing summary statistics
-    summary_stats = calculate_summary_statistics(top_3_pairs)
+    summary_stats = calculate_summary_statistics(top_10_pairs)
     print("Summary Statistics for Top 3 Pairs:")
     for i in range(3):
         stats = summary_stats[f"candle_{i+1}"]
@@ -165,9 +162,9 @@ def main():
         print()
 
     # Finding similar pairs based on average volume and volatility
-    similar_pairs = find_similar_pairs(pairs, top_3_pairs, summary_stats)
+    similar_pairs = find_similar_pairs(pairs, top_10_pairs, summary_stats)
 
-    print("\nPairs Similar to Top 3 based on Volume and Volatility:")
+    print("\nPairs Similar to Top 10 based on Volume and Volatility:")
     if similar_pairs:
         for pair, data in similar_pairs.items():
             print(f"Pair: {pair}")

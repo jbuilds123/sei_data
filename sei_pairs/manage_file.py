@@ -50,7 +50,7 @@ def count_pairs_with_ohlcv_data(file_path):
         print("Error decoding JSON.")
 
 
-file_path = 'sei_pairs/new_pairs.json'  # Path to your JSON file
+file_path = 'sei_pairs/historic_pairs.json'  # Path to your JSON file
 # Create a backup of the original file before making any changes
 shutil.copyfile(file_path, file_path + '.bak')
 count_pairs_with_ohlcv_data(file_path)

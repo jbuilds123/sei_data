@@ -59,7 +59,7 @@ async def fetch_ohlcv(pool_address, before_timestamp=None):
 
 
 async def main():
-    pairs_file_path = "sei_pairs/new_pairs.json"
+    pairs_file_path = "sei_pairs/historic_pairs.json"
     pairs_data = read_pairs_file(pairs_file_path)
 
     total_pairs_processed = 0

@@ -102,7 +102,8 @@ async def fetch_and_process_messages(channel):
 
 
 async def main():
-    json_file_path = "sei_pairs/new_pairs.json"  # Define your JSON file path here
+    # Define your JSON file path here
+    json_file_path = "sei_pairs/historic_pairs.json"
     existing_data = load_existing_data(json_file_path)
 
     # Initialize counters
