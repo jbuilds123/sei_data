@@ -51,7 +51,8 @@ def split_data(sequences, labels, addresses, test_size, random_state):
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-    X_train_imputed = imputer.fit_transform(X_train.reshape(X_train.shape[0], -1))
+    X_train_imputed = imputer.fit_transform(
+        X_train.reshape(X_train.shape[0], -1))
 
     # Apply SMOTE
     smote = SMOTE()
@@ -216,7 +217,8 @@ def calculate_performance_metrics(
                 fixed_index = entry_candle - 1
 
                 entry_price = (
-                    original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+                    original_close_prices_sequences[pair_index +
+                                                    fixed_index][-1] * 1.2
                 )
 
                 adjusted_exit_price = end_prices[pair_index] * 0.9
@@ -231,7 +233,8 @@ def calculate_performance_metrics(
                     dollar_gain_loss = -(trade_size + buy_in_fee)
                     gain_loss_percent = -100  # -100% gain
                 else:
-                    potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
+                    potential_dollar_gain_loss = (
+                        gain_loss_percent / 100) * trade_size
                     net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
 
                     if net_dollar_gain_loss >= trade_size + buy_in_fee:
@@ -309,7 +312,8 @@ def calculate_performance_metrics(
 
     print(50 * "-")
     print("===Prediction Stats===")
-    print(f"Total Predictions Made (including rejections): {total_predictions}")
+    print(
+        f"Total Predictions Made (including rejections): {total_predictions}")
     print(f"Positive Predictions: {total_pos_pred}")
     print(f"True Positives: {tp} (Rate: {tpr:.2%})")
     print(f"False Positives: {fp} (Rate: {fpr:.2%})")
@@ -369,7 +373,8 @@ else:
 
 # Model training
 if train_new_model:
-    X_train_sm, y_train_sm = apply_smote(X_train, y_train, padded_sequences.shape)
+    X_train_sm, y_train_sm = apply_smote(
+        X_train, y_train, padded_sequences.shape)
     class_weights_dict = compute_class_weights(y_train_sm)
     model = create_lstm_model((X_train.shape[1], X_train.shape[2]))
     model = compile_and_train_model(
@@ -378,7 +383,8 @@ if train_new_model:
 else:
     model_path = f"sei_ai/tuned_models/model_v{model_version}.keras"
     # Include custom loss function when loading the model
-    model = load_model(model_path, custom_objects={"focal_loss_fixed": focal_loss()})
+    model = load_model(model_path, custom_objects={
+                       "focal_loss_fixed": focal_loss()})
 
 # Evaluate model
 predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
