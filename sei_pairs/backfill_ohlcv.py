@@ -69,6 +69,11 @@ async def main():
     sixteen_hours_in_seconds = 16 * 3600
 
     for pool_address, pair_info in pairs_data.items():
+        if "ohlcv" in pair_info and pair_info["ohlcv"]:
+            # Skip if OHLCV data already exists
+            total_pairs_skipped += 1
+            continue
+
         pair_age = current_timestamp - pair_info["created_at"]
         if pair_age < six_hours_in_seconds:
             total_pairs_skipped += 1
