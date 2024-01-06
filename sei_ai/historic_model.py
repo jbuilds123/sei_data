@@ -338,10 +338,10 @@ def calculate_performance_metrics(
 
 
 # handy usages
-probabiliy_threshold = 0.75  # was 0.75
+probabiliy_threshold = 0.65  # was 0.75
 run_on_full_data = True
 train_new_model = False
-model_version = 1
+model_version = 2
 
 # Position size
 trade_size = 5

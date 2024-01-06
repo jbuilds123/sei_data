@@ -198,7 +198,8 @@ def load_close_data(training_file, live_file):
         live_close_prices = live_data[5]
 
         # Explicitly keep as a list of arrays
-        combined_close_prices = list(training_close_prices) + list(live_close_prices)
+        combined_close_prices = list(
+            training_close_prices) + list(live_close_prices)
 
     except FileNotFoundError:
         print(
@@ -217,7 +218,8 @@ def split_data(sequences, labels, addresses, test_size, random_state):
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-    X_train_imputed = imputer.fit_transform(X_train.reshape(X_train.shape[0], -1))
+    X_train_imputed = imputer.fit_transform(
+        X_train.reshape(X_train.shape[0], -1))
 
     # Apply SMOTE
     smote = SMOTE()
@@ -310,6 +312,15 @@ def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75)
     # Mapping each pair address to its prediction
     pair_prediction_map = dict(zip(pairs_for_predictions, y_pred_class))
 
+    # Mapping each pair address to its prediction probability
+    pair_probability_map = dict(zip(pairs_for_predictions, y_pred))
+
+    # Print probabilities for live pairs
+    for live_pair in live_pair_addresses:
+        if live_pair in pair_probability_map:
+            print(
+                f"Pair: {live_pair}, Probability: {pair_probability_map[live_pair]:.2f}")
+
     # Calculate and print the total number of predictions above and below the threshold
     total_above_threshold = np.sum(y_pred_class)
     total_below_threshold = len(y_pred_class) - total_above_threshold
@@ -328,7 +339,6 @@ def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75)
     brier = brier_score_loss(y_test, y_pred)
     conf_matrix = confusion_matrix(y_test, y_pred_class)
 
-    """"""
     print(f"Log Loss: {test_loss:.2f}")
     print(f"AUC-ROC Score: {test_auc:.2f}")
     print(f"Precision: {precision:.2f}")
@@ -338,7 +348,6 @@ def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75)
     print(f"Brier Score: {brier:.2f}")
     print("Confusion Matrix:")
     print(conf_matrix)
-    """"""
 
     return y_pred, pair_prediction_map
 
@@ -430,7 +439,8 @@ def calculate_performance_metrics(
                 fixed_index = entry_candle - 1
 
                 entry_price = (
-                    original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+                    original_close_prices_sequences[pair_index +
+                                                    fixed_index][-1] * 1.2
                 )
 
                 adjusted_exit_price = end_prices[pair_index] * 0.9
@@ -445,7 +455,8 @@ def calculate_performance_metrics(
                     dollar_gain_loss = -(trade_size + buy_in_fee)
                     gain_loss_percent = -100  # -100% gain
                 else:
-                    potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
+                    potential_dollar_gain_loss = (
+                        gain_loss_percent / 100) * trade_size
                     net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
 
                     if net_dollar_gain_loss >= trade_size + buy_in_fee:
@@ -533,7 +544,8 @@ def calculate_performance_metrics(
         if live_status:
             # For live pairs, use the actual length of the sequence
             pair_index = pair_addresses_list.index(pair_address)
-            current_candle_number = len(original_close_prices_sequences[pair_index])
+            current_candle_number = len(
+                original_close_prices_sequences[pair_index])
 
             # Check if the entry candle is the current candle
             if current_candle_number == entry_candle:
@@ -561,7 +573,8 @@ def calculate_performance_metrics(
 
     print(25 * "-")
     print("===Prediction Stats===")
-    print(f"Total Predictions Made (including rejections): {total_predictions}")
+    print(
+        f"Total Predictions Made (including rejections): {total_predictions}")
     print(f"Positive Predictions: {total_pos_pred}")
     print(f"True Positives: {tp} (Rate: {tpr:.2%})")
     print(f"False Positives: {fp} (Rate: {fpr:.2%})")
@@ -574,11 +587,9 @@ def calculate_performance_metrics(
     print("===Trade Stats===")
     print(f"Live Trades: {live_trades}")
     print(f"{trades_made} Trades | ${trade_size} Buy-Ins")
-    """
     print(f"Total Spent: ${total_spent:.2f}")
     print(f"Buy-in Fees: ${total_buy_in_fees:.2f}")
     print(f"Sell Fees: ${total_sell_fees:.2f}")
-    """
     print(f"PNL Dollar: ${total_dollar_gain_loss:.2f}")
     print(f"PNL Percent: {overall_growth_loss_percent:.2f}%")
     print(f"Win Rate: {win_rate:.2f}%")
@@ -589,7 +600,7 @@ def calculate_performance_metrics(
 probabiliy_threshold = 0.75  # was 0.85
 run_on_full_data = True
 train_new_model = False
-model_version = 1
+model_version = 2
 
 # Position size
 trade_size = 5
