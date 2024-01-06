@@ -191,6 +191,7 @@ def main():
         ]
         sequence_lengths = np.array(sequence_lengths, dtype=int)
 
+        """
         # Print the variables before saving
         print("-------------------------------")
         print("|live_prep| Padded Sequences:", padded_sequences)
@@ -203,6 +204,7 @@ def main():
             original_close_prices_sequences,
         )
         print("|live_prep| Sequence Lengths:", sequence_lengths)
+        """
 
         # Check if any of the arrays are non-empty
         if any(
