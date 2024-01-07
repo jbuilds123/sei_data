@@ -681,7 +681,7 @@ predictions = evaluate_model(
 # Debugging: Print probabilities for live pairs
 print("\nProbabilities for Live Pairs:")
 for i, pair_address in enumerate(pair_addresses):
-    if pair_address in live_pair_addresses and predictions[i] > 0.01:
+    if pair_address in live_pair_addresses:
         logging.info(
             f"Pair Address: {pair_address}, Probability = {predictions[i]:.4f}")
 # debug
