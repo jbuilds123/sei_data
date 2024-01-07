@@ -48,7 +48,8 @@ async def fetch_and_process_messages(channel):
                 pool_match = re.search(pool_pattern, message.text)
                 token_match = re.search(token_pattern, message.text)
                 deployer_match = re.search(deployer_pattern, message.text)
-                transaction_match = re.search(transaction_pattern, message.text)
+                transaction_match = re.search(
+                    transaction_pattern, message.text)
                 links_matches = re.findall(link_pattern, message.text)
 
                 # Add created_at key with the timestamp
@@ -77,7 +78,8 @@ async def fetch_and_process_messages(channel):
                     data["deployer_address"] = deployer_match.group(2)
                     data["deployer_link"] = deployer_match.group(1)
 
-                deployer_count_match = re.search(deployer_count_pattern, message.text)
+                deployer_count_match = re.search(
+                    deployer_count_pattern, message.text)
                 if deployer_count_match:
                     deployer_count = int(deployer_count_match.group(2))
                     data["deployer_count"] = deployer_count
@@ -125,7 +127,7 @@ async def main():
         sorted_pairs = dict(
             sorted(
                 combined_data.items(), key=lambda x: x[1]["created_at"], reverse=True
-            )[:50]
+            )[:30]
         )
 
         # Count the pairs removed due to being old
@@ -135,9 +137,11 @@ async def main():
 
         # Print summary
         print(25 * "=")
-        print(f"|live_pairs_fetch| Total pairs processed: {total_pairs_processed}")
+        print(
+            f"|live_pairs_fetch| Total pairs processed: {total_pairs_processed}")
         print(f"|live_pairs_fetch| New pairs added: {new_pairs_added}")
-        print(f"|live_pairs_fetch| Pairs removed (due to age): {pairs_removed}")
+        print(
+            f"|live_pairs_fetch| Pairs removed (due to age): {pairs_removed}")
         print(
             f"|live_pairs_fetch| Total pairs in file after update: {len(sorted_pairs)}"
         )

@@ -1,10 +1,14 @@
 import numpy as np
 import pickle
 import json
+import logging
 import os
 import requests
 import time
 import asyncio
+import traceback
+import pytz
+from datetime import datetime, timezone
 import tensorflow as tf
 from datetime import datetime
 from keras.models import load_model
@@ -41,6 +45,35 @@ Base.metadata.create_all(bind=engine)
 
 live_pair_addresses = []
 
+# Configure logging
+log_directory = "logs"
+log_filename = "live_pair_logs.log"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+# Custom formatter class
+
+
+class ESTFormatter(logging.Formatter):
+    est = pytz.timezone('US/Eastern')
+
+    def formatTime(self, record, datefmt=None):
+        ct = datetime.fromtimestamp(record.created)
+        localized_ct = self.est.localize(ct)
+        if datefmt:
+            return localized_ct.strftime(datefmt)
+        else:
+            return localized_ct.strftime("%Y-%m-%d %I:%M:%S %p %Z")
+
+
+# Setup logger with custom formatter
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+fh = logging.FileHandler(os.path.join(log_directory, log_filename))
+formatter = ESTFormatter('%(asctime)s %(message)s', "%Y-%m-%d %I:%M:%S %p %Z")
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
 
 def send_discord_webhook(pair_address, paper_trade):
     if not ds_url:
@@ -58,24 +91,9 @@ def send_discord_webhook(pair_address, paper_trade):
             "content": message_content,
             "embeds": [
                 {
-                    "title": "Paper Trade Notification",
-                    "description": f"Pair Address: {pair_address}\nEntry Price: {paper_trade['entry_price']}\nEntry Candle: {paper_trade['entry_candle']}",
-                    "color": 5814783,
-                }
-            ],
-        }
-    else:
-        # Construct the message to be sent, including the role ping
-        message_content = (
-            f"Paper Trade Made Out of Range<@&{ping_role}>" if ping_role else ""
-        )
-        message = {
-            "content": message_content,
-            "embeds": [
-                {
-                    "title": "Paper Trade Notification",
-                    "description": f"Pair Address: {pair_address}\nEntry Price: {paper_trade['entry_price']}\nEntry Candle: {paper_trade['entry_candle']} OOR!",
-                    "color": 5814783,
+                    "title": f"Paper Trade Notification for ${paper_trade['network']}",
+                    "description": f"Pair Address: {pair_address}\nEntry Price: {paper_trade['entry_price']}\nEntry Candle: {paper_trade['entry_candle']}\n Actual Candle Entry: {paper_trade['current_candle']}",
+                    "color": 16711680,
                 }
             ],
         }
@@ -147,6 +165,22 @@ def load_data(training_file, live_file):
         unique_live_pair_addresses = set(live_pair_addresses)
         print(f"Total Live Pairs: {len(unique_live_pair_addresses)}")
 
+        '''
+        # Debug: Print sample of training data
+        print("Sample of Training Data:")
+        for i in range(5):  # Adjust number of samples as needed
+            # Assuming 0 index is sequences
+            print(f"Training Data Sample {i}: {training_data[0][i]}")
+            # Assuming 1 index is labels
+            print(f"Label: {training_data[1][i]}")
+
+        # Debug: Print sample of live data
+        print("Sample of Live Data:")
+        for i in range(5):  # Adjust number of samples as needed
+            # Assuming 0 index is sequences
+            print(f"Live Data Sample {i}: {live_data[0][i]}")
+            print(f"Label: {live_data[1][i]}")  # Assuming 1 index is labels
+        '''
         # end debug
 
         # Indices of uniform data
@@ -207,12 +241,6 @@ def load_close_data(training_file, live_file):
         )
 
     return combined_close_prices
-
-
-def split_data(sequences, labels, addresses, test_size, random_state):
-    return train_test_split(
-        sequences, labels, addresses, test_size=test_size, random_state=random_state
-    )
 
 
 def apply_smote(X_train, y_train, sequence_shape):
@@ -302,24 +330,12 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75):
+def evaluate_model(model, X_test, y_test, threshold=0.50):
     y_pred = model.predict(X_test).flatten()
+
     # Convert probabilities to class labels
     y_pred_class = (y_pred > threshold).astype(int)
     # threshold was 0.75
-
-    # debug
-    # Mapping each pair address to its prediction
-    pair_prediction_map = dict(zip(pairs_for_predictions, y_pred_class))
-
-    # Mapping each pair address to its prediction probability
-    pair_probability_map = dict(zip(pairs_for_predictions, y_pred))
-
-    # Print probabilities for live pairs
-    for live_pair in live_pair_addresses:
-        if live_pair in pair_probability_map:
-            print(
-                f"Pair: {live_pair}, Probability: {pair_probability_map[live_pair]:.2f}")
 
     # Calculate and print the total number of predictions above and below the threshold
     total_above_threshold = np.sum(y_pred_class)
@@ -339,6 +355,7 @@ def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75)
     brier = brier_score_loss(y_test, y_pred)
     conf_matrix = confusion_matrix(y_test, y_pred_class)
 
+    '''
     print(f"Log Loss: {test_loss:.2f}")
     print(f"AUC-ROC Score: {test_auc:.2f}")
     print(f"Precision: {precision:.2f}")
@@ -348,8 +365,9 @@ def evaluate_model(model, X_test, y_test, pairs_for_predictions, threshold=0.75)
     print(f"Brier Score: {brier:.2f}")
     print("Confusion Matrix:")
     print(conf_matrix)
+    '''
 
-    return y_pred, pair_prediction_map
+    return y_pred
 
 
 def load_pretrained_model(model_version, input_shape):
@@ -368,7 +386,6 @@ def load_pretrained_model(model_version, input_shape):
 
 def calculate_performance_metrics(
     predictions,
-    pair_prediction_map,
     pairs_test,
     y_test,
     sequence_lengths,
@@ -391,22 +408,8 @@ def calculate_performance_metrics(
 
     # debug
     # Initialize counter for pairs with predictions
-    total_pairs_with_predictions = 0
     total_pairs_set = set(pair_addresses)
-    print("Total Unique Pairs Found: ", len(total_pairs_set))
-
-    # Logging whether a prediction was made for each live pair, along with the prediction result
-    for live_pair in live_pair_addresses:
-        if live_pair in pair_prediction_map:
-            prediction_result = pair_prediction_map[live_pair]
-            print(
-                f"Pair: {live_pair}, Prediction Made: True, Prediction Result: {bool(prediction_result)}"
-            )
-            total_pairs_with_predictions += 1
-        else:
-            print(f"Pair: {live_pair}, Prediction Made: False")
-
-    print(f"Total Live Pairs with Predictions: {total_pairs_with_predictions}")
+    print("Total Pairs: ", len(total_pairs_set))
 
     pair_addresses_list = pair_addresses.tolist()
 
@@ -427,10 +430,44 @@ def calculate_performance_metrics(
 
     tp, fp, tn, fn = 0, 0, 0, 0
     total_pos_pred, total_neg_pred = 0, 0
+    live_trades = 0
 
     for pair_address, (prediction, actual_label) in final_predictions.items():
         entry_candle = pair_entry_candle[pair_address]
 
+    if pair_address in live_pair_addresses:
+        # For live pairs, check if the probability is above threshold for any candle between 2 and 7
+        try:
+            if 2 <= entry_candle <= 7 and pair_max_prob[pair_address] > threshold:
+                logging.info(
+                    f"Live trade found for candle {entry_candle}, pair {pair_address}")
+                live_trades += 1
+                entry_price = (
+                    original_close_prices_sequences[pair_index +
+                                                    fixed_index][-1] * 1.2
+                )
+                total_buy_in_fees += buy_in_fee
+
+                # For live pairs, use the actual length of the sequence
+                pair_index = pair_addresses_list.index(pair_address)
+                current_candle_number = len(
+                    original_close_prices_sequences[pair_index])
+
+                # live trade details and execution
+                paper_trade = {
+                    "network": "sei",
+                    "entry_price": entry_price,
+                    "entry_candle": entry_candle,
+                    "current_candle": current_candle_number,
+                }
+                create_paper_trade_entry(pair_address, paper_trade)
+                send_discord_webhook(pair_address, paper_trade)
+                logging.info("Discord wh and paper trade entry made")
+        except Exception as e:
+            logging.error(
+                f"Error in processing live trade for {pair_address}: {str(e)}")
+            logging.error(traceback.format_exc())  # Log detailed traceback
+    else:
         # Only proceed if the entry candle is within the desired range (3rd to 7th candle)
         if 3 <= entry_candle <= 7:
             if prediction == 1:
@@ -510,7 +547,6 @@ def calculate_performance_metrics(
 
     # total trades made
     trades_made = len(trade_simulations)
-    live_trades = 0
 
     for trade in trade_simulations:
         (
@@ -572,6 +608,7 @@ def calculate_performance_metrics(
                 send_discord_webhook(pair_address, paper_trade)
 
     print(25 * "-")
+    '''
     print("===Prediction Stats===")
     print(
         f"Total Predictions Made (including rejections): {total_predictions}")
@@ -584,8 +621,10 @@ def calculate_performance_metrics(
     for pair in false_negatives_pairs:
         print(f"  -- {pair}")
     print()
+    '''
     print("===Trade Stats===")
     print(f"Live Trades: {live_trades}")
+    '''
     print(f"{trades_made} Trades | ${trade_size} Buy-Ins")
     print(f"Total Spent: ${total_spent:.2f}")
     print(f"Buy-in Fees: ${total_buy_in_fees:.2f}")
@@ -594,13 +633,14 @@ def calculate_performance_metrics(
     print(f"PNL Percent: {overall_growth_loss_percent:.2f}%")
     print(f"Win Rate: {win_rate:.2f}%")
     print()
+    '''
 
 
 # Model settings
-probabiliy_threshold = 0.75  # was 0.85
+probabiliy_threshold = 0.50  # was 0.75
 run_on_full_data = True
 train_new_model = False
-model_version = 2
+model_version = 1
 
 # Position size
 trade_size = 5
@@ -633,14 +673,22 @@ model = load_pretrained_model(
 )
 
 # Evaluate model
-predictions, pair_prediction_map = evaluate_model(
-    model, X_for_predictions, y_for_predictions, pair_addresses
+predictions = evaluate_model(
+    model, X_for_predictions, y_for_predictions
 )
+
+# debug
+# Debugging: Print probabilities for live pairs
+print("\nProbabilities for Live Pairs:")
+for i, pair_address in enumerate(pair_addresses):
+    if pair_address in live_pair_addresses and predictions[i] > 0.01:
+        logging.info(
+            f"Pair Address: {pair_address}, Probability = {predictions[i]:.4f}")
+# debug
 
 # Calculate performance metrics
 calculate_performance_metrics(
     predictions,
-    pair_prediction_map,
     pairs_for_predictions,
     y_for_predictions,
     sequence_lengths,
