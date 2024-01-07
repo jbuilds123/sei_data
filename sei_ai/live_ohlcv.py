@@ -37,14 +37,23 @@ async def fetch_ohlcv(session, pool_address):
     return pool_address, ohlcv_list[::-1]
 
 
-# Function to analyze OHLCV data and update disqualified flag
 def analyze_and_update_disqualification(pairs_data, pool_address, ohlcv_data):
-    if len(ohlcv_data) >= 4:  # Check if there are more than 4 candles
-        first_three_volumes = [float(candle["volume"]) for candle in ohlcv_data[:3]]
-        avg_volume = sum(first_three_volumes) / len(first_three_volumes)
-        if avg_volume < 25:
-            pairs_data[pool_address]["disqualified"] = True
-            # print(f"|live_ohlcv| Discqualified pair {pool_address}")
+    # Disqualify if there are more than 8 candles
+    if len(ohlcv_data) > 8:
+        pairs_data[pool_address]["disqualified"] = True
+        print(
+            f"|live_ohlcv| Disqualified pair {pool_address} due to more than 8 candles"
+        )
+    else:
+        # Existing logic for disqualification based on average volume
+        if len(ohlcv_data) >= 4:
+            first_three_volumes = [float(candle["volume"]) for candle in ohlcv_data[:3]]
+            avg_volume = sum(first_three_volumes) / len(first_three_volumes)
+            if avg_volume < 25:
+                pairs_data[pool_address]["disqualified"] = True
+                print(
+                    f"|live_ohlcv| Disqualified pair {pool_address} due to low volume"
+                )
 
 
 async def main():

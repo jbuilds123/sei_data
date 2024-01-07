@@ -22,8 +22,7 @@ async def fetch_ohlcv(pool_address):
                     data = await response.json()
 
                     pool_data = (
-                        data.get("data", {}).get(
-                            "attributes", {}).get("ohlcv_list", [])
+                        data.get("data", {}).get("attributes", {}).get("ohlcv_list", [])
                     )
                     if not pool_data:
                         return ohlcv_list

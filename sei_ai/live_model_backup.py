@@ -84,7 +84,7 @@ def send_discord_webhook(pair_address, paper_trade):
     if pair_address is not None and paper_trade is not None:
         # Construct the message to be sent, including the role ping
         message_content = (
-            f"New Paper Trade Detected <@&{ping_role}>" if ping_role else ""
+            f"New Paper Trade Detected<@&{ping_role}>" if ping_role else ""
         )
         message = {
             "content": message_content,
@@ -241,19 +241,6 @@ def load_close_data(training_file, live_file):
     return combined_close_prices
 
 
-def read_executed_trades(file_path):
-    try:
-        with open(file_path, "r") as file:
-            return set(json.load(file))
-    except (FileNotFoundError, json.JSONDecodeError):
-        return set()
-
-
-def save_executed_trades(file_path, executed_trades):
-    with open(file_path, "w") as file:
-        json.dump(list(executed_trades), file)
-
-
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
@@ -340,7 +327,7 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.0009):
+def evaluate_model(model, X_test, y_test, threshold=0.001):
     y_pred = model.predict(X_test).flatten()
 
     # Convert probabilities to class labels
@@ -405,12 +392,7 @@ def calculate_performance_metrics(
     trade_size,
 ):
     global live_pair_addresses
-    pair_first_trigger, pair_labels, pair_entry_candle, trade_simulations = (
-        {},
-        {},
-        {},
-        [],
-    )
+    pair_max_prob, pair_labels, pair_entry_candle, trade_simulations = {}, {}, {}, []
     total_spent = 0
     total_dollar_gain_loss = 0
     total_buy_in_fees = 0
@@ -419,80 +401,66 @@ def calculate_performance_metrics(
     buy_in_fee = 0.07
     sell_fee = 0.07
     trades_made = 0
-    tp, fp, tn, fn = 0, 0, 0, 0
-    total_pos_pred, total_neg_pred = 0, 0
     false_negatives_pairs = []
-    executed_trades_file = "sei_ai/paper_trades.json"
-    executed_trades = read_executed_trades(executed_trades_file)
 
+    # debug
+    # Initialize counter for pairs with predictions
     total_pairs_set = set(pair_addresses)
     print("Total Pairs: ", len(total_pairs_set))
 
     pair_addresses_list = pair_addresses.tolist()
 
-    for i, (pair_address, prob, actual_label, seq_length) in enumerate(
-        zip(pairs_test, predictions, y_test, sequence_lengths)
+    for pair_address, prob, actual_label, seq_length in zip(
+        pairs_test, predictions, y_test, sequence_lengths
     ):
-        # Calculate TP, FP, TN, FN
-        pred_label = int(prob > threshold)
-        if pred_label == 1 and actual_label == 1:
-            tp += 1
-        elif pred_label == 1 and actual_label == 0:
-            fp += 1
-        elif pred_label == 0 and actual_label == 1:
-            fn += 1
-        elif pred_label == 0 and actual_label == 0:
-            tn += 1
-
-        # Check if the sequence length is greater than 2 and the probability is above the threshold
-        if (
-            pair_address not in pair_first_trigger
-            and seq_length > 2
-            and prob > threshold
-        ):
-            pair_first_trigger[pair_address] = (seq_length, prob, actual_label)
+        if pair_address not in pair_max_prob or prob > pair_max_prob[pair_address]:
+            pair_max_prob[pair_address] = prob
             pair_labels[pair_address] = actual_label
             pair_entry_candle[pair_address] = seq_length
 
+    final_predictions = {
+        pair: (int(prob > threshold), label)
+        for pair, prob, label in zip(
+            pair_max_prob.keys(), pair_max_prob.values(), pair_labels.values()
+        )
+    }
+
+    tp, fp, tn, fn = 0, 0, 0, 0
+    total_pos_pred, total_neg_pred = 0, 0
     live_trades = 0
 
-    for pair_address, (entry_candle, prob, actual_label) in pair_first_trigger.items():
+    for pair_address, (prediction, actual_label) in final_predictions.items():
         entry_candle = pair_entry_candle[pair_address]
 
-    if pair_address in live_pair_addresses and pair_address not in executed_trades:
+    if pair_address in live_pair_addresses:
+        print(f"Found live pair: {pair_address}")
         # For live pairs, check if the probability is above threshold for any candle between 2 and 7
         try:
-            if 3 <= entry_candle <= 7:
+            print("Max prob: ", pair_max_prob[pair_address])
+            if 1 <= entry_candle <= 7 and pair_max_prob[pair_address] > threshold:
                 logging.info(
                     f"Live trade found for candle {entry_candle}, pair {pair_address}"
                 )
                 live_trades += 1
-                pair_index = pair_addresses_list.index(pair_address)
-                fixed_index = entry_candle - 1
-                entry_price = original_close_prices_sequences[pair_index + fixed_index][
-                    -1
-                ]  #  * 1.2
+                entry_price = (
+                    original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+                )
                 total_buy_in_fees += buy_in_fee
 
                 # For live pairs, use the actual length of the sequence
+                pair_index = pair_addresses_list.index(pair_address)
                 current_candle_number = len(original_close_prices_sequences[pair_index])
 
                 # live trade details and execution
                 paper_trade = {
-                    "pair_address": pair_address,
                     "network": "sei",
                     "entry_price": entry_price,
                     "entry_candle": entry_candle,
                     "current_candle": current_candle_number,
                 }
-
-                print("Paper Trade", paper_trade)
-                # create_paper_trade_entry(pair_address, paper_trade)
+                create_paper_trade_entry(pair_address, paper_trade)
                 send_discord_webhook(pair_address, paper_trade)
                 logging.info("Discord wh and paper trade entry made")
-
-                executed_trades.add(pair_address)
-                save_executed_trades(executed_trades_file, executed_trades)
         except Exception as e:
             logging.error(
                 f"Error in processing live trade for {pair_address}: {str(e)}"
@@ -501,18 +469,20 @@ def calculate_performance_metrics(
     else:
         # Only proceed if the entry candle is within the desired range (3rd to 7th candle)
         if 3 <= entry_candle <= 7:
-            prediction = int(prob > threshold)
             if prediction == 1:
                 total_pos_pred += 1
                 pair_index = pair_addresses_list.index(pair_address)
                 fixed_index = entry_candle - 1
+
                 entry_price = (
                     original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
                 )
+
                 adjusted_exit_price = end_prices[pair_index] * 0.9
                 gain_loss_percent = (
                     (adjusted_exit_price - entry_price) / entry_price
                 ) * 100
+
                 total_buy_in_fees += buy_in_fee
 
                 # Check if gain percentage is over 5 million
@@ -522,6 +492,7 @@ def calculate_performance_metrics(
                 else:
                     potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
                     net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
+
                     if net_dollar_gain_loss >= trade_size + buy_in_fee:
                         dollar_gain_loss = net_dollar_gain_loss - sell_fee
                         total_sell_fees += sell_fee
@@ -558,77 +529,111 @@ def calculate_performance_metrics(
         if prediction == 0 and actual_label == 1:
             false_negatives_pairs.append(pair_address)
 
-        trade_simulations.sort(key=lambda x: x[3], reverse=True)
+    trade_simulations.sort(key=lambda x: x[3], reverse=True)
 
-        tpr = tp / total_pos_pred if total_pos_pred > 0 else 0
-        fpr = fp / total_pos_pred if total_pos_pred > 0 else 0
-        tnr = tn / total_neg_pred if total_neg_pred > 0 else 0
-        fnr = fn / total_neg_pred if total_neg_pred > 0 else 0
+    tpr = tp / total_pos_pred if total_pos_pred > 0 else 0
+    fpr = fp / total_pos_pred if total_pos_pred > 0 else 0
+    tnr = tn / total_neg_pred if total_neg_pred > 0 else 0
+    fnr = fn / total_neg_pred if total_neg_pred > 0 else 0
 
-        total_predictions = total_pos_pred + total_neg_pred
-        win_rate = (wins / total_pos_pred) * 100 if total_pos_pred > 0 else 0
-        overall_growth_loss_percent = (
-            total_dollar_gain_loss / total_spent * 100 if total_spent > 0 else 0
-        )
+    total_predictions = total_pos_pred + total_neg_pred
+    win_rate = (wins / total_pos_pred) * 100 if total_pos_pred > 0 else 0
+    overall_growth_loss_percent = (
+        total_dollar_gain_loss / total_spent * 100 if total_spent > 0 else 0
+    )
 
-        # total trades made
-        trades_made = len(trade_simulations)
+    # total trades made
+    trades_made = len(trade_simulations)
 
-        for trade in trade_simulations:
-            (
-                pair_address,
-                entry_price,
-                adjusted_exit_price,
-                gain_loss_percent,
-                dollar_gain_loss,
-                entry_candle,
-            ) = trade
+    for trade in trade_simulations:
+        (
+            pair_address,
+            entry_price,
+            adjusted_exit_price,
+            gain_loss_percent,
+            dollar_gain_loss,
+            entry_candle,
+        ) = trade
 
-            live_status = pair_address in live_pair_addresses
+        live_status = pair_address in live_pair_addresses
 
-            # Convert NumPy array or scalar to native Python type
-            if isinstance(entry_price, np.ndarray):
-                entry_price = entry_price.tolist()  # Convert array to list
-            elif np.isscalar(entry_price):
-                entry_price = float(entry_price)  # Convert scalar to float
+        # Convert NumPy array or scalar to native Python type
+        if isinstance(entry_price, np.ndarray):
+            entry_price = entry_price.tolist()  # Convert array to list
+        elif np.isscalar(entry_price):
+            entry_price = float(entry_price)  # Convert scalar to float
 
-            trade_details = {
-                "pair": pair_address,
-                "entry_candle": entry_candle,
-                "entry_price": entry_price,
-                "adjusted_exit": adjusted_exit_price,
-                "percent_gain": round(gain_loss_percent, 2),
-                "dollar_gain": round(dollar_gain_loss, 2),
-                "is_live_pair": live_status,
-            }
-            # print(trade_details)
+        trade_details = {
+            "pair": pair_address,
+            "entry_candle": entry_candle,
+            "entry_price": entry_price,
+            "adjusted_exit": adjusted_exit_price,
+            "percent_gain": round(gain_loss_percent, 2),
+            "dollar_gain": round(dollar_gain_loss, 2),
+            "is_live_pair": live_status,
+        }
+        # print(trade_details)
 
-        print(25 * "-")
-        print("===Prediction Stats===")
-        print(f"Total Predictions Made (including rejections): {total_predictions}")
-        print(f"Positive Predictions: {total_pos_pred}")
-        print(f"True Positives: {tp} (Rate: {tpr:.2%})")
-        print(f"False Positives: {fp} (Rate: {fpr:.2%})")
-        print(f"True Negatives: {tn} (Rate: {tnr:.2%})")
-        print(f"False Negatives: {fn} (Rate: {fnr:.2%})")
-        print("\nFalse Negative Pairs:")
-        for pair in false_negatives_pairs:
-            print(f"  -- {pair}")
-        print()
-        print("===Trade Stats===")
-        print(f"Live Trades: {live_trades}")
-        print(f"{trades_made} Trades | ${trade_size} Buy-Ins")
-        print(f"Total Spent: ${total_spent:.2f}")
-        print(f"Buy-in Fees: ${total_buy_in_fees:.2f}")
-        print(f"Sell Fees: ${total_sell_fees:.2f}")
-        print(f"PNL Dollar: ${total_dollar_gain_loss:.2f}")
-        print(f"PNL Percent: {overall_growth_loss_percent:.2f}%")
-        print(f"Win Rate: {win_rate:.2f}%")
-        print()
+        if live_status:
+            # For live pairs, use the actual length of the sequence
+            pair_index = pair_addresses_list.index(pair_address)
+            current_candle_number = len(original_close_prices_sequences[pair_index])
+
+            # Check if the entry candle is the current candle
+            if current_candle_number == entry_candle:
+                live_trades += 1
+                paper_trade = {
+                    "network": "sei",
+                    "entry_price": entry_price,
+                    "entry_candle": entry_candle,
+                }
+                create_paper_trade_entry(pair_address, paper_trade)
+                send_discord_webhook(pair_address, paper_trade)
+                # Exclude this pair from future processing
+                # exclude_pair(pair_address)
+            else:
+                live_trades += 1
+                paper_trade = {
+                    "network": "sei",
+                    "entry_price": entry_price,
+                    "entry_candle": entry_candle,
+                }
+                create_paper_trade_entry(pair_address, paper_trade)
+                pair_address = None
+                paper_trade = None
+                send_discord_webhook(pair_address, paper_trade)
+
+    print(25 * "-")
+    """
+    print("===Prediction Stats===")
+    print(
+        f"Total Predictions Made (including rejections): {total_predictions}")
+    print(f"Positive Predictions: {total_pos_pred}")
+    print(f"True Positives: {tp} (Rate: {tpr:.2%})")
+    print(f"False Positives: {fp} (Rate: {fpr:.2%})")
+    print(f"True Negatives: {tn} (Rate: {tnr:.2%})")
+    print(f"False Negatives: {fn} (Rate: {fnr:.2%})")
+    print("\nFalse Negative Pairs:")
+    for pair in false_negatives_pairs:
+        print(f"  -- {pair}")
+    print()
+    """
+    print("===Trade Stats===")
+    print(f"Live Trades: {live_trades}")
+    """
+    print(f"{trades_made} Trades | ${trade_size} Buy-Ins")
+    print(f"Total Spent: ${total_spent:.2f}")
+    print(f"Buy-in Fees: ${total_buy_in_fees:.2f}")
+    print(f"Sell Fees: ${total_sell_fees:.2f}")
+    print(f"PNL Dollar: ${total_dollar_gain_loss:.2f}")
+    print(f"PNL Percent: {overall_growth_loss_percent:.2f}%")
+    print(f"Win Rate: {win_rate:.2f}%")
+    print()
+    """
 
 
 # Model settings
-probabiliy_threshold = 0.0009  # was 0.55
+probabiliy_threshold = 0.001  # was 0.55
 run_on_full_data = True
 train_new_model = False
 model_version = 1
@@ -670,7 +675,7 @@ predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
 # debug
 # Define a function to colorize log messages
 def colorize_log_message(message, probability):
-    if probability > 0.0009:
+    if probability > 0.001:
         return f"🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈{message}🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈"  # Red text for high probability
     else:
         return message
