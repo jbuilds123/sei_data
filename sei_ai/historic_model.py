@@ -135,7 +135,7 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.50):
+def evaluate_model(model, X_test, y_test, threshold=0.55):
     y_pred = model.predict(X_test).flatten()
     # Convert probabilities to class labels
     y_pred_class = (y_pred > threshold).astype(int)
@@ -341,7 +341,7 @@ def calculate_performance_metrics(
 
 
 # handy usages
-probabiliy_threshold = 0.50  # was 0.75
+probabiliy_threshold = 0.55  # was 0.75
 run_on_full_data = True
 train_new_model = False
 model_version = 1
