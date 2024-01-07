@@ -680,10 +680,17 @@ predictions = evaluate_model(
 # debug
 # Debugging: Print probabilities for live pairs
 print("\nProbabilities for Live Pairs:")
-for i, pair_address in enumerate(pair_addresses):
+# Iterate through unique pair addresses
+for pair_address in set(pair_addresses):
     if pair_address in live_pair_addresses:
-        logging.info(
-            f"Pair Address: {pair_address}, Probability = {predictions[i]:.4f}")
+        # Find indices where this pair address occurs
+        indices = [i for i, x in enumerate(
+            pair_addresses) if x == pair_address]
+        # Check if any prediction for this pair exceeds the threshold
+        if any(predictions[i] > 0.01 for i in indices):
+            for i in indices:
+                logging.info(
+                    f"Pair Address: {pair_address}, Probability = {predictions[i]:.4f}")
 # debug
 
 # Calculate performance metrics
