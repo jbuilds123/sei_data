@@ -51,8 +51,7 @@ def split_data(sequences, labels, addresses, test_size, random_state):
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-    X_train_imputed = imputer.fit_transform(
-        X_train.reshape(X_train.shape[0], -1))
+    X_train_imputed = imputer.fit_transform(X_train.reshape(X_train.shape[0], -1))
 
     # Apply SMOTE
     smote = SMOTE()
@@ -135,11 +134,18 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.55):
+def evaluate_model(model, X_test, y_test, threshold=0.50):
     y_pred = model.predict(X_test).flatten()
     # Convert probabilities to class labels
     y_pred_class = (y_pred > threshold).astype(int)
     # threshold was 0.50
+
+    # Calculate and print the total number of predictions above and below the threshold
+    total_above_threshold = np.sum(y_pred_class)
+    total_below_threshold = len(y_pred_class) - total_above_threshold
+    print(
+        f"Total Predictions Above Threshold: {total_above_threshold}, Below Threshold: {total_below_threshold}"
+    )
 
     test_loss = log_loss(y_test, y_pred)  # Log Loss
     test_auc = roc_auc_score(y_test, y_pred)  # AUC-ROC Score
@@ -174,7 +180,6 @@ def calculate_performance_metrics(
     threshold,
     trade_size,
 ):
-    pair_max_prob, pair_labels, pair_entry_candle, trade_simulations = {}, {}, {}, []
     total_spent = 0
     total_dollar_gain_loss = 0
     total_buy_in_fees = 0
@@ -183,116 +188,98 @@ def calculate_performance_metrics(
     buy_in_fee = 0.07
     sell_fee = 0.07
     trades_made = 0
+    tp, fp, tn, fn = 0, 0, 0, 0
+
+    false_negatives_pairs = []
+    trade_simulations = []
+    first_predictions = set()
 
     pair_addresses_list = pair_addresses.tolist()
-    false_negatives_pairs = []
 
-    for pair_address, prob, actual_label, seq_length in zip(
-        pairs_test, predictions, y_test, sequence_lengths
+    for i, (pair_address, prob, actual_label, seq_length) in enumerate(
+        zip(pairs_test, predictions, y_test, sequence_lengths)
     ):
-        if pair_address not in pair_max_prob or prob > pair_max_prob[pair_address]:
-            pair_max_prob[pair_address] = prob
-            pair_labels[pair_address] = actual_label
-            pair_entry_candle[pair_address] = seq_length
+        pred_label = int(prob > threshold)
+        if pred_label == 1 and actual_label == 1:
+            tp += 1
+        elif pred_label == 1 and actual_label == 0:
+            fp += 1
+        elif pred_label == 0 and actual_label == 1:
+            fn += 1
+        elif pred_label == 0 and actual_label == 0:
+            tn += 1
 
-    final_predictions = {
-        pair: (int(prob > threshold), label)
-        for pair, prob, label in zip(
-            pair_max_prob.keys(), pair_max_prob.values(), pair_labels.values()
-        )
-    }
+        # Ensure only one trade per pair
+        if pair_address in first_predictions:
+            continue
 
-    tp, fp, tn, fn = 0, 0, 0, 0
-    total_pos_pred, total_neg_pred = 0, 0
+        # Check if the sequence length is greater than 2 and the probability is above the threshold
+        if seq_length > 2 and prob > threshold:
+            first_predictions.add(pair_address)
+            pair_index = pair_addresses_list.index(pair_address)
+            fixed_index = seq_length - 1
+            entry_price = (
+                original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+            )
 
-    for pair_address, (prediction, actual_label) in final_predictions.items():
-        entry_candle = pair_entry_candle[pair_address]
+            # Processing for simulated trades
+            adjusted_exit_price = end_prices[pair_index] * 0.9
+            gain_loss_percent = (
+                (adjusted_exit_price - entry_price) / entry_price
+            ) * 100
+            total_buy_in_fees += buy_in_fee
 
-        # Only proceed if the entry candle is within the desired range (3rd to 7th candle)
-        if 3 <= entry_candle <= 7:
-            if prediction == 1:
-                total_pos_pred += 1
-                pair_index = pair_addresses_list.index(pair_address)
-
-                fixed_index = entry_candle - 1
-
-                entry_price = (
-                    original_close_prices_sequences[pair_index +
-                                                    fixed_index][-1] * 1.2
-                )
-
-                adjusted_exit_price = end_prices[pair_index] * 0.9
-                gain_loss_percent = (
-                    (adjusted_exit_price - entry_price) / entry_price
-                ) * 100
-
-                total_buy_in_fees += buy_in_fee  # Update buy-in fees here
-
-                # Check if gain percentage is over 5 million
-                if gain_loss_percent > 5000000:
-                    dollar_gain_loss = -(trade_size + buy_in_fee)
-                    gain_loss_percent = -100  # -100% gain
-                else:
-                    potential_dollar_gain_loss = (
-                        gain_loss_percent / 100) * trade_size
-                    net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
-
-                    if net_dollar_gain_loss >= trade_size + buy_in_fee:
-                        dollar_gain_loss = net_dollar_gain_loss - sell_fee
-                        total_sell_fees += sell_fee
-                        # Only increment total_spent by trade_size and buy_in_fee, sell_fee added later
-                        total_spent += trade_size + buy_in_fee
-                    else:
-                        dollar_gain_loss = -(trade_size + buy_in_fee)
-                        gain_loss_percent = -100
-                        total_spent += trade_size + buy_in_fee
-
-                trade_simulations.append(
-                    (
-                        pair_address,
-                        entry_price,
-                        adjusted_exit_price,
-                        gain_loss_percent,
-                        dollar_gain_loss,
-                        entry_candle,
-                        pair_max_prob[pair_address]
-                    )
-                )
-                total_dollar_gain_loss += dollar_gain_loss
-                if dollar_gain_loss > 0:
-                    wins += 1
-                if actual_label == 1:
-                    tp += 1
-                else:
-                    fp += 1
+            if gain_loss_percent > 5000000:
+                dollar_gain_loss = -(trade_size + buy_in_fee)
+                gain_loss_percent = -100
             else:
-                total_neg_pred += 1
-                if actual_label == 1:
-                    fn += 1
+                potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
+                net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
+                if net_dollar_gain_loss >= trade_size + buy_in_fee:
+                    dollar_gain_loss = net_dollar_gain_loss - sell_fee
+                    total_sell_fees += sell_fee
                 else:
-                    tn += 1
+                    dollar_gain_loss = -(trade_size + buy_in_fee)
+                    gain_loss_percent = -100
 
-        # Check for false negatives
-        if prediction == 0 and actual_label == 1:
-            false_negatives_pairs.append(pair_address)
+            trade_simulations.append(
+                (
+                    pair_address,
+                    entry_price,
+                    adjusted_exit_price,
+                    gain_loss_percent,
+                    dollar_gain_loss,
+                    seq_length,
+                    prob,
+                )
+            )
+            total_spent += trade_size + buy_in_fee
+            total_dollar_gain_loss += dollar_gain_loss
+            if dollar_gain_loss > 0:
+                wins += 1
 
-    trade_simulations.sort(key=lambda x: x[3], reverse=True)
+    # Calculate other performance metrics
+    tpr = tp / (tp + fn) if (tp + fn) > 0 else 0
+    fpr = fp / (fp + tn) if (fp + tn) > 0 else 0
+    tnr = tn / (tn + fp) if (tn + fp) > 0 else 0
+    fnr = fn / (fn + tp) if (fn + tp) > 0 else 0
 
-    tpr = tp / total_pos_pred if total_pos_pred > 0 else 0
-    fpr = fp / total_pos_pred if total_pos_pred > 0 else 0
-    tnr = tn / total_neg_pred if total_neg_pred > 0 else 0
-    fnr = fn / total_neg_pred if total_neg_pred > 0 else 0
-
-    total_predictions = total_pos_pred + total_neg_pred
-    win_rate = (wins / total_pos_pred) * 100 if total_pos_pred > 0 else 0
+    win_rate = (
+        (wins / len(trade_simulations)) * 100 if len(trade_simulations) > 0 else 0
+    )
     overall_growth_loss_percent = (
-        total_dollar_gain_loss / total_spent * 100 if total_spent > 0 else 0
+        (total_dollar_gain_loss / total_spent) * 100 if total_spent > 0 else 0
     )
 
     # total trades made
     trades_made = len(trade_simulations)
 
-    for trade in trade_simulations:
+    # Sort trade_simulations by dollar_gain in descending order
+    sorted_trade_simulations = sorted(
+        trade_simulations, key=lambda x: x[4], reverse=True
+    )
+
+    for trade in sorted_trade_simulations:
         (
             pair_address,
             entry_price,
@@ -300,8 +287,17 @@ def calculate_performance_metrics(
             gain_loss_percent,
             dollar_gain_loss,
             entry_candle,
-            probability
+            trade_prob,
         ) = trade
+
+        # Convert NumPy array or scalar to native Python type
+        if isinstance(entry_price, np.ndarray):
+            entry_price = entry_price.tolist()  # Convert array to list
+        elif np.isscalar(entry_price):
+            entry_price = float(entry_price)  # Convert scalar to float
+
+        trade_prediction_score = f"{round(trade_prob * 100, 4)}%"
+
         trade_details = {
             "pair": pair_address,
             "entry_candle": entry_candle,
@@ -309,28 +305,22 @@ def calculate_performance_metrics(
             "adjusted_exit": adjusted_exit_price,
             "percent_gain": round(gain_loss_percent, 2),
             "dollar_gain": round(dollar_gain_loss, 2),
-            "probability": round(probability, 6)
+            "probability": trade_prediction_score,
         }
         print(trade_details)
 
-    print(50 * "-")
+    print(25 * "-")
     print("===Prediction Stats===")
-    print(
-        f"Total Predictions Made (including rejections): {total_predictions}")
-    print(f"Positive Predictions: {total_pos_pred}")
     print(f"True Positives: {tp} (Rate: {tpr:.2%})")
     print(f"False Positives: {fp} (Rate: {fpr:.2%})")
     print(f"True Negatives: {tn} (Rate: {tnr:.2%})")
     print(f"False Negatives: {fn} (Rate: {fnr:.2%})")
-    if fn > 0:
-        print("\nFalse Negative Pairs:")
-        for pair in false_negatives_pairs:
-            print(f"  -- {pair}")
+    print("\nFalse Negative Pairs:")
+    for pair in false_negatives_pairs:
+        print(f"  -- {pair}")
     print()
     print("===Trade Stats===")
     print(f"{trades_made} Trades | ${trade_size} Buy-Ins")
-    # Correctly calculate the total spent, adding sell fees if applicable
-    total_spent = total_spent + total_sell_fees
     print(f"Total Spent: ${total_spent:.2f}")
     print(f"Buy-in Fees: ${total_buy_in_fees:.2f}")
     print(f"Sell Fees: ${total_sell_fees:.2f}")
@@ -341,7 +331,7 @@ def calculate_performance_metrics(
 
 
 # handy usages
-probabiliy_threshold = 0.55  # was 0.75
+probabiliy_threshold = 0.50  # was 0.75
 run_on_full_data = True
 train_new_model = False
 model_version = 1
@@ -376,8 +366,7 @@ else:
 
 # Model training
 if train_new_model:
-    X_train_sm, y_train_sm = apply_smote(
-        X_train, y_train, padded_sequences.shape)
+    X_train_sm, y_train_sm = apply_smote(X_train, y_train, padded_sequences.shape)
     class_weights_dict = compute_class_weights(y_train_sm)
     model = create_lstm_model((X_train.shape[1], X_train.shape[2]))
     model = compile_and_train_model(
@@ -386,8 +375,7 @@ if train_new_model:
 else:
     model_path = f"sei_ai/tuned_models/model_v{model_version}.keras"
     # Include custom loss function when loading the model
-    model = load_model(model_path, custom_objects={
-                       "focal_loss_fixed": focal_loss()})
+    model = load_model(model_path, custom_objects={"focal_loss_fixed": focal_loss()})
 
 # Evaluate model
 predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
