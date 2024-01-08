@@ -327,7 +327,7 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.50):
+def evaluate_model(model, X_test, y_test, threshold=0.70):
     y_pred = model.predict(X_test).flatten()
 
     # Convert probabilities to class labels
@@ -563,7 +563,7 @@ def calculate_performance_metrics(
 
 
 # Model settings
-probabiliy_threshold = 0.50  # was 0.55
+probabiliy_threshold = 0.70  # was 0.55
 run_on_full_data = True
 train_new_model = False
 model_version = 1
@@ -605,7 +605,7 @@ predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
 # debug
 # Define a function to colorize log messages
 def colorize_log_message(message, probability):
-    if probability > 0.50:
+    if probability > 0.70:
         return f"🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈{message}🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈"
     else:
         return message

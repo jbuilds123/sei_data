@@ -66,7 +66,7 @@ async def main():
     total_pairs_skipped = 0
     current_timestamp = time.time()
     six_hours_in_seconds = 6 * 3600
-    sixteen_hours_in_seconds = 16 * 3600
+    sixteen_hours_in_seconds = 15 * 3600
 
     for pool_address, pair_info in pairs_data.items():
         if "ohlcv" in pair_info and pair_info["ohlcv"]:

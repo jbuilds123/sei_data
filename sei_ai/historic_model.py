@@ -51,7 +51,8 @@ def split_data(sequences, labels, addresses, test_size, random_state):
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-    X_train_imputed = imputer.fit_transform(X_train.reshape(X_train.shape[0], -1))
+    X_train_imputed = imputer.fit_transform(
+        X_train.reshape(X_train.shape[0], -1))
 
     # Apply SMOTE
     smote = SMOTE()
@@ -134,7 +135,7 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.50):
+def evaluate_model(model, X_test, y_test, threshold=0.70):
     y_pred = model.predict(X_test).flatten()
     # Convert probabilities to class labels
     y_pred_class = (y_pred > threshold).astype(int)
@@ -219,7 +220,8 @@ def calculate_performance_metrics(
             pair_index = pair_addresses_list.index(pair_address)
             fixed_index = seq_length - 1
             entry_price = (
-                original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+                original_close_prices_sequences[pair_index +
+                                                fixed_index][-1] * 1.2
             )
 
             # Processing for simulated trades
@@ -233,7 +235,8 @@ def calculate_performance_metrics(
                 dollar_gain_loss = -(trade_size + buy_in_fee)
                 gain_loss_percent = -100
             else:
-                potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
+                potential_dollar_gain_loss = (
+                    gain_loss_percent / 100) * trade_size
                 net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
                 if net_dollar_gain_loss >= trade_size + buy_in_fee:
                     dollar_gain_loss = net_dollar_gain_loss - sell_fee
@@ -265,7 +268,8 @@ def calculate_performance_metrics(
     fnr = fn / (fn + tp) if (fn + tp) > 0 else 0
 
     win_rate = (
-        (wins / len(trade_simulations)) * 100 if len(trade_simulations) > 0 else 0
+        (wins / len(trade_simulations)) *
+        100 if len(trade_simulations) > 0 else 0
     )
     overall_growth_loss_percent = (
         (total_dollar_gain_loss / total_spent) * 100 if total_spent > 0 else 0
@@ -331,7 +335,7 @@ def calculate_performance_metrics(
 
 
 # handy usages
-probabiliy_threshold = 0.50  # was 0.75
+probabiliy_threshold = 0.70  # was 0.75
 run_on_full_data = True
 train_new_model = False
 model_version = 1
@@ -366,7 +370,8 @@ else:
 
 # Model training
 if train_new_model:
-    X_train_sm, y_train_sm = apply_smote(X_train, y_train, padded_sequences.shape)
+    X_train_sm, y_train_sm = apply_smote(
+        X_train, y_train, padded_sequences.shape)
     class_weights_dict = compute_class_weights(y_train_sm)
     model = create_lstm_model((X_train.shape[1], X_train.shape[2]))
     model = compile_and_train_model(
@@ -375,7 +380,8 @@ if train_new_model:
 else:
     model_path = f"sei_ai/tuned_models/model_v{model_version}.keras"
     # Include custom loss function when loading the model
-    model = load_model(model_path, custom_objects={"focal_loss_fixed": focal_loss()})
+    model = load_model(model_path, custom_objects={
+                       "focal_loss_fixed": focal_loss()})
 
 # Evaluate model
 predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
