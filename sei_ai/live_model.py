@@ -91,7 +91,7 @@ def send_discord_webhook(pair_address, paper_trade):
             "embeds": [
                 {
                     "title": f"***${paper_trade['network']} Network***",
-                    "description": f"**Pair Address:** *{pair_address}*\n\n**Entry Price:** *{paper_trade['entry_price']}*\n\n**Entry Candle:** *{paper_trade['entry_candle']}*",
+                    "description": f"**Pair Address:** [{pair_address}](https://www.geckoterminal.com/sei-network/pools/{pair_address})\n\n**Entry Price:** *{paper_trade['entry_price']}*\n\n**Entry Candle:** *{paper_trade['entry_candle']}*",
                     "color": 16711680,
                     "footer": {
                         "text": "This is just a simulation test trade that is counting as a papertrade in a fully live environment. I suggest to watch and judge the AI, not follow just yet. Exercise patience while it learns the market!",
