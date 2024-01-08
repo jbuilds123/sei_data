@@ -1,0 +1,609 @@
+{
+    "sei1f7fvuw8qjg50wqpfemvpv99h45lwe5kgegfr5y2dzh65a3h85ygqwp5wf2": {
+        "created_at": 1704689678,
+        "pool_address": "sei1f7fvuw8qjg50wqpfemvpv99h45lwe5kgegfr5y2dzh65a3h85ygqwp5wf2",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1f7fvuw8qjg50wqpfemvpv99h45lwe5kgegfr5y2dzh65a3h85ygqwp5wf2",
+        "disqualified": false,
+        "deployer_address": "sei1e0htcpu3w93rmmrpztj265lfzz5e9m4zh39az9",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1e0htcpu3w93rmmrpztj265lfzz5e9m4zh39az9",
+        "transaction_hash": "7FE9C701984F8C49CBDB249479FB0DC003F757E7491152E92CEEF5711A5CE236",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/7FE9C701984F8C49CBDB249479FB0DC003F757E7491152E92CEEF5711A5CE236",
+        "links": []
+    },
+    "sei1qynmae8ej44efea4s4elm09qzveca24nuplq5489a6zpynr7z5dqw2wauz": {
+        "created_at": 1704687300,
+        "pool_address": "sei1qynmae8ej44efea4s4elm09qzveca24nuplq5489a6zpynr7z5dqw2wauz",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1qynmae8ej44efea4s4elm09qzveca24nuplq5489a6zpynr7z5dqw2wauz",
+        "disqualified": false,
+        "deployer_address": "sei1rgcsgv3x6mfft4n6r9y9ykkfmk7fw9r8wdadzu",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1rgcsgv3x6mfft4n6r9y9ykkfmk7fw9r8wdadzu",
+        "transaction_hash": "493F7149A30472F5833313F720CB0C3CB5E3B28C8FB31564BC8FF4C5BE734C6E",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/493F7149A30472F5833313F720CB0C3CB5E3B28C8FB31564BC8FF4C5BE734C6E",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/Seitanonsei"
+            }
+        ]
+    },
+    "sei130gxz3unaq3a2hcnfya29eh8ckzpyj80h72lpz44y5v48z2s0qjs7jp4df": {
+        "created_at": 1704686467,
+        "pool_address": "sei130gxz3unaq3a2hcnfya29eh8ckzpyj80h72lpz44y5v48z2s0qjs7jp4df",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei130gxz3unaq3a2hcnfya29eh8ckzpyj80h72lpz44y5v48z2s0qjs7jp4df",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "C1CE21069197E655474357ED7798FBABEC44296BBF4726D9C960AEC5595D4B26",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/C1CE21069197E655474357ED7798FBABEC44296BBF4726D9C960AEC5595D4B26",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1ur825pz3y28082pgl4am3nxgprj4fewxtxxwmtwcgwdy0pcerxqsa9ylfg": {
+        "created_at": 1704684634,
+        "pool_address": "sei1ur825pz3y28082pgl4am3nxgprj4fewxtxxwmtwcgwdy0pcerxqsa9ylfg",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1ur825pz3y28082pgl4am3nxgprj4fewxtxxwmtwcgwdy0pcerxqsa9ylfg",
+        "disqualified": false,
+        "deployer_address": "sei10a4fe9rhav48g6mhg6a69a5g2s6mawc8gqfhzh",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei10a4fe9rhav48g6mhg6a69a5g2s6mawc8gqfhzh",
+        "transaction_hash": "AAE81A75AEDFB6ABC681273D759B7EB0A6C1A298411ED6C30E9B37BA2B22D5DE",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/AAE81A75AEDFB6ABC681273D759B7EB0A6C1A298411ED6C30E9B37BA2B22D5DE",
+        "links": []
+    },
+    "sei19nfrsrcl3g3u7gr4dtnvwu0tldttt94xjpk6ushjv3nywrhcndmq3l0a78": {
+        "created_at": 1704683465,
+        "pool_address": "sei19nfrsrcl3g3u7gr4dtnvwu0tldttt94xjpk6ushjv3nywrhcndmq3l0a78",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei19nfrsrcl3g3u7gr4dtnvwu0tldttt94xjpk6ushjv3nywrhcndmq3l0a78",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "CA7847A1CD852483F055605F68DC846641A46C88A8E76FF9FD436FFD2BB11FB6",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/CA7847A1CD852483F055605F68DC846641A46C88A8E76FF9FD436FFD2BB11FB6",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei16a2n5ejzty25qvvz6t4ees8ddxyr3q3w7ecjumjzud2yyf995ygsrjr55v": {
+        "created_at": 1704683004,
+        "pool_address": "sei16a2n5ejzty25qvvz6t4ees8ddxyr3q3w7ecjumjzud2yyf995ygsrjr55v",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei16a2n5ejzty25qvvz6t4ees8ddxyr3q3w7ecjumjzud2yyf995ygsrjr55v",
+        "disqualified": false,
+        "deployer_address": "sei1vvxq65v0za6nx99rvef7rnpng3dtly5f6pe02z",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1vvxq65v0za6nx99rvef7rnpng3dtly5f6pe02z",
+        "transaction_hash": "3CE2A4409A562DCF2017593E90AC94D2A33082D5F108E0719EA702745E810CFE",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3CE2A4409A562DCF2017593E90AC94D2A33082D5F108E0719EA702745E810CFE",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704683340,
+                "open": "0.000000003121702784",
+                "high": "0.000000003121702784",
+                "low": "0.000000003121702784",
+                "close": "0.000000003121702784",
+                "volume": "31.22"
+            },
+            {
+                "timestamp": 1704683580,
+                "open": "0.000000003121702784",
+                "high": "0.004204130953985560",
+                "low": "0.004140934933200000",
+                "close": "0.004140934933200000",
+                "volume": "0.12"
+            }
+        ]
+    },
+    "sei1xc0ck32vm25yzs44xrtnszy36tjnpdh06a6v7np5t53kf8yzmfus6arg9k": {
+        "created_at": 1704681942,
+        "pool_address": "sei1xc0ck32vm25yzs44xrtnszy36tjnpdh06a6v7np5t53kf8yzmfus6arg9k",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1xc0ck32vm25yzs44xrtnszy36tjnpdh06a6v7np5t53kf8yzmfus6arg9k",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "2A109919119C2FFF131F9D7A69E4A1ACD115B621747400D70C4053C60B348034",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/2A109919119C2FFF131F9D7A69E4A1ACD115B621747400D70C4053C60B348034",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei17979etq4kpuf4awsydzt4phl22quc0h28mp6udyttd56e0weje9sqa6d2k": {
+        "created_at": 1704681936,
+        "pool_address": "sei17979etq4kpuf4awsydzt4phl22quc0h28mp6udyttd56e0weje9sqa6d2k",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei17979etq4kpuf4awsydzt4phl22quc0h28mp6udyttd56e0weje9sqa6d2k",
+        "disqualified": true,
+        "deployer_address": "sei17mcegr7gu7u5k39d3n8ekvpa23alhq00yq947k",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei17mcegr7gu7u5k39d3n8ekvpa23alhq00yq947k",
+        "transaction_hash": "395E2206A92D6A1D8648F9C9CB5D5947D2A51BC6C91EFEFCB7835A2D314A1C29",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/395E2206A92D6A1D8648F9C9CB5D5947D2A51BC6C91EFEFCB7835A2D314A1C29",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704681900,
+                "open": "0.000004655132182981",
+                "high": "0.000004655132182981",
+                "low": "0.000004655132182981",
+                "close": "0.000004655132182981",
+                "volume": "6.22"
+            },
+            {
+                "timestamp": 1704681960,
+                "open": "0.000004655132182981",
+                "high": "0.000004630888720085",
+                "low": "0.000004630888720085",
+                "close": "0.000004630888720085",
+                "volume": "6.19"
+            },
+            {
+                "timestamp": 1704683580,
+                "open": "0.000004630888720085",
+                "high": "0.000004675502010840",
+                "low": "0.000004675502010840",
+                "close": "0.000004675502010840",
+                "volume": "9.37"
+            },
+            {
+                "timestamp": 1704684720,
+                "open": "0.000004675502010840",
+                "high": "0.000004505467395434",
+                "low": "0.000004505467395434",
+                "close": "0.000004505467395434",
+                "volume": "9.03"
+            },
+            {
+                "timestamp": 1704685740,
+                "open": "0.000004505467395434",
+                "high": "0.000004580648790594",
+                "low": "0.000004580648790594",
+                "close": "0.000004580648790594",
+                "volume": "9.79"
+            },
+            {
+                "timestamp": 1704687060,
+                "open": "0.000004580648790594",
+                "high": "0.000004631201378970",
+                "low": "0.000004631201378970",
+                "close": "0.000004631201378970",
+                "volume": "3.09"
+            },
+            {
+                "timestamp": 1704687480,
+                "open": "0.000004631201378970",
+                "high": "0.000004597505788645",
+                "low": "0.000004597505788645",
+                "close": "0.000004597505788645",
+                "volume": "1.23"
+            }
+        ]
+    },
+    "sei1c7zmv5f3rfslseekkle8xv23fveghytm06qn7n8jcvxedcxxvycqg2jmyd": {
+        "created_at": 1704681615,
+        "pool_address": "sei1c7zmv5f3rfslseekkle8xv23fveghytm06qn7n8jcvxedcxxvycqg2jmyd",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1c7zmv5f3rfslseekkle8xv23fveghytm06qn7n8jcvxedcxxvycqg2jmyd",
+        "disqualified": false,
+        "deployer_address": "sei1mzku843wgztg4f9lpc6cx0d6k58njn9458mque",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1mzku843wgztg4f9lpc6cx0d6k58njn9458mque",
+        "transaction_hash": "5665F8C1E17D9985E317825412172D225BCC231CD8F9CA930CC7260438C59891",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/5665F8C1E17D9985E317825412172D225BCC231CD8F9CA930CC7260438C59891",
+        "links": [
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/bunnyonsei"
+            }
+        ],
+        "ohlcv": [
+            {
+                "timestamp": 1704689160,
+                "open": "0.000000001635656481",
+                "high": "0.000000001635656481",
+                "low": "0.000000001635656481",
+                "close": "0.000000001635656481",
+                "volume": "6.22"
+            }
+        ]
+    },
+    "sei12fq2txp6y5548s278dy9lwv6pxge7jzhw4cyqznkn798pqmhdu2sdzlk42": {
+        "created_at": 1704681459,
+        "pool_address": "sei12fq2txp6y5548s278dy9lwv6pxge7jzhw4cyqznkn798pqmhdu2sdzlk42",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei12fq2txp6y5548s278dy9lwv6pxge7jzhw4cyqznkn798pqmhdu2sdzlk42",
+        "disqualified": false,
+        "deployer_address": "sei1la9vgf57ad35sutnh9r2x3yu73ajxpxtcj6rg2",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1la9vgf57ad35sutnh9r2x3yu73ajxpxtcj6rg2",
+        "transaction_hash": "6A0FB1782A96E8DB0D32E1ABE1599724B25898B6995BDF4F262F84B4399DA36D",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/6A0FB1782A96E8DB0D32E1ABE1599724B25898B6995BDF4F262F84B4399DA36D",
+        "links": [
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/STARBOT"
+            }
+        ],
+        "ohlcv": [
+            {
+                "timestamp": 1704681480,
+                "open": "0.000000489803364291",
+                "high": "0.000000489803364291",
+                "low": "0.000000489803364291",
+                "close": "0.000000489803364291",
+                "volume": "6.27"
+            },
+            {
+                "timestamp": 1704681540,
+                "open": "0.000000489803364291",
+                "high": "0.000000488764135707",
+                "low": "0.000000322351690278",
+                "close": "0.000000322351690278",
+                "volume": "117.47"
+            }
+        ]
+    },
+    "sei1lh2zk87xcfgrxkk06ahkh9vk4xk8rrqwjt5cexu6rhcaf0p89lnq4z435x": {
+        "created_at": 1704681352,
+        "pool_address": "sei1lh2zk87xcfgrxkk06ahkh9vk4xk8rrqwjt5cexu6rhcaf0p89lnq4z435x",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1lh2zk87xcfgrxkk06ahkh9vk4xk8rrqwjt5cexu6rhcaf0p89lnq4z435x",
+        "disqualified": false,
+        "deployer_address": "sei1hyyk098d5t5tmcrtaejttj9ueuxrg8f0u8ude8",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hyyk098d5t5tmcrtaejttj9ueuxrg8f0u8ude8",
+        "transaction_hash": "10986F804677A8DD3AA78C20824C069318F2DC420F81792452EB1AEBF6BB5A0E",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/10986F804677A8DD3AA78C20824C069318F2DC420F81792452EB1AEBF6BB5A0E",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704681360,
+                "open": "0.000004669905947656",
+                "high": "0.000004669905947656",
+                "low": "0.000004645584143499",
+                "close": "0.000004645584143499",
+                "volume": "12.59"
+            }
+        ]
+    },
+    "sei18rk3frdflhyddvecxap9kekex4f8sjhyfv0ccddvy8ua5wdeq2xqk46zd5": {
+        "created_at": 1704681258,
+        "pool_address": "sei18rk3frdflhyddvecxap9kekex4f8sjhyfv0ccddvy8ua5wdeq2xqk46zd5",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei18rk3frdflhyddvecxap9kekex4f8sjhyfv0ccddvy8ua5wdeq2xqk46zd5",
+        "disqualified": false,
+        "deployer_address": "sei1jvvzza7cg4a5awpusjaavng4fal0uh4p2auzzj",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1jvvzza7cg4a5awpusjaavng4fal0uh4p2auzzj",
+        "transaction_hash": "BE54476D41B910AAF5339048A3A8E993B04D38AD21823A0CA8589D9465A9EB78",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/BE54476D41B910AAF5339048A3A8E993B04D38AD21823A0CA8589D9465A9EB78",
+        "links": []
+    },
+    "sei10294p3ugarrxt3ydmx6e78y938c9xp7pw5ftlu26h66tk3hqpmgsmr2u2a": {
+        "created_at": 1704680570,
+        "pool_address": "sei10294p3ugarrxt3ydmx6e78y938c9xp7pw5ftlu26h66tk3hqpmgsmr2u2a",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei10294p3ugarrxt3ydmx6e78y938c9xp7pw5ftlu26h66tk3hqpmgsmr2u2a",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "47907C3CE8AFAB7156BFDE80FF1F2F5324E391591E5C5F6B66DE26240B536055",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/47907C3CE8AFAB7156BFDE80FF1F2F5324E391591E5C5F6B66DE26240B536055",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704680580,
+                "open": "0.000004749566969870",
+                "high": "0.000004749566969870",
+                "low": "0.000004728098724283",
+                "close": "0.000004728098724283",
+                "volume": "12.81"
+            }
+        ]
+    },
+    "sei1vcrxt4wfp0cvs2nr3qusx7jls6pz90xfptpgemu2xwmgvz4x7gasl464g7": {
+        "created_at": 1704680373,
+        "pool_address": "sei1vcrxt4wfp0cvs2nr3qusx7jls6pz90xfptpgemu2xwmgvz4x7gasl464g7",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1vcrxt4wfp0cvs2nr3qusx7jls6pz90xfptpgemu2xwmgvz4x7gasl464g7",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "18AC18329976E7ACAFB9927E5CBD4CA9AB8F6F15C9A0102C23483A610280C2DA",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/18AC18329976E7ACAFB9927E5CBD4CA9AB8F6F15C9A0102C23483A610280C2DA",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704680400,
+                "open": "0.000004808756544954",
+                "high": "0.000004847364043992",
+                "low": "0.000004808756544954",
+                "close": "0.000004813019015531",
+                "volume": "82.18"
+            }
+        ]
+    },
+    "sei1jezhk4j3zamj2yal9szh29y04jg3ts93etedm8qwy87cl4un6ztsfr097g": {
+        "created_at": 1704680180,
+        "pool_address": "sei1jezhk4j3zamj2yal9szh29y04jg3ts93etedm8qwy87cl4un6ztsfr097g",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1jezhk4j3zamj2yal9szh29y04jg3ts93etedm8qwy87cl4un6ztsfr097g",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "3BBCA82AB59F7A3F18190B06F6E9954BC5CB1BE2CA27121C43207395ECE7E7A9",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3BBCA82AB59F7A3F18190B06F6E9954BC5CB1BE2CA27121C43207395ECE7E7A9",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704680160,
+                "open": "0.000004510188538107",
+                "high": "0.000004547628439822",
+                "low": "0.000004510188538107",
+                "close": "0.000004547628439822",
+                "volume": "71.01"
+            }
+        ]
+    },
+    "sei1x5cymhy4p8at0adekv8ugy7mspxjffxkf5fvughgap3p6dwfayaq8x54x9": {
+        "created_at": 1704680020,
+        "pool_address": "sei1x5cymhy4p8at0adekv8ugy7mspxjffxkf5fvughgap3p6dwfayaq8x54x9",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1x5cymhy4p8at0adekv8ugy7mspxjffxkf5fvughgap3p6dwfayaq8x54x9",
+        "disqualified": false,
+        "deployer_address": "sei1sv228axh72fsv9z4fg47lwdj4rwhx543td6uj4",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1sv228axh72fsv9z4fg47lwdj4rwhx543td6uj4",
+        "transaction_hash": "3957244850205D261FF13278DA5A34F366D5776DA7DD89DBDCA219D080631D83",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3957244850205D261FF13278DA5A34F366D5776DA7DD89DBDCA219D080631D83",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            },
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/SuperSEIYANsei"
+            }
+        ]
+    },
+    "sei1q9yfzush02va97gfff3qfeucy3uzkmv8fev6m5adf2rvaw57q5fspdx4dt": {
+        "created_at": 1704679749,
+        "pool_address": "sei1q9yfzush02va97gfff3qfeucy3uzkmv8fev6m5adf2rvaw57q5fspdx4dt",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1q9yfzush02va97gfff3qfeucy3uzkmv8fev6m5adf2rvaw57q5fspdx4dt",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "FB95F35A23BA7F15B99E12C7C39B6156A3E75BCF9D8AB351C522CCD76066541B",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/FB95F35A23BA7F15B99E12C7C39B6156A3E75BCF9D8AB351C522CCD76066541B",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704679740,
+                "open": "0.000004581744770716",
+                "high": "0.000004581744770716",
+                "low": "0.000004581744770716",
+                "close": "0.000004581744770716",
+                "volume": "69.92"
+            }
+        ]
+    },
+    "sei14a8w87dug0cs78d6dxcgtchmhuck7s8wwwa4qmkymr9m53nu33gsy3nklm": {
+        "created_at": 1704679688,
+        "pool_address": "sei14a8w87dug0cs78d6dxcgtchmhuck7s8wwwa4qmkymr9m53nu33gsy3nklm",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei14a8w87dug0cs78d6dxcgtchmhuck7s8wwwa4qmkymr9m53nu33gsy3nklm",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "4152E4944298F1575FF25F9172D36486403513132C620F225883F7C00FCC01D5",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/4152E4944298F1575FF25F9172D36486403513132C620F225883F7C00FCC01D5",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1s40sfd8300gjx9mmgje2nmwnsez2w92zgj5r00we8du6gd3w564qqez7pa": {
+        "created_at": 1704679259,
+        "pool_address": "sei1s40sfd8300gjx9mmgje2nmwnsez2w92zgj5r00we8du6gd3w564qqez7pa",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1s40sfd8300gjx9mmgje2nmwnsez2w92zgj5r00we8du6gd3w564qqez7pa",
+        "disqualified": false,
+        "deployer_address": "sei1sv228axh72fsv9z4fg47lwdj4rwhx543td6uj4",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1sv228axh72fsv9z4fg47lwdj4rwhx543td6uj4",
+        "transaction_hash": "00345DB186AA3519A2881E255DE30A6D2DB7F68D2C151DDF5CB7A06589DE32C5",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/00345DB186AA3519A2881E255DE30A6D2DB7F68D2C151DDF5CB7A06589DE32C5",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            },
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/SuperSEIYANsei"
+            }
+        ]
+    },
+    "sei15p3f0e24zkznzvtgfrtzddum2hjstzcagfmxh8nlu8mz393ust9qlzpyqr": {
+        "created_at": 1704679199,
+        "pool_address": "sei15p3f0e24zkznzvtgfrtzddum2hjstzcagfmxh8nlu8mz393ust9qlzpyqr",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei15p3f0e24zkznzvtgfrtzddum2hjstzcagfmxh8nlu8mz393ust9qlzpyqr",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "1AF2F3B1FB67655323BD3DED7F007E15AB0D9AEA6B12F0C290C79007F4F30156",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1AF2F3B1FB67655323BD3DED7F007E15AB0D9AEA6B12F0C290C79007F4F30156",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1wt3aynr242pauzg29avlesr378p6h8an96c377kaj5298d0cccjsc6c03c": {
+        "created_at": 1704679111,
+        "pool_address": "sei1wt3aynr242pauzg29avlesr378p6h8an96c377kaj5298d0cccjsc6c03c",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1wt3aynr242pauzg29avlesr378p6h8an96c377kaj5298d0cccjsc6c03c",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "8B5DC3F97B66468265C4C55231ACFF85094849818464F35F4DBABFF45EC5C5AA",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/8B5DC3F97B66468265C4C55231ACFF85094849818464F35F4DBABFF45EC5C5AA",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1zp5kzg9a75mx6tl5lkjrcxxdgsy6tfepy87tl2pwe0zg6m5xq7wqt45x3v": {
+        "created_at": 1704679056,
+        "pool_address": "sei1zp5kzg9a75mx6tl5lkjrcxxdgsy6tfepy87tl2pwe0zg6m5xq7wqt45x3v",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1zp5kzg9a75mx6tl5lkjrcxxdgsy6tfepy87tl2pwe0zg6m5xq7wqt45x3v",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "6D9DF4A93F8658E0F9F7776B1F2AAF7CF752BE72CAB5C6BB904BC7BF00BF9564",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/6D9DF4A93F8658E0F9F7776B1F2AAF7CF752BE72CAB5C6BB904BC7BF00BF9564",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1qsg6snhqk3wuxmjhvmxjrx4gq7xz4nxxs87ddlpcr3u099tc7wcqep7qhh": {
+        "created_at": 1704678957,
+        "pool_address": "sei1qsg6snhqk3wuxmjhvmxjrx4gq7xz4nxxs87ddlpcr3u099tc7wcqep7qhh",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1qsg6snhqk3wuxmjhvmxjrx4gq7xz4nxxs87ddlpcr3u099tc7wcqep7qhh",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "1BD7869A64AB9126624C47E6746439AA23922E52FCF0C396FAE3F76C0841AD9F",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1BD7869A64AB9126624C47E6746439AA23922E52FCF0C396FAE3F76C0841AD9F",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1ld4sf8q2famrw62t2n8dg7l88n5p2d2zfplx6u8hvsc7mzjeur2s7vf798": {
+        "created_at": 1704678955,
+        "pool_address": "sei1ld4sf8q2famrw62t2n8dg7l88n5p2d2zfplx6u8hvsc7mzjeur2s7vf798",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1ld4sf8q2famrw62t2n8dg7l88n5p2d2zfplx6u8hvsc7mzjeur2s7vf798",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "F030B5F15F7F463858D7A9BDDE84425910E2A6BDDB277603146B2C7D18C4ED81",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/F030B5F15F7F463858D7A9BDDE84425910E2A6BDDB277603146B2C7D18C4ED81",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704679080,
+                "open": "0.000004554950380586",
+                "high": "0.000004554950380586",
+                "low": "0.000004554950380586",
+                "close": "0.000004554950380586",
+                "volume": "70.19"
+            }
+        ]
+    },
+    "sei1r4fp63j3h7j2kradz8punk0rmtv2v96vhyzz7stxv559wpcc2dcqvyzamf": {
+        "created_at": 1704678901,
+        "pool_address": "sei1r4fp63j3h7j2kradz8punk0rmtv2v96vhyzz7stxv559wpcc2dcqvyzamf",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1r4fp63j3h7j2kradz8punk0rmtv2v96vhyzz7stxv559wpcc2dcqvyzamf",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "996ADCBCB6943869D27202A29BD30D7369420A532D163FBC7E6FDE36F54B6379",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/996ADCBCB6943869D27202A29BD30D7369420A532D163FBC7E6FDE36F54B6379",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei17nhczlkngn3segjpd74dk9xn6uuadqyugz02t0d87yj2l6p7vv9qnzhl8l": {
+        "created_at": 1704678814,
+        "pool_address": "sei17nhczlkngn3segjpd74dk9xn6uuadqyugz02t0d87yj2l6p7vv9qnzhl8l",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei17nhczlkngn3segjpd74dk9xn6uuadqyugz02t0d87yj2l6p7vv9qnzhl8l",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "1669F138FF5A7750B0B46709F1076DB795302927B13E8B18C1381033930FD13C",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1669F138FF5A7750B0B46709F1076DB795302927B13E8B18C1381033930FD13C",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1e5yj62ch9u2n657x3jxq4y269gdtpqzfwyz3n0n22m3w7276p2vscrcrp9": {
+        "created_at": 1704678779,
+        "pool_address": "sei1e5yj62ch9u2n657x3jxq4y269gdtpqzfwyz3n0n22m3w7276p2vscrcrp9",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1e5yj62ch9u2n657x3jxq4y269gdtpqzfwyz3n0n22m3w7276p2vscrcrp9",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "731DAA02C6A42A08E68050F8A4312C819ABA3585995B7F56DD36601E33DC88A8",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/731DAA02C6A42A08E68050F8A4312C819ABA3585995B7F56DD36601E33DC88A8",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei16l7kf5lpzvu94u7k7pl7kfcjnt86c49zvrhcnmnen3w2kyn6nyssw6amfw": {
+        "created_at": 1704678749,
+        "pool_address": "sei16l7kf5lpzvu94u7k7pl7kfcjnt86c49zvrhcnmnen3w2kyn6nyssw6amfw",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei16l7kf5lpzvu94u7k7pl7kfcjnt86c49zvrhcnmnen3w2kyn6nyssw6amfw",
+        "disqualified": false,
+        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
+        "transaction_hash": "85D8EB8D2DF464E16CF3323C0F38CCAB7FC1D0686FFD3527A5D86DB88348A25A",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/85D8EB8D2DF464E16CF3323C0F38CCAB7FC1D0686FFD3527A5D86DB88348A25A",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/SuperSEIYANportal"
+            }
+        ]
+    },
+    "sei1078fwlj3anz5wws0xqlerg8ylrs54a3xmxxsxsjqc9xlnv0t9r2qggn6s0": {
+        "created_at": 1704678527,
+        "pool_address": "sei1078fwlj3anz5wws0xqlerg8ylrs54a3xmxxsxsjqc9xlnv0t9r2qggn6s0",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1078fwlj3anz5wws0xqlerg8ylrs54a3xmxxsxsjqc9xlnv0t9r2qggn6s0",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "B3EA534930CDAA6109383E8F2FCE3E58247FAAAD0DFEC9FA62953C6097E07B0C",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/B3EA534930CDAA6109383E8F2FCE3E58247FAAAD0DFEC9FA62953C6097E07B0C",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704678600,
+                "open": "0.000004574525168051",
+                "high": "0.000004574525168051",
+                "low": "0.000004574525168051",
+                "close": "0.000004574525168051",
+                "volume": "70.00"
+            }
+        ]
+    },
+    "sei1283klfm3q5vtmaehtwufm4kpfs6w2k9mkwsyht6ay9kgnwjtrsvsyvfdrx": {
+        "created_at": 1704678131,
+        "pool_address": "sei1283klfm3q5vtmaehtwufm4kpfs6w2k9mkwsyht6ay9kgnwjtrsvsyvfdrx",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1283klfm3q5vtmaehtwufm4kpfs6w2k9mkwsyht6ay9kgnwjtrsvsyvfdrx",
+        "disqualified": false,
+        "deployer_address": "sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zlrkwh99maqa4lsrrzkmv3k0rdyjaptu3kk622",
+        "transaction_hash": "29725D97B4D40EF717574CEB0BFE4BA2EA3C3F52E869EA70CDC60C3E78297F3B",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/29725D97B4D40EF717574CEB0BFE4BA2EA3C3F52E869EA70CDC60C3E78297F3B",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1704678240,
+                "open": "0.000004427246378579",
+                "high": "0.000004427246378579",
+                "low": "0.000004427246378579",
+                "close": "0.000004427246378579",
+                "volume": "69.85"
+            }
+        ]
+    }
+}

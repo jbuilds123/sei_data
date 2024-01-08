@@ -167,24 +167,6 @@ def load_data(training_file, live_file):
         unique_live_pair_addresses = set(live_pair_addresses)
         print(f"Total Live Pairs: {len(unique_live_pair_addresses)}")
 
-        """
-        # Debug: Print sample of training data
-        print("Sample of Training Data:")
-        for i in range(5):  # Adjust number of samples as needed
-            # Assuming 0 index is sequences
-            print(f"Training Data Sample {i}: {training_data[0][i]}")
-            # Assuming 1 index is labels
-            print(f"Label: {training_data[1][i]}")
-
-        # Debug: Print sample of live data
-        print("Sample of Live Data:")
-        for i in range(5):  # Adjust number of samples as needed
-            # Assuming 0 index is sequences
-            print(f"Live Data Sample {i}: {live_data[0][i]}")
-            print(f"Label: {live_data[1][i]}")  # Assuming 1 index is labels
-        """
-        # end debug
-
         # Indices of uniform data
         # Adjust these indices based on your data structure
         uniform_data_indices = [0, 1, 2, 3, 4, 6]
@@ -234,7 +216,8 @@ def load_close_data(training_file, live_file):
         live_close_prices = live_data[5]
 
         # Explicitly keep as a list of arrays
-        combined_close_prices = list(training_close_prices) + list(live_close_prices)
+        combined_close_prices = list(
+            training_close_prices) + list(live_close_prices)
 
     except FileNotFoundError:
         print(
@@ -260,7 +243,8 @@ def save_executed_trades(file_path, executed_trades):
 def apply_smote(X_train, y_train, sequence_shape):
     # Impute NaN values
     imputer = SimpleImputer(missing_values=np.nan, strategy="mean")
-    X_train_imputed = imputer.fit_transform(X_train.reshape(X_train.shape[0], -1))
+    X_train_imputed = imputer.fit_transform(
+        X_train.reshape(X_train.shape[0], -1))
 
     # Apply SMOTE
     smote = SMOTE()
@@ -446,7 +430,8 @@ def calculate_performance_metrics(
             pair_index = pair_addresses_list.index(pair_address)
             fixed_index = seq_length - 1
             entry_price = (
-                original_close_prices_sequences[pair_index + fixed_index][-1] * 1.2
+                original_close_prices_sequences[pair_index +
+                                                fixed_index][-1] * 1.2
             )
 
             # Processing for live pairs
@@ -477,7 +462,8 @@ def calculate_performance_metrics(
                     dollar_gain_loss = -(trade_size + buy_in_fee)
                     gain_loss_percent = -100
                 else:
-                    potential_dollar_gain_loss = (gain_loss_percent / 100) * trade_size
+                    potential_dollar_gain_loss = (
+                        gain_loss_percent / 100) * trade_size
                     net_dollar_gain_loss = potential_dollar_gain_loss - buy_in_fee
                     if net_dollar_gain_loss >= trade_size + buy_in_fee:
                         dollar_gain_loss = net_dollar_gain_loss - sell_fee
@@ -508,7 +494,8 @@ def calculate_performance_metrics(
     fnr = fn / (fn + tp) if (fn + tp) > 0 else 0
 
     win_rate = (
-        (wins / len(trade_simulations)) * 100 if len(trade_simulations) > 0 else 0
+        (wins / len(trade_simulations)) *
+        100 if len(trade_simulations) > 0 else 0
     )
     overall_growth_loss_percent = (
         (total_dollar_gain_loss / total_spent) * 100 if total_spent > 0 else 0
@@ -619,7 +606,7 @@ predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
 # Define a function to colorize log messages
 def colorize_log_message(message, probability):
     if probability > 0.50:
-        return f"🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈{message}🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈"  # Red text for high probability
+        return f"🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈{message}🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈"
     else:
         return message
 
