@@ -38,7 +38,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ds_url = os.getenv("pt_wh")
-ping_role = os.getenv("ping_role")
+ping_role = os.getenv("sei_ping_role")
 
 # Create tables
 Base.metadata.create_all(bind=engine)
