@@ -29,19 +29,12 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout, BatchNormalization
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from keras.optimizers.legacy import Adam
-from db.session import SessionLocal, engine
-from db.base import Base
-from db.models import PaperTrades
-from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
 
 load_dotenv()
 
 ds_url = os.getenv("pt_wh")
 ping_role = os.getenv("sei_ping_role")
-
-# Create tables
-Base.metadata.create_all(bind=engine)
 
 live_pair_addresses = []
 
@@ -113,30 +106,6 @@ def send_discord_webhook(pair_address, paper_trade):
         print(f"Timeout Error: {errt}")
     except requests.exceptions.RequestException as err:
         print(f"Error: {err}")
-
-
-def create_paper_trade_entry(pair_address, trade_details):
-    session = SessionLocal()
-    trade_details_converted = convert_numpy(trade_details)
-    try:
-        # Attempt to create a new trade entry
-        new_trade = PaperTrades(
-            pair_address=pair_address,
-            created_at=int(time.time()),
-            trade_details=trade_details_converted,
-        )
-        session.add(new_trade)
-        session.commit()
-        print(f"Paper trade entry created for pair {pair_address}")
-
-    except SQLAlchemyError as e:
-        session.rollback()
-        if "duplicate key value violates unique constraint" in str(e):
-            print(f"Duplicate entry for pair {pair_address} not created.")
-        else:
-            print(f"Error creating paper trade entry: {e}")
-    finally:
-        session.close()
 
 
 def convert_numpy(obj):
@@ -327,7 +296,7 @@ def compile_and_train_model(
     return model
 
 
-def evaluate_model(model, X_test, y_test, threshold=0.70):
+def evaluate_model(model, X_test, y_test, threshold=0.75):
     y_pred = model.predict(X_test).flatten()
 
     # Convert probabilities to class labels
@@ -563,7 +532,7 @@ def calculate_performance_metrics(
 
 
 # Model settings
-probabiliy_threshold = 0.70  # was 0.55
+probabiliy_threshold = 0.75  # was 0.55
 run_on_full_data = True
 train_new_model = False
 model_version = 1
@@ -605,7 +574,7 @@ predictions = evaluate_model(model, X_for_predictions, y_for_predictions)
 # debug
 # Define a function to colorize log messages
 def colorize_log_message(message, probability):
-    if probability > 0.70:
+    if probability > 0.75:
         return f"🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈{message}🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈"
     else:
         return message
