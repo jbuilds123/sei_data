@@ -21,7 +21,8 @@ async def fetch_ohlcv(session, pool_address):
         url = f"https://api.geckoterminal.com/api/v2/networks/sei-network/pools/{pool_address}/ohlcv/minute?aggregate=1&limit=1000"
         async with session.get(url) as response:
             data = await response.json()
-            pool_data = data.get("data", {}).get("attributes", {}).get("ohlcv_list", [])
+            pool_data = data.get("data", {}).get(
+                "attributes", {}).get("ohlcv_list", [])
             for d in pool_data:
                 ohlcv_dict = {
                     "timestamp": d[0],
@@ -47,7 +48,8 @@ def analyze_and_update_disqualification(pairs_data, pool_address, ohlcv_data):
     else:
         # Existing logic for disqualification based on average volume
         if len(ohlcv_data) >= 4:
-            first_three_volumes = [float(candle["volume"]) for candle in ohlcv_data[:3]]
+            first_three_volumes = [float(candle["volume"])
+                                   for candle in ohlcv_data[:3]]
             avg_volume = sum(first_three_volumes) / len(first_three_volumes)
             if avg_volume < 25:
                 pairs_data[pool_address]["disqualified"] = True
@@ -77,7 +79,8 @@ async def main():
         for pool_address, ohlcv_data in results:
             if ohlcv_data:
                 found_ohlcv += 1
-                was_disqualified = pairs_data[pool_address].get("disqualified", False)
+                was_disqualified = pairs_data[pool_address].get(
+                    "disqualified", False)
                 pairs_data[pool_address]["ohlcv"] = ohlcv_data
                 analyze_and_update_disqualification(
                     pairs_data, pool_address, ohlcv_data
