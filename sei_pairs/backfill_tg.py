@@ -39,7 +39,7 @@ async def fetch_and_process_messages(channel):
     link_pattern = r"\[([^\]]+)\]\((https?://[^\)]+)\)"
 
     async with client:
-        messages = await client.get_messages(channel, limit=300)
+        messages = await client.get_messages(channel, limit=1000)
         processed_messages = []
 
         for message in messages:
