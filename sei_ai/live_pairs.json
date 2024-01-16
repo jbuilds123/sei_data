@@ -1,9 +1,2006 @@
 {
+    "sei1gcapm4xwjaptca5l3kuzwsdu99c0ayrvlxr3f3xw2frvxf0lz8xsjaxpff": {
+        "created_at": 1705381671,
+        "pool_address": "sei1gcapm4xwjaptca5l3kuzwsdu99c0ayrvlxr3f3xw2frvxf0lz8xsjaxpff",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1gcapm4xwjaptca5l3kuzwsdu99c0ayrvlxr3f3xw2frvxf0lz8xsjaxpff",
+        "disqualified": false,
+        "deployer_address": "sei1zh95kmm55wwn633glcltsfuu3h0f22hjmy4lcg",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zh95kmm55wwn633glcltsfuu3h0f22hjmy4lcg",
+        "transaction_hash": "51AD8D929302E4E6968139744C9929D4A79F37D25A5D497ACEDA1101FD637DAC",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/51AD8D929302E4E6968139744C9929D4A79F37D25A5D497ACEDA1101FD637DAC",
+        "links": [
+            {
+                "title": "t.me",
+                "url": "https://t.me/+h-cqRAiYR8lmMzNl"
+            },
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/seidogitoken"
+            }
+        ]
+    },
+    "sei128vdgaw2tygyvqwve92fgqsdhxpmwa43d0ctqtnh07c3x4ka2t3syds3ym": {
+        "created_at": 1705379775,
+        "pool_address": "sei128vdgaw2tygyvqwve92fgqsdhxpmwa43d0ctqtnh07c3x4ka2t3syds3ym",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei128vdgaw2tygyvqwve92fgqsdhxpmwa43d0ctqtnh07c3x4ka2t3syds3ym",
+        "disqualified": false,
+        "deployer_address": "sei1dsqz4dp5rtekysdqj68f96p4htftp3qx48r9ff",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1dsqz4dp5rtekysdqj68f96p4htftp3qx48r9ff",
+        "transaction_hash": "800A226501661F4A0B6EC40C3920FBFA811749D3D3A103423813DA855295E6F9",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/800A226501661F4A0B6EC40C3920FBFA811749D3D3A103423813DA855295E6F9",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705380120,
+                "open": "0.000913137562752176",
+                "high": "0.000913137562752176",
+                "low": "0.000913137562752176",
+                "close": "0.000913137562752176",
+                "volume": "4.23"
+            },
+            {
+                "timestamp": 1705383480,
+                "open": "0.000913137562752176",
+                "high": "33.458239875399698349",
+                "low": "33.458239875399698349",
+                "close": "33.458239875399698349",
+                "volume": "1.02"
+            },
+            {
+                "timestamp": 1705384860,
+                "open": "33.458239875399698349",
+                "high": "43407.736842105303367134",
+                "low": "43407.736842105303367134",
+                "close": "43407.736842105303367134",
+                "volume": "1.65"
+            }
+        ]
+    },
+    "sei1vfca50ad64yg3wmlazaw2laaezyz83yw709yukgre5z8unyvmmnsp8lsuw": {
+        "created_at": 1705377484,
+        "pool_address": "sei1vfca50ad64yg3wmlazaw2laaezyz83yw709yukgre5z8unyvmmnsp8lsuw",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1vfca50ad64yg3wmlazaw2laaezyz83yw709yukgre5z8unyvmmnsp8lsuw",
+        "disqualified": true,
+        "deployer_address": "sei16lz3ru4sqtptqa2zdsw3vqmsmqrwm4tqkv7anm",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei16lz3ru4sqtptqa2zdsw3vqmsmqrwm4tqkv7anm",
+        "transaction_hash": "F18E43A5BCCEAF5117ABE7B705C63B56ED2847F43DDB35DEFB931F8190B9E3A4",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/F18E43A5BCCEAF5117ABE7B705C63B56ED2847F43DDB35DEFB931F8190B9E3A4",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705377660,
+                "open": "0.000017055093606811",
+                "high": "0.000017055093606811",
+                "low": "0.000017055093606811",
+                "close": "0.000017055093606811",
+                "volume": "7.65"
+            },
+            {
+                "timestamp": 1705377840,
+                "open": "0.000017055093606811",
+                "high": "0.000017029627873315",
+                "low": "0.000017029627873315",
+                "close": "0.000017029627873315",
+                "volume": "0.42"
+            },
+            {
+                "timestamp": 1705377900,
+                "open": "0.000017029627873315",
+                "high": "0.000016920432885028",
+                "low": "0.000016920432885028",
+                "close": "0.000016920432885028",
+                "volume": "7.59"
+            },
+            {
+                "timestamp": 1705378080,
+                "open": "0.000016920432885028",
+                "high": "0.000017066238905553",
+                "low": "0.000017066238905553",
+                "close": "0.000017066238905553",
+                "volume": "84.65"
+            },
+            {
+                "timestamp": 1705378200,
+                "open": "0.000017066238905553",
+                "high": "0.000017040656937182",
+                "low": "0.000017040656937182",
+                "close": "0.000017040656937182",
+                "volume": "0.42"
+            },
+            {
+                "timestamp": 1705378260,
+                "open": "0.000017040656937182",
+                "high": "0.000017252447758677",
+                "low": "0.000017252447758677",
+                "close": "0.000017252447758677",
+                "volume": "84.73"
+            },
+            {
+                "timestamp": 1705379820,
+                "open": "0.000017252447758677",
+                "high": "19.177438986738401638",
+                "low": "19.081493931582500068",
+                "close": "19.177438986738401638",
+                "volume": "8.40"
+            },
+            {
+                "timestamp": 1705381200,
+                "open": "19.177438986738401638",
+                "high": "0.116157925751325997",
+                "low": "0.116157925751325997",
+                "close": "0.116157925751325997",
+                "volume": "0.01"
+            },
+            {
+                "timestamp": 1705381980,
+                "open": "0.116157925751325997",
+                "high": "11.761261292685500024",
+                "low": "11.761261292685500024",
+                "close": "11.761261292685500024",
+                "volume": "1.69"
+            }
+        ]
+    },
+    "sei1vqpw7r0xnvrcgrtev80eshdccgffs8743m4uxwvrjqj9emf4vf8s0h2mj7": {
+        "created_at": 1705374553,
+        "pool_address": "sei1vqpw7r0xnvrcgrtev80eshdccgffs8743m4uxwvrjqj9emf4vf8s0h2mj7",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1vqpw7r0xnvrcgrtev80eshdccgffs8743m4uxwvrjqj9emf4vf8s0h2mj7",
+        "disqualified": false,
+        "deployer_address": "sei1hryly37plp9hpase57063c7qtu7tyqkp7ckc63",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hryly37plp9hpase57063c7qtu7tyqkp7ckc63",
+        "transaction_hash": "3892BB5D762C19C2523D46327F76601364267923532DF74FE4F073BF0AAE9E11",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3892BB5D762C19C2523D46327F76601364267923532DF74FE4F073BF0AAE9E11",
+        "links": []
+    },
+    "sei1za99uvps67mn60ujjmvsjjzzctdy5mckz5exlmgc9vwwz9h3xcks5hn7ur": {
+        "created_at": 1705367594,
+        "pool_address": "sei1za99uvps67mn60ujjmvsjjzzctdy5mckz5exlmgc9vwwz9h3xcks5hn7ur",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1za99uvps67mn60ujjmvsjjzzctdy5mckz5exlmgc9vwwz9h3xcks5hn7ur",
+        "disqualified": false,
+        "deployer_address": "sei1lpyxa6hxfrcj2unzrjpuxplgrf82hzh7ynwz3l",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1lpyxa6hxfrcj2unzrjpuxplgrf82hzh7ynwz3l",
+        "transaction_hash": "734126E2F350A58F192C3481328FF276B4A6733BBAAF34DA457A85F3D6FC5A44",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/734126E2F350A58F192C3481328FF276B4A6733BBAAF34DA457A85F3D6FC5A44",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705367700,
+                "open": "0.430130869371100011",
+                "high": "0.470883734368550022",
+                "low": "0.413525100665899981",
+                "close": "0.470883734368550022",
+                "volume": "3061.52"
+            },
+            {
+                "timestamp": 1705367760,
+                "open": "0.470883734368550022",
+                "high": "0.474480105675395003",
+                "low": "0.474480105675395003",
+                "close": "0.474480105675395003",
+                "volume": "62.28"
+            },
+            {
+                "timestamp": 1705367820,
+                "open": "0.474480105675395003",
+                "high": "0.470837182690096001",
+                "low": "0.470837182690096001",
+                "close": "0.470837182690096001",
+                "volume": "278.11"
+            },
+            {
+                "timestamp": 1705367880,
+                "open": "0.470837182690096001",
+                "high": "0.471424008773960013",
+                "low": "0.471424008773960013",
+                "close": "0.471424008773960013",
+                "volume": "102.21"
+            },
+            {
+                "timestamp": 1705367940,
+                "open": "0.471424008773960013",
+                "high": "0.459879348694181012",
+                "low": "0.450654087983951013",
+                "close": "0.450654087983951013",
+                "volume": "872.57"
+            },
+            {
+                "timestamp": 1705371300,
+                "open": "0.450654087983951013",
+                "high": "30328.918424999999842839",
+                "low": "91.116766243465306729",
+                "close": "30328.918424999999842839",
+                "volume": "0.24"
+            },
+            {
+                "timestamp": 1705371600,
+                "open": "30328.918424999999842839",
+                "high": "695.900283892127959007",
+                "low": "695.900283892127959007",
+                "close": "695.900283892127959007",
+                "volume": "0.24"
+            }
+        ]
+    },
+    "sei1yz3gg9lvkr42pzhsvwgypszewyuqxqwlkvr9r5fanjpqn369jdqs4f450e": {
+        "created_at": 1705360282,
+        "pool_address": "sei1yz3gg9lvkr42pzhsvwgypszewyuqxqwlkvr9r5fanjpqn369jdqs4f450e",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1yz3gg9lvkr42pzhsvwgypszewyuqxqwlkvr9r5fanjpqn369jdqs4f450e",
+        "disqualified": true,
+        "deployer_address": "sei133s3m6rymwwdeu37v60kfka4h02lflxnxwm5e2",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei133s3m6rymwwdeu37v60kfka4h02lflxnxwm5e2",
+        "transaction_hash": "665BF31D8765E182E1AC3F60A20F6827F06B1916AA15AEB06C0BA462EED523FA",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/665BF31D8765E182E1AC3F60A20F6827F06B1916AA15AEB06C0BA462EED523FA",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705360260,
+                "open": "0.000790198636755229",
+                "high": "0.000790198636755229",
+                "low": "0.000790198636755229",
+                "close": "0.000790198636755229",
+                "volume": "3.94"
+            },
+            {
+                "timestamp": 1705360380,
+                "open": "0.000790198636755229",
+                "high": "0.000846363402291039",
+                "low": "0.000846363402291039",
+                "close": "0.000846363402291039",
+                "volume": "274.75"
+            },
+            {
+                "timestamp": 1705361160,
+                "open": "0.000846363402291039",
+                "high": "0.000900186658013130",
+                "low": "0.000900186658013130",
+                "close": "0.000900186658013130",
+                "volume": "4.48"
+            },
+            {
+                "timestamp": 1705361220,
+                "open": "0.000900186658013130",
+                "high": "0.000908937972017362",
+                "low": "0.000908937972017362",
+                "close": "0.000908937972017362",
+                "volume": "19.71"
+            },
+            {
+                "timestamp": 1705361400,
+                "open": "0.000908937972017362",
+                "high": "0.000955157234230282",
+                "low": "0.000955157234230282",
+                "close": "0.000955157234230282",
+                "volume": "189.46"
+            },
+            {
+                "timestamp": 1705362480,
+                "open": "0.000955157234230282",
+                "high": "0.001013140990381340",
+                "low": "0.001013140990381340",
+                "close": "0.001013140990381340",
+                "volume": "29.47"
+            },
+            {
+                "timestamp": 1705363320,
+                "open": "0.001013140990381340",
+                "high": "0.001046428249165960",
+                "low": "0.001046428249165960",
+                "close": "0.001046428249165960",
+                "volume": "71.60"
+            },
+            {
+                "timestamp": 1705363380,
+                "open": "0.001046428249165960",
+                "high": "0.001164340086379520",
+                "low": "0.001120288676530390",
+                "close": "0.001164340086379520",
+                "volume": "185.68"
+            },
+            {
+                "timestamp": 1705363440,
+                "open": "0.001164340086379520",
+                "high": "0.001185238324349460",
+                "low": "0.001185238324349460",
+                "close": "0.001185238324349460",
+                "volume": "25.70"
+            },
+            {
+                "timestamp": 1705363500,
+                "open": "0.001185238324349460",
+                "high": "0.001184402101646500",
+                "low": "0.001184402101646500",
+                "close": "0.001184402101646500",
+                "volume": "4.04"
+            },
+            {
+                "timestamp": 1705363560,
+                "open": "0.001184402101646500",
+                "high": "0.001232957395399050",
+                "low": "0.001232957395399050",
+                "close": "0.001232957395399050",
+                "volume": "103.72"
+            },
+            {
+                "timestamp": 1705363620,
+                "open": "0.001232957395399050",
+                "high": "0.001297595640382120",
+                "low": "0.001297595640382120",
+                "close": "0.001297595640382120",
+                "volume": "159.64"
+            },
+            {
+                "timestamp": 1705363680,
+                "open": "0.001297595640382120",
+                "high": "0.001319283363289520",
+                "low": "0.001319283363289520",
+                "close": "0.001319283363289520",
+                "volume": "38.37"
+            },
+            {
+                "timestamp": 1705363800,
+                "open": "0.001319283363289520",
+                "high": "0.001323268439815330",
+                "low": "0.001323268439815330",
+                "close": "0.001323268439815330",
+                "volume": "20.56"
+            },
+            {
+                "timestamp": 1705363860,
+                "open": "0.001323268439815330",
+                "high": "0.001373732697116890",
+                "low": "0.001323117634148400",
+                "close": "0.001373732697116890",
+                "volume": "150.45"
+            },
+            {
+                "timestamp": 1705363920,
+                "open": "0.001373732697116890",
+                "high": "0.001403735831233500",
+                "low": "0.001403735831233500",
+                "close": "0.001403735831233500",
+                "volume": "87.47"
+            },
+            {
+                "timestamp": 1705363980,
+                "open": "0.001403735831233500",
+                "high": "0.001534096675797530",
+                "low": "0.001498700506736430",
+                "close": "0.001534096675797530",
+                "volume": "210.53"
+            },
+            {
+                "timestamp": 1705364100,
+                "open": "0.001534096675797530",
+                "high": "0.001680440799731980",
+                "low": "0.001580305220208790",
+                "close": "0.001680440799731980",
+                "volume": "356.18"
+            },
+            {
+                "timestamp": 1705364160,
+                "open": "0.001680440799731980",
+                "high": "0.001757929601048900",
+                "low": "0.001757929601048900",
+                "close": "0.001757929601048900",
+                "volume": "153.26"
+            },
+            {
+                "timestamp": 1705364220,
+                "open": "0.001757929601048900",
+                "high": "0.001786416730321350",
+                "low": "0.001786416730321350",
+                "close": "0.001786416730321350",
+                "volume": "95.26"
+            },
+            {
+                "timestamp": 1705364400,
+                "open": "0.001786416730321350",
+                "high": "0.001791430410574570",
+                "low": "0.001743338398720910",
+                "close": "0.001791430410574570",
+                "volume": "243.47"
+            },
+            {
+                "timestamp": 1705364460,
+                "open": "0.001791430410574570",
+                "high": "0.002015243645600260",
+                "low": "0.001886460541361310",
+                "close": "0.002015243645600260",
+                "volume": "328.32"
+            },
+            {
+                "timestamp": 1705364520,
+                "open": "0.002015243645600260",
+                "high": "0.002022109602852260",
+                "low": "0.002022109602852260",
+                "close": "0.002022109602852260",
+                "volume": "90.35"
+            },
+            {
+                "timestamp": 1705364580,
+                "open": "0.002022109602852260",
+                "high": "0.002004676439299670",
+                "low": "0.002004676439299670",
+                "close": "0.002004676439299670",
+                "volume": "4.02"
+            },
+            {
+                "timestamp": 1705364640,
+                "open": "0.002004676439299670",
+                "high": "0.002023656356753940",
+                "low": "0.002023656356753940",
+                "close": "0.002023656356753940",
+                "volume": "69.76"
+            },
+            {
+                "timestamp": 1705364700,
+                "open": "0.002023656356753940",
+                "high": "0.002152203256988860",
+                "low": "0.002085250194190890",
+                "close": "0.002152203256988860",
+                "volume": "207.33"
+            },
+            {
+                "timestamp": 1705364820,
+                "open": "0.002152203256988860",
+                "high": "0.002177814333517290",
+                "low": "0.002177814333517290",
+                "close": "0.002177814333517290",
+                "volume": "12.91"
+            },
+            {
+                "timestamp": 1705364940,
+                "open": "0.002177814333517290",
+                "high": "0.002201522979639720",
+                "low": "0.002065155243402200",
+                "close": "0.002065155243402200",
+                "volume": "451.33"
+            },
+            {
+                "timestamp": 1705365060,
+                "open": "0.002065155243402200",
+                "high": "0.001903069425688960",
+                "low": "0.001903069425688960",
+                "close": "0.001903069425688960",
+                "volume": "130.21"
+            },
+            {
+                "timestamp": 1705365120,
+                "open": "0.001903069425688960",
+                "high": "0.001825035264427740",
+                "low": "0.001825035264427740",
+                "close": "0.001825035264427740",
+                "volume": "143.77"
+            },
+            {
+                "timestamp": 1705365240,
+                "open": "0.001825035264427740",
+                "high": "0.001727535615520910",
+                "low": "0.001727535615520910",
+                "close": "0.001727535615520910",
+                "volume": "186.85"
+            },
+            {
+                "timestamp": 1705365300,
+                "open": "0.001727535615520910",
+                "high": "0.001636358384082630",
+                "low": "0.001636358384082630",
+                "close": "0.001636358384082630",
+                "volume": "137.66"
+            },
+            {
+                "timestamp": 1705365420,
+                "open": "0.001636358384082630",
+                "high": "0.001625765115852890",
+                "low": "0.001532733464644350",
+                "close": "0.001532733464644350",
+                "volume": "158.42"
+            },
+            {
+                "timestamp": 1705365480,
+                "open": "0.001532733464644350",
+                "high": "0.001481428652928890",
+                "low": "0.001410212803485720",
+                "close": "0.001410212803485720",
+                "volume": "267.98"
+            },
+            {
+                "timestamp": 1705365540,
+                "open": "0.001410212803485720",
+                "high": "0.001330847533788500",
+                "low": "0.001330847533788500",
+                "close": "0.001330847533788500",
+                "volume": "133.00"
+            },
+            {
+                "timestamp": 1705365600,
+                "open": "0.001330847533788500",
+                "high": "0.001257732344686450",
+                "low": "0.001200263426782080",
+                "close": "0.001200263426782080",
+                "volume": "234.23"
+            },
+            {
+                "timestamp": 1705365660,
+                "open": "0.001200263426782080",
+                "high": "0.001354721641203800",
+                "low": "0.001245455426843550",
+                "close": "0.001354721641203800",
+                "volume": "366.84"
+            },
+            {
+                "timestamp": 1705365720,
+                "open": "0.001354721641203800",
+                "high": "0.001394147838762850",
+                "low": "0.001368841718839550",
+                "close": "0.001394147838762850",
+                "volume": "98.03"
+            },
+            {
+                "timestamp": 1705365780,
+                "open": "0.001394147838762850",
+                "high": "0.001514455084153200",
+                "low": "0.001462219977329640",
+                "close": "0.001514455084153200",
+                "volume": "193.48"
+            },
+            {
+                "timestamp": 1705365840,
+                "open": "0.001514455084153200",
+                "high": "0.001506745805078410",
+                "low": "0.001506745805078410",
+                "close": "0.001506745805078410",
+                "volume": "28.53"
+            },
+            {
+                "timestamp": 1705365900,
+                "open": "0.001506745805078410",
+                "high": "0.001483188279896780",
+                "low": "0.001471083380279400",
+                "close": "0.001483188279896780",
+                "volume": "115.03"
+            },
+            {
+                "timestamp": 1705365960,
+                "open": "0.001483188279896780",
+                "high": "0.001558770061521010",
+                "low": "0.001523665636048970",
+                "close": "0.001558770061521010",
+                "volume": "127.21"
+            },
+            {
+                "timestamp": 1705366020,
+                "open": "0.001558770061521010",
+                "high": "0.001590526816979470",
+                "low": "0.001561149075633000",
+                "close": "0.001590526816979470",
+                "volume": "106.23"
+            },
+            {
+                "timestamp": 1705366080,
+                "open": "0.001590526816979470",
+                "high": "0.001685646818533760",
+                "low": "0.001656488507707070",
+                "close": "0.001685646818533760",
+                "volume": "300.00"
+            },
+            {
+                "timestamp": 1705366140,
+                "open": "0.001685646818533760",
+                "high": "0.001785176347034230",
+                "low": "0.001741481241625930",
+                "close": "0.001785176347034230",
+                "volume": "147.61"
+            },
+            {
+                "timestamp": 1705366200,
+                "open": "0.001785176347034230",
+                "high": "0.001875884318390050",
+                "low": "0.001822632235017420",
+                "close": "0.001875884318390050",
+                "volume": "176.56"
+            },
+            {
+                "timestamp": 1705366260,
+                "open": "0.001875884318390050",
+                "high": "0.001919359884783410",
+                "low": "0.001897656728574600",
+                "close": "0.001898668986285300",
+                "volume": "89.07"
+            },
+            {
+                "timestamp": 1705366320,
+                "open": "0.001898668986285300",
+                "high": "0.002033102130823880",
+                "low": "0.001937223372050960",
+                "close": "0.002033102130823880",
+                "volume": "274.80"
+            },
+            {
+                "timestamp": 1705366380,
+                "open": "0.002033102130823880",
+                "high": "0.002139814707883930",
+                "low": "0.002102653759657450",
+                "close": "0.002139814707883930",
+                "volume": "128.84"
+            },
+            {
+                "timestamp": 1705366440,
+                "open": "0.002139814707883930",
+                "high": "0.002247617922354440",
+                "low": "0.002222274430479110",
+                "close": "0.002247617922354440",
+                "volume": "76.69"
+            },
+            {
+                "timestamp": 1705366500,
+                "open": "0.002247617922354440",
+                "high": "0.002291965700129480",
+                "low": "0.002208281248349200",
+                "close": "0.002291965700129480",
+                "volume": "276.62"
+            },
+            {
+                "timestamp": 1705366620,
+                "open": "0.002291965700129480",
+                "high": "0.002388010966871200",
+                "low": "0.002388010966871200",
+                "close": "0.002388010966871200",
+                "volume": "39.83"
+            },
+            {
+                "timestamp": 1705366680,
+                "open": "0.002388010966871200",
+                "high": "0.002452993477423800",
+                "low": "0.002452993477423800",
+                "close": "0.002452993477423800",
+                "volume": "135.17"
+            },
+            {
+                "timestamp": 1705366740,
+                "open": "0.002452993477423800",
+                "high": "0.002520847982439210",
+                "low": "0.002478766870833600",
+                "close": "0.002520847982439210",
+                "volume": "120.26"
+            },
+            {
+                "timestamp": 1705366800,
+                "open": "0.002520847982439210",
+                "high": "0.002578097567017580",
+                "low": "0.002572936086885440",
+                "close": "0.002578097567017580",
+                "volume": "96.68"
+            },
+            {
+                "timestamp": 1705366860,
+                "open": "0.002578097567017580",
+                "high": "2481.882039481649826484",
+                "low": "0.000178999903543275",
+                "close": "0.000178999903543275",
+                "volume": "691.07"
+            },
+            {
+                "timestamp": 1705366920,
+                "open": "0.000178999903543275",
+                "high": "0.000001807529408270",
+                "low": "0.000001807529408270",
+                "close": "0.000001807529408270",
+                "volume": "0.33"
+            },
+            {
+                "timestamp": 1705366980,
+                "open": "0.000001807529408270",
+                "high": "0.000023074224286425",
+                "low": "0.000007793442622250",
+                "close": "0.000023074224286425",
+                "volume": "0.47"
+            },
+            {
+                "timestamp": 1705367040,
+                "open": "0.000023074224286425",
+                "high": "0.000112971967066855",
+                "low": "0.000018931543015367",
+                "close": "0.000112404203851967",
+                "volume": "18.50"
+            },
+            {
+                "timestamp": 1705367100,
+                "open": "0.000112404203851967",
+                "high": "0.000016262227768963",
+                "low": "0.000006609478882138",
+                "close": "0.000016262227768963",
+                "volume": "0.42"
+            },
+            {
+                "timestamp": 1705367160,
+                "open": "0.000016262227768963",
+                "high": "0.000043527532153171",
+                "low": "0.000043527532153171",
+                "close": "0.000043527532153171",
+                "volume": "0.63"
+            },
+            {
+                "timestamp": 1705367340,
+                "open": "0.000043527532153171",
+                "high": "0.000164249986395071",
+                "low": "0.000009427537976464",
+                "close": "0.000009427537976464",
+                "volume": "2.96"
+            },
+            {
+                "timestamp": 1705367400,
+                "open": "0.000009427537976464",
+                "high": "0.000072412488983118",
+                "low": "0.000006869602485752",
+                "close": "0.000009958695714556",
+                "volume": "7.17"
+            },
+            {
+                "timestamp": 1705367460,
+                "open": "0.000009958695714556",
+                "high": "0.000009908732938157",
+                "low": "0.000002686786393339",
+                "close": "0.000002686786393339",
+                "volume": "4.08"
+            },
+            {
+                "timestamp": 1705367580,
+                "open": "0.000002686786393339",
+                "high": "0.000156805682512615",
+                "low": "0.000002975338637478",
+                "close": "0.000002975338637478",
+                "volume": "9.73"
+            },
+            {
+                "timestamp": 1705367700,
+                "open": "0.000002975338637478",
+                "high": "0.000049369761614252",
+                "low": "0.000037278190871791",
+                "close": "0.000037278190871791",
+                "volume": "1.84"
+            },
+            {
+                "timestamp": 1705367760,
+                "open": "0.000037278190871791",
+                "high": "0.000197302737229565",
+                "low": "0.000015955020858427",
+                "close": "0.000042865741224054",
+                "volume": "25.10"
+            },
+            {
+                "timestamp": 1705367880,
+                "open": "0.000042865741224054",
+                "high": "0.000042596044530437",
+                "low": "0.000042596044530437",
+                "close": "0.000042596044530437",
+                "volume": "0.82"
+            },
+            {
+                "timestamp": 1705367940,
+                "open": "0.000042596044530437",
+                "high": "0.000028931128116211",
+                "low": "0.000028931128116211",
+                "close": "0.000028931128116211",
+                "volume": "0.24"
+            },
+            {
+                "timestamp": 1705368240,
+                "open": "0.000028931128116211",
+                "high": "0.000060794949440676",
+                "low": "0.000060794949440676",
+                "close": "0.000060794949440676",
+                "volume": "0.82"
+            },
+            {
+                "timestamp": 1705369260,
+                "open": "0.000060794949440676",
+                "high": "0.000139975961834224",
+                "low": "0.000139975961834224",
+                "close": "0.000139975961834224",
+                "volume": "0.81"
+            },
+            {
+                "timestamp": 1705370160,
+                "open": "0.000139975961834224",
+                "high": "0.000122039142759538",
+                "low": "0.000122039142759538",
+                "close": "0.000122039142759538",
+                "volume": "1.03"
+            },
+            {
+                "timestamp": 1705370700,
+                "open": "0.000122039142759538",
+                "high": "0.000026100206990318",
+                "low": "0.000026100206990318",
+                "close": "0.000026100206990318",
+                "volume": "1.18"
+            },
+            {
+                "timestamp": 1705371420,
+                "open": "0.000026100206990318",
+                "high": "0.000014891180981548",
+                "low": "0.000014891180981548",
+                "close": "0.000014891180981548",
+                "volume": "0.20"
+            },
+            {
+                "timestamp": 1705371480,
+                "open": "0.000014891180981548",
+                "high": "0.000036806675593728",
+                "low": "0.000036806675593728",
+                "close": "0.000036806675593728",
+                "volume": "0.81"
+            }
+        ]
+    },
+    "sei1uv3wzzjyx48g7zukwrlm3a8pm3e0l2pl3mteqt4cfa52kzkacq6s5x7j7t": {
+        "created_at": 1705360021,
+        "pool_address": "sei1uv3wzzjyx48g7zukwrlm3a8pm3e0l2pl3mteqt4cfa52kzkacq6s5x7j7t",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1uv3wzzjyx48g7zukwrlm3a8pm3e0l2pl3mteqt4cfa52kzkacq6s5x7j7t",
+        "disqualified": false,
+        "deployer_address": "sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
+        "transaction_hash": "8DECFA2E34F1A2EE2B9D1CF02DA7C7CCD9DACA7A56CEB1788E6DB15F6708ED51",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/8DECFA2E34F1A2EE2B9D1CF02DA7C7CCD9DACA7A56CEB1788E6DB15F6708ED51",
+        "links": []
+    },
+    "sei1y5jvdp892xv2yhex4dx38ff582vwm4ykl70ant63vqu4mew9lc7sstku7e": {
+        "created_at": 1705356175,
+        "pool_address": "sei1y5jvdp892xv2yhex4dx38ff582vwm4ykl70ant63vqu4mew9lc7sstku7e",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1y5jvdp892xv2yhex4dx38ff582vwm4ykl70ant63vqu4mew9lc7sstku7e",
+        "disqualified": true,
+        "deployer_address": "sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "transaction_hash": "4D856A28CD182B7D22C8BE18CE9783C3573A2DFDD95DE01F1B280B818B53439B",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/4D856A28CD182B7D22C8BE18CE9783C3573A2DFDD95DE01F1B280B818B53439B",
+        "links": [
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/SEIPEPESEI/"
+            }
+        ],
+        "ohlcv": [
+            {
+                "timestamp": 1705356180,
+                "open": "0.000000430135963390",
+                "high": "0.000000430135963390",
+                "low": "0.000000430135963390",
+                "close": "0.000000430135963390",
+                "volume": "0.39"
+            },
+            {
+                "timestamp": 1705356300,
+                "open": "0.000000430135963390",
+                "high": "0.000000451089393339",
+                "low": "0.000000434473897460",
+                "close": "0.000000451089393339",
+                "volume": "12.46"
+            },
+            {
+                "timestamp": 1705356360,
+                "open": "0.000000451089393339",
+                "high": "0.000000463956231056",
+                "low": "0.000000463956231056",
+                "close": "0.000000463956231056",
+                "volume": "7.79"
+            },
+            {
+                "timestamp": 1705361580,
+                "open": "0.000000463956231056",
+                "high": "0.000000489211187115",
+                "low": "0.000000489211187115",
+                "close": "0.000000489211187115",
+                "volume": "7.91"
+            },
+            {
+                "timestamp": 1705371780,
+                "open": "0.000000489211187115",
+                "high": "0.000000508028192578",
+                "low": "0.000000508028192578",
+                "close": "0.000000508028192578",
+                "volume": "0.46"
+            }
+        ]
+    },
+    "sei1urertndh7xj5a3cn7dwjavgrhjqzpvq073zpnvzsqge7ehec5xkqd5c7v7": {
+        "created_at": 1705355233,
+        "pool_address": "sei1urertndh7xj5a3cn7dwjavgrhjqzpvq073zpnvzsqge7ehec5xkqd5c7v7",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1urertndh7xj5a3cn7dwjavgrhjqzpvq073zpnvzsqge7ehec5xkqd5c7v7",
+        "disqualified": false,
+        "deployer_address": "sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "transaction_hash": "D84E33C9BEAEC183FF5FA81396A9BBC48CAC6E69FBBE4A52286D6ECD596C230D",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/D84E33C9BEAEC183FF5FA81396A9BBC48CAC6E69FBBE4A52286D6ECD596C230D",
+        "links": [
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/SEIPEPESEI/"
+            }
+        ],
+        "ohlcv": [
+            {
+                "timestamp": 1705381920,
+                "open": "639.145660377358012738",
+                "high": "639.145660377358012738",
+                "low": "639.145660377358012738",
+                "close": "639.145660377358012738",
+                "volume": "1.69"
+            }
+        ]
+    },
+    "sei19g05fczp5n85nqev6p6v6vmlkyd353ltq3exejfq6mh8snyq3e5qnr2srk": {
+        "created_at": 1705354112,
+        "pool_address": "sei19g05fczp5n85nqev6p6v6vmlkyd353ltq3exejfq6mh8snyq3e5qnr2srk",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei19g05fczp5n85nqev6p6v6vmlkyd353ltq3exejfq6mh8snyq3e5qnr2srk",
+        "disqualified": true,
+        "deployer_address": "sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei13rrekrjnu7vnsv6aprxwy7r48hq2x4slnv9ffu",
+        "transaction_hash": "34CF530E9A7E724429F2EEC0664D5DFCBE2DB611B6CAB558AA997E3526ADEE5B",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/34CF530E9A7E724429F2EEC0664D5DFCBE2DB611B6CAB558AA997E3526ADEE5B",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705354140,
+                "open": "0.000000421856929288",
+                "high": "0.000000421856929288",
+                "low": "0.000000421856929288",
+                "close": "0.000000421856929288",
+                "volume": "0.38"
+            },
+            {
+                "timestamp": 1705354320,
+                "open": "0.000000421856929288",
+                "high": "0.000000437556982490",
+                "low": "0.000000437556982490",
+                "close": "0.000000437556982490",
+                "volume": "15.28"
+            },
+            {
+                "timestamp": 1705354620,
+                "open": "0.000000437556982490",
+                "high": "0.000000455420516636",
+                "low": "0.000000455420516636",
+                "close": "0.000000455420516636",
+                "volume": "0.01"
+            },
+            {
+                "timestamp": 1705354680,
+                "open": "0.000000455420516636",
+                "high": "0.000000455140887525",
+                "low": "0.000000455140887525",
+                "close": "0.000000455140887525",
+                "volume": "0.01"
+            },
+            {
+                "timestamp": 1705354920,
+                "open": "0.000000455140887525",
+                "high": "0.000000467409142717",
+                "low": "0.000000467409142717",
+                "close": "0.000000467409142717",
+                "volume": "11.51"
+            }
+        ]
+    },
+    "sei192qtngwjw744msf3c4v8xcue5h32fh3nnhz0a2zywgkshxkf4huqc5mulv": {
+        "created_at": 1705349901,
+        "pool_address": "sei192qtngwjw744msf3c4v8xcue5h32fh3nnhz0a2zywgkshxkf4huqc5mulv",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei192qtngwjw744msf3c4v8xcue5h32fh3nnhz0a2zywgkshxkf4huqc5mulv",
+        "disqualified": false,
+        "deployer_address": "sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
+        "transaction_hash": "AC373D71119EB4B8D4816D79B1DA6488FE6F400D585065A2EC2033C764F238CE",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/AC373D71119EB4B8D4816D79B1DA6488FE6F400D585065A2EC2033C764F238CE",
+        "links": [
+            {
+                "title": "twitter.com",
+                "url": "https://twitter.com/SeiBeast"
+            }
+        ]
+    },
+    "sei1rty964pj2chervdgjerge5dj0adm0ump3lyzltq2809c5stc0aeqwfecpa": {
+        "created_at": 1705338371,
+        "pool_address": "sei1rty964pj2chervdgjerge5dj0adm0ump3lyzltq2809c5stc0aeqwfecpa",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1rty964pj2chervdgjerge5dj0adm0ump3lyzltq2809c5stc0aeqwfecpa",
+        "disqualified": false,
+        "deployer_address": "sei1tnrhxpfzh4cwvk63yjcxflecd26rryl6vwgvp9",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1tnrhxpfzh4cwvk63yjcxflecd26rryl6vwgvp9",
+        "transaction_hash": "CB357C3E4999E02105EEE148C380F118F67B4FB6620A6CCE61602FF7F553E9AE",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/CB357C3E4999E02105EEE148C380F118F67B4FB6620A6CCE61602FF7F553E9AE",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705338360,
+                "open": "0.000000428791331495",
+                "high": "0.000000428791331495",
+                "low": "0.000000428791331495",
+                "close": "0.000000428791331495",
+                "volume": "0.36"
+            },
+            {
+                "timestamp": 1705338480,
+                "open": "0.000000428791331495",
+                "high": "0.000000447515285349",
+                "low": "0.000000447515285349",
+                "close": "0.000000447515285349",
+                "volume": "17.82"
+            },
+            {
+                "timestamp": 1705338540,
+                "open": "0.000000447515285349",
+                "high": "0.000000466439648861",
+                "low": "0.000000466439648861",
+                "close": "0.000000466439648861",
+                "volume": "0.07"
+            }
+        ]
+    },
+    "sei1jdsck47ccmdg3krw4sykxg5x8f2v7fphsghhvkefmjadwamstdgsm8fedy": {
+        "created_at": 1705335428,
+        "pool_address": "sei1jdsck47ccmdg3krw4sykxg5x8f2v7fphsghhvkefmjadwamstdgsm8fedy",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1jdsck47ccmdg3krw4sykxg5x8f2v7fphsghhvkefmjadwamstdgsm8fedy",
+        "disqualified": false,
+        "deployer_address": "sei10x7rsxnjkhrc9xrymg9ltyp3jx4p9qd75j5e20",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei10x7rsxnjkhrc9xrymg9ltyp3jx4p9qd75j5e20",
+        "transaction_hash": "3583FC0194D83AC3BF74DBB8099186ED1324D59B83900C4CD0BFF9EFB86C0359",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3583FC0194D83AC3BF74DBB8099186ED1324D59B83900C4CD0BFF9EFB86C0359",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705336020,
+                "open": "0.000013437449985266",
+                "high": "0.000013437449985266",
+                "low": "0.000013437449985266",
+                "close": "0.000013437449985266",
+                "volume": "0.35"
+            }
+        ]
+    },
+    "sei183v6u962734806r0kjxr57p9a45yfm2p8d9rcwjd0ws3akq5sncs2yg46z": {
+        "created_at": 1705334981,
+        "pool_address": "sei183v6u962734806r0kjxr57p9a45yfm2p8d9rcwjd0ws3akq5sncs2yg46z",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei183v6u962734806r0kjxr57p9a45yfm2p8d9rcwjd0ws3akq5sncs2yg46z",
+        "disqualified": true,
+        "deployer_address": "sei1064uzftuwknz8pvuq6m24l4y3rv329tw5k6jve",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1064uzftuwknz8pvuq6m24l4y3rv329tw5k6jve",
+        "transaction_hash": "6748C17C2738218D76FC15F954FB2A447DDEDA9456AFCE4F230148B3CC82C0BF",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/6748C17C2738218D76FC15F954FB2A447DDEDA9456AFCE4F230148B3CC82C0BF",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705335240,
+                "open": "0.000000013232717421",
+                "high": "0.000000013232717421",
+                "low": "0.000000013232717421",
+                "close": "0.000000013232717421",
+                "volume": "0.35"
+            },
+            {
+                "timestamp": 1705335360,
+                "open": "0.000000013232717421",
+                "high": "0.000000014325689585",
+                "low": "0.000000014325689585",
+                "close": "0.000000014325689585",
+                "volume": "0.23"
+            },
+            {
+                "timestamp": 1705335420,
+                "open": "0.000000014325689585",
+                "high": "0.000000015026031295",
+                "low": "0.000000015026031295",
+                "close": "0.000000015026031295",
+                "volume": "0.13"
+            },
+            {
+                "timestamp": 1705335540,
+                "open": "0.000000015026031295",
+                "high": "0.000000017124096709",
+                "low": "0.000000017124096709",
+                "close": "0.000000017124096709",
+                "volume": "0.59"
+            },
+            {
+                "timestamp": 1705335600,
+                "open": "0.000000017124096709",
+                "high": "0.000000019331079041",
+                "low": "0.000000019331079041",
+                "close": "0.000000019331079041",
+                "volume": "0.44"
+            },
+            {
+                "timestamp": 1705335720,
+                "open": "0.000000019331079041",
+                "high": "0.000000023865598102",
+                "low": "0.000000021528579553",
+                "close": "0.000000023865598102",
+                "volume": "0.97"
+            },
+            {
+                "timestamp": 1705335840,
+                "open": "0.000000023865598102",
+                "high": "0.000000025224322186",
+                "low": "0.000000025224322186",
+                "close": "0.000000025224322186",
+                "volume": "0.11"
+            },
+            {
+                "timestamp": 1705335960,
+                "open": "0.000000025224322186",
+                "high": "0.000000027306351038",
+                "low": "0.000000027306351038",
+                "close": "0.000000027306351038",
+                "volume": "0.70"
+            },
+            {
+                "timestamp": 1705336020,
+                "open": "0.000000027306351038",
+                "high": "0.000000031630830378",
+                "low": "0.000000031630830378",
+                "close": "0.000000031630830378",
+                "volume": "0.88"
+            },
+            {
+                "timestamp": 1705336080,
+                "open": "0.000000031630830378",
+                "high": "0.000000037581715914",
+                "low": "0.000000037581715914",
+                "close": "0.000000037581715914",
+                "volume": "1.13"
+            },
+            {
+                "timestamp": 1705336140,
+                "open": "0.000000037581715914",
+                "high": "0.000000042199137588",
+                "low": "0.000000042199137588",
+                "close": "0.000000042199137588",
+                "volume": "0.28"
+            },
+            {
+                "timestamp": 1705336260,
+                "open": "0.000000042199137588",
+                "high": "0.000000049211430091",
+                "low": "0.000000049211430091",
+                "close": "0.000000049211430091",
+                "volume": "1.84"
+            },
+            {
+                "timestamp": 1705336320,
+                "open": "0.000000049211430091",
+                "high": "0.000000060230263272",
+                "low": "0.000000060230263272",
+                "close": "0.000000060230263272",
+                "volume": "1.09"
+            },
+            {
+                "timestamp": 1705336560,
+                "open": "0.000000060230263272",
+                "high": "0.000000090934035517",
+                "low": "0.000000090934035517",
+                "close": "0.000000090934035517",
+                "volume": "0.71"
+            },
+            {
+                "timestamp": 1705336680,
+                "open": "0.000000090934035517",
+                "high": "0.000000257196242766",
+                "low": "0.000000157168555921",
+                "close": "0.000000257196242766",
+                "volume": "12.71"
+            },
+            {
+                "timestamp": 1705337820,
+                "open": "0.000000257196242766",
+                "high": "0.000000310383145782",
+                "low": "0.000000284583752678",
+                "close": "0.000000310383145782",
+                "volume": "2.97"
+            },
+            {
+                "timestamp": 1705337880,
+                "open": "0.000000310383145782",
+                "high": "0.000000331982876016",
+                "low": "0.000000331982876016",
+                "close": "0.000000331982876016",
+                "volume": "1.15"
+            },
+            {
+                "timestamp": 1705338060,
+                "open": "0.000000331982876016",
+                "high": "0.000000377759158427",
+                "low": "0.000000377759158427",
+                "close": "0.000000377759158427",
+                "volume": "0.87"
+            },
+            {
+                "timestamp": 1705338120,
+                "open": "0.000000377759158427",
+                "high": "0.000000402256461904",
+                "low": "0.000000390723314356",
+                "close": "0.000000402256461904",
+                "volume": "1.17"
+            },
+            {
+                "timestamp": 1705338180,
+                "open": "0.000000402256461904",
+                "high": "0.000000584859187709",
+                "low": "0.000000584859187709",
+                "close": "0.000000584859187709",
+                "volume": "17.31"
+            },
+            {
+                "timestamp": 1705338300,
+                "open": "0.000000584859187709",
+                "high": "0.000000911556005386",
+                "low": "0.000000895105118697",
+                "close": "0.000000911556005386",
+                "volume": "1.08"
+            },
+            {
+                "timestamp": 1705338480,
+                "open": "0.000000911556005386",
+                "high": "0.000000951588455045",
+                "low": "0.000000927813643435",
+                "close": "0.000000951588455045",
+                "volume": "1.53"
+            },
+            {
+                "timestamp": 1705338600,
+                "open": "0.000000951588455045",
+                "high": "0.000001041921626447",
+                "low": "0.000001041921626447",
+                "close": "0.000001041921626447",
+                "volume": "1.07"
+            },
+            {
+                "timestamp": 1705338660,
+                "open": "0.000001041921626447",
+                "high": "0.000001153473926484",
+                "low": "0.000001082374157042",
+                "close": "0.000001153473926484",
+                "volume": "4.28"
+            },
+            {
+                "timestamp": 1705338840,
+                "open": "0.000001153473926484",
+                "high": "0.000001377401433555",
+                "low": "0.000001377401433555",
+                "close": "0.000001377401433555",
+                "volume": "10.00"
+            },
+            {
+                "timestamp": 1705340040,
+                "open": "0.000001377401433555",
+                "high": "0.000001662228486610",
+                "low": "0.000001662228486610",
+                "close": "0.000001662228486610",
+                "volume": "0.58"
+            },
+            {
+                "timestamp": 1705340160,
+                "open": "0.000001662228486610",
+                "high": "0.000001701310409781",
+                "low": "0.000001701310409781",
+                "close": "0.000001701310409781",
+                "volume": "1.29"
+            },
+            {
+                "timestamp": 1705340400,
+                "open": "0.000001701310409781",
+                "high": "0.000001827114970257",
+                "low": "0.000001827114970257",
+                "close": "0.000001827114970257",
+                "volume": "1.76"
+            },
+            {
+                "timestamp": 1705340640,
+                "open": "0.000001827114970257",
+                "high": "0.000001949066943710",
+                "low": "0.000001949066943710",
+                "close": "0.000001949066943710",
+                "volume": "3.61"
+            },
+            {
+                "timestamp": 1705341240,
+                "open": "0.000001949066943710",
+                "high": "0.000001951855388415",
+                "low": "0.000001951855388415",
+                "close": "0.000001951855388415",
+                "volume": "3.62"
+            },
+            {
+                "timestamp": 1705353600,
+                "open": "0.000001951855388415",
+                "high": "0.000000617326697722",
+                "low": "0.000000617326697722",
+                "close": "0.000000617326697722",
+                "volume": "62.72"
+            },
+            {
+                "timestamp": 1705354620,
+                "open": "0.000000617326697722",
+                "high": "0.000000208308852817",
+                "low": "0.000000208308852817",
+                "close": "0.000000208308852817",
+                "volume": "1.53"
+            },
+            {
+                "timestamp": 1705367100,
+                "open": "0.000000208308852817",
+                "high": "0.000000242432824035",
+                "low": "0.000000242432824035",
+                "close": "0.000000242432824035",
+                "volume": "0.58"
+            },
+            {
+                "timestamp": 1705367220,
+                "open": "0.000000242432824035",
+                "high": "0.000000248981903673",
+                "low": "0.000000248981903673",
+                "close": "0.000000248981903673",
+                "volume": "0.82"
+            },
+            {
+                "timestamp": 1705367340,
+                "open": "0.000000248981903673",
+                "high": "0.000000259382616809",
+                "low": "0.000000259382616809",
+                "close": "0.000000259382616809",
+                "volume": "0.66"
+            },
+            {
+                "timestamp": 1705367460,
+                "open": "0.000000259382616809",
+                "high": "0.000000269159338564",
+                "low": "0.000000269159338564",
+                "close": "0.000000269159338564",
+                "volume": "0.66"
+            },
+            {
+                "timestamp": 1705367520,
+                "open": "0.000000269159338564",
+                "high": "0.000000278302098084",
+                "low": "0.000000278302098084",
+                "close": "0.000000278302098084",
+                "volume": "0.52"
+            },
+            {
+                "timestamp": 1705377780,
+                "open": "0.000000278302098084",
+                "high": "0.000000305912795492",
+                "low": "0.000000305912795492",
+                "close": "0.000000305912795492",
+                "volume": "1.70"
+            }
+        ]
+    },
+    "sei18gw2uu5a8s7ydxr0l5m3crlxe0asmvcf925cgwsnhyje9npd2x9qc0zukf": {
+        "created_at": 1705332417,
+        "pool_address": "sei18gw2uu5a8s7ydxr0l5m3crlxe0asmvcf925cgwsnhyje9npd2x9qc0zukf",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei18gw2uu5a8s7ydxr0l5m3crlxe0asmvcf925cgwsnhyje9npd2x9qc0zukf",
+        "disqualified": true,
+        "deployer_address": "sei1g6m5ydlg8nyh72nrw98g8ml7hu6vh9yptrruwg",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1g6m5ydlg8nyh72nrw98g8ml7hu6vh9yptrruwg",
+        "transaction_hash": "0BCBF083764EE912D33DB5502D7A9C6B21393B11EA784C2FA2D41860E8CBC798",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/0BCBF083764EE912D33DB5502D7A9C6B21393B11EA784C2FA2D41860E8CBC798",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705332420,
+                "open": "0.000354605503903552",
+                "high": "0.000354605503903552",
+                "low": "0.000354605503903552",
+                "close": "0.000354605503903552",
+                "volume": "0.35"
+            },
+            {
+                "timestamp": 1705332540,
+                "open": "0.000354605503903552",
+                "high": "0.000386638941818455",
+                "low": "0.000386638941818455",
+                "close": "0.000386638941818455",
+                "volume": "247.41"
+            },
+            {
+                "timestamp": 1705333260,
+                "open": "0.000386638941818455",
+                "high": "0.000420235627881085",
+                "low": "0.000420235627881085",
+                "close": "0.000420235627881085",
+                "volume": "1.42"
+            },
+            {
+                "timestamp": 1705333320,
+                "open": "0.000420235627881085",
+                "high": "0.000422689100094634",
+                "low": "0.000422689100094634",
+                "close": "0.000422689100094634",
+                "volume": "21.93"
+            },
+            {
+                "timestamp": 1705333920,
+                "open": "0.000422689100094634",
+                "high": "0.000423149893997027",
+                "low": "0.000423149893997027",
+                "close": "0.000423149893997027",
+                "volume": "1.41"
+            },
+            {
+                "timestamp": 1705334040,
+                "open": "0.000423149893997027",
+                "high": "0.000386888509195340",
+                "low": "0.000386888509195340",
+                "close": "0.000386888509195340",
+                "volume": "247.57"
+            },
+            {
+                "timestamp": 1705334100,
+                "open": "0.000386888509195340",
+                "high": "0.000389867584622940",
+                "low": "0.000358296828628592",
+                "close": "0.000389867584622940",
+                "volume": "250.73"
+            },
+            {
+                "timestamp": 1705334760,
+                "open": "0.000389867584622940",
+                "high": "0.000495892324595052",
+                "low": "0.000477580040197624",
+                "close": "0.000495892324595052",
+                "volume": "159.45"
+            },
+            {
+                "timestamp": 1705334820,
+                "open": "0.000495892324595052",
+                "high": "0.000498231791145262",
+                "low": "0.000498231791145262",
+                "close": "0.000498231791145262",
+                "volume": "3.52"
+            },
+            {
+                "timestamp": 1705335360,
+                "open": "0.000498231791145262",
+                "high": "0.000535803691802840",
+                "low": "0.000522368106605014",
+                "close": "0.000535803691802840",
+                "volume": "87.22"
+            },
+            {
+                "timestamp": 1705335480,
+                "open": "0.000535803691802840",
+                "high": "0.000556612810151521",
+                "low": "0.000532864538578771",
+                "close": "0.000556612810151521",
+                "volume": "140.03"
+            },
+            {
+                "timestamp": 1705335540,
+                "open": "0.000556612810151521",
+                "high": "0.000585097368458626",
+                "low": "0.000579408775965425",
+                "close": "0.000585097368458626",
+                "volume": "35.45"
+            },
+            {
+                "timestamp": 1705335600,
+                "open": "0.000585097368458626",
+                "high": "0.000592418029562592",
+                "low": "0.000584424836882819",
+                "close": "0.000584424836882819",
+                "volume": "40.95"
+            },
+            {
+                "timestamp": 1705335720,
+                "open": "0.000584424836882819",
+                "high": "0.000590228474703713",
+                "low": "0.000590228474703713",
+                "close": "0.000590228474703713",
+                "volume": "40.83"
+            },
+            {
+                "timestamp": 1705335840,
+                "open": "0.000590228474703713",
+                "high": "0.000600423703498752",
+                "low": "0.000600423703498752",
+                "close": "0.000600423703498752",
+                "volume": "21.12"
+            },
+            {
+                "timestamp": 1705335900,
+                "open": "0.000600423703498752",
+                "high": "0.000620636445060296",
+                "low": "0.000620636445060296",
+                "close": "0.000620636445060296",
+                "volume": "101.42"
+            },
+            {
+                "timestamp": 1705335960,
+                "open": "0.000620636445060296",
+                "high": "0.000632227949045771",
+                "low": "0.000632227949045771",
+                "close": "0.000632227949045771",
+                "volume": "10.53"
+            },
+            {
+                "timestamp": 1705336020,
+                "open": "0.000632227949045771",
+                "high": "0.000661331305121992",
+                "low": "0.000637185927856773",
+                "close": "0.000661331305121992",
+                "volume": "141.68"
+            },
+            {
+                "timestamp": 1705336080,
+                "open": "0.000661331305121992",
+                "high": "0.000698004810504270",
+                "low": "0.000698004810504270",
+                "close": "0.000698004810504270",
+                "volume": "11.29"
+            },
+            {
+                "timestamp": 1705336140,
+                "open": "0.000698004810504270",
+                "high": "0.000683780983536870",
+                "low": "0.000683780983536870",
+                "close": "0.000683780983536870",
+                "volume": "68.38"
+            },
+            {
+                "timestamp": 1705336260,
+                "open": "0.000683780983536870",
+                "high": "0.000722006259832102",
+                "low": "0.000716714565637337",
+                "close": "0.000716714565637337",
+                "volume": "30.93"
+            },
+            {
+                "timestamp": 1705336380,
+                "open": "0.000716714565637337",
+                "high": "0.000714081589131605",
+                "low": "0.000714081589131605",
+                "close": "0.000714081589131605",
+                "volume": "3.61"
+            },
+            {
+                "timestamp": 1705336500,
+                "open": "0.000714081589131605",
+                "high": "0.000776969977844086",
+                "low": "0.000733021579088814",
+                "close": "0.000776969977844086",
+                "volume": "209.97"
+            },
+            {
+                "timestamp": 1705336620,
+                "open": "0.000776969977844086",
+                "high": "0.000814479350110911",
+                "low": "0.000812105232352085",
+                "close": "0.000812105232352085",
+                "volume": "133.59"
+            },
+            {
+                "timestamp": 1705336800,
+                "open": "0.000812105232352085",
+                "high": "0.000820366872979267",
+                "low": "0.000820366872979267",
+                "close": "0.000820366872979267",
+                "volume": "76.40"
+            },
+            {
+                "timestamp": 1705336860,
+                "open": "0.000820366872979267",
+                "high": "0.000846035913472450",
+                "low": "0.000826584707266909",
+                "close": "0.000826584707266909",
+                "volume": "189.75"
+            },
+            {
+                "timestamp": 1705336920,
+                "open": "0.000826584707266909",
+                "high": "0.000794693979649831",
+                "low": "0.000794693979649831",
+                "close": "0.000794693979649831",
+                "volume": "54.98"
+            },
+            {
+                "timestamp": 1705337040,
+                "open": "0.000794693979649831",
+                "high": "0.000862317815930240",
+                "low": "0.000831702181711073",
+                "close": "0.000862317815930240",
+                "volume": "268.80"
+            },
+            {
+                "timestamp": 1705337100,
+                "open": "0.000862317815930240",
+                "high": "0.000774701189061252",
+                "low": "0.000672058499869876",
+                "close": "0.000672058499869876",
+                "volume": "585.70"
+            },
+            {
+                "timestamp": 1705337160,
+                "open": "0.000672058499869876",
+                "high": "0.000626030600860689",
+                "low": "0.000602832936702789",
+                "close": "0.000602832936702789",
+                "volume": "143.12"
+            },
+            {
+                "timestamp": 1705337220,
+                "open": "0.000602832936702789",
+                "high": "0.000602916169814697",
+                "low": "0.000594655616613549",
+                "close": "0.000602916169814697",
+                "volume": "42.04"
+            },
+            {
+                "timestamp": 1705337400,
+                "open": "0.000602916169814697",
+                "high": "0.000573383478131300",
+                "low": "0.000573383478131300",
+                "close": "0.000573383478131300",
+                "volume": "181.61"
+            },
+            {
+                "timestamp": 1705337460,
+                "open": "0.000573383478131300",
+                "high": "0.000553453543661466",
+                "low": "0.000539286920426342",
+                "close": "0.000553453543661466",
+                "volume": "292.39"
+            },
+            {
+                "timestamp": 1705337520,
+                "open": "0.000553453543661466",
+                "high": "0.000524032297319478",
+                "low": "0.000524032297319478",
+                "close": "0.000524032297319478",
+                "volume": "99.43"
+            },
+            {
+                "timestamp": 1705337580,
+                "open": "0.000524032297319478",
+                "high": "0.000497310683780859",
+                "low": "0.000497310683780859",
+                "close": "0.000497310683780859",
+                "volume": "79.16"
+            },
+            {
+                "timestamp": 1705337640,
+                "open": "0.000497310683780859",
+                "high": "0.000548165055874513",
+                "low": "0.000500696829337400",
+                "close": "0.000548165055874513",
+                "volume": "228.45"
+            },
+            {
+                "timestamp": 1705337700,
+                "open": "0.000548165055874513",
+                "high": "0.000607462052624513",
+                "low": "0.000575326322106751",
+                "close": "0.000607462052624513",
+                "volume": "200.70"
+            },
+            {
+                "timestamp": 1705337760,
+                "open": "0.000607462052624513",
+                "high": "0.000691923279077200",
+                "low": "0.000678066970230488",
+                "close": "0.000691923279077200",
+                "volume": "79.73"
+            },
+            {
+                "timestamp": 1705337820,
+                "open": "0.000691923279077200",
+                "high": "0.000695173762490606",
+                "low": "0.000686646395438394",
+                "close": "0.000686646395438394",
+                "volume": "45.04"
+            },
+            {
+                "timestamp": 1705337880,
+                "open": "0.000686646395438394",
+                "high": "0.000715517496173591",
+                "low": "0.000697686155390452",
+                "close": "0.000701955879304469",
+                "volume": "180.34"
+            },
+            {
+                "timestamp": 1705337940,
+                "open": "0.000701955879304469",
+                "high": "0.000704852197871661",
+                "low": "0.000704852197871661",
+                "close": "0.000704852197871661",
+                "volume": "35.60"
+            },
+            {
+                "timestamp": 1705338000,
+                "open": "0.000704852197871661",
+                "high": "0.000717041305254639",
+                "low": "0.000717041305254639",
+                "close": "0.000717041305254639",
+                "volume": "33.47"
+            },
+            {
+                "timestamp": 1705338060,
+                "open": "0.000717041305254639",
+                "high": "0.000761513278057478",
+                "low": "0.000742333995758168",
+                "close": "0.000757096583797706",
+                "volume": "83.87"
+            },
+            {
+                "timestamp": 1705338120,
+                "open": "0.000757096583797706",
+                "high": "0.000777284961770216",
+                "low": "0.000754738580943148",
+                "close": "0.000777284961770216",
+                "volume": "76.90"
+            },
+            {
+                "timestamp": 1705338180,
+                "open": "0.000777284961770216",
+                "high": "0.000778637228177695",
+                "low": "0.000705484425913166",
+                "close": "0.000713429446507191",
+                "volume": "551.69"
+            },
+            {
+                "timestamp": 1705338240,
+                "open": "0.000713429446507191",
+                "high": "0.000801449015688399",
+                "low": "0.000758101905881139",
+                "close": "0.000801449015688399",
+                "volume": "234.81"
+            },
+            {
+                "timestamp": 1705338300,
+                "open": "0.000801449015688399",
+                "high": "0.000833699851029848",
+                "low": "0.000833699851029848",
+                "close": "0.000833699851029848",
+                "volume": "41.27"
+            },
+            {
+                "timestamp": 1705338360,
+                "open": "0.000833699851029848",
+                "high": "0.000842291090860758",
+                "low": "0.000830189965615594",
+                "close": "0.000842291090860758",
+                "volume": "104.74"
+            },
+            {
+                "timestamp": 1705338660,
+                "open": "0.000842291090860758",
+                "high": "0.000910064465170584",
+                "low": "0.000878207016539695",
+                "close": "0.000910064465170584",
+                "volume": "161.21"
+            },
+            {
+                "timestamp": 1705338720,
+                "open": "0.000910064465170584",
+                "high": "0.001073807664862560",
+                "low": "0.001073807664862560",
+                "close": "0.001073807664862560",
+                "volume": "757.38"
+            },
+            {
+                "timestamp": 1705338840,
+                "open": "0.001073807664862560",
+                "high": "47488.897554731702257413",
+                "low": "0.000006699728215324",
+                "close": "0.000006699728215324",
+                "volume": "10.70"
+            },
+            {
+                "timestamp": 1705339080,
+                "open": "0.000006699728215324",
+                "high": "0.000000750328693269",
+                "low": "0.000000750328693269",
+                "close": "0.000000750328693269",
+                "volume": "0.07"
+            }
+        ]
+    },
+    "sei1w6hsupu77d9afmjwp50tyq5g5cws47wpqzd8ek7hasxy9du80dys4amecv": {
+        "created_at": 1705313479,
+        "pool_address": "sei1w6hsupu77d9afmjwp50tyq5g5cws47wpqzd8ek7hasxy9du80dys4amecv",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1w6hsupu77d9afmjwp50tyq5g5cws47wpqzd8ek7hasxy9du80dys4amecv",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "613F914B502D579D247333325FD1C39CABE8D2308B5FB4BD20B4635FFD0EC879",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/613F914B502D579D247333325FD1C39CABE8D2308B5FB4BD20B4635FFD0EC879",
+        "links": []
+    },
+    "sei12qp38eywhrhswpke9mu369qv7hzgylanv3a26hz6ujmgv67nwfrstz6nvy": {
+        "created_at": 1705313249,
+        "pool_address": "sei12qp38eywhrhswpke9mu369qv7hzgylanv3a26hz6ujmgv67nwfrstz6nvy",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei12qp38eywhrhswpke9mu369qv7hzgylanv3a26hz6ujmgv67nwfrstz6nvy",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "9F9806CEB4885A5D616FA8073C54BC42F41041C1040255929E2F72B472C4A718",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/9F9806CEB4885A5D616FA8073C54BC42F41041C1040255929E2F72B472C4A718",
+        "links": []
+    },
+    "sei1w7ldvnqjngfk6c7t063cn50ed27qt5l2wsmjj3ngun9hjlyet0zswlh9uz": {
+        "created_at": 1705313199,
+        "pool_address": "sei1w7ldvnqjngfk6c7t063cn50ed27qt5l2wsmjj3ngun9hjlyet0zswlh9uz",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1w7ldvnqjngfk6c7t063cn50ed27qt5l2wsmjj3ngun9hjlyet0zswlh9uz",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "AC8A47CBBA24C52BF39636C5BF66540C2A38D06D7964FD3299933636541F4B46",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/AC8A47CBBA24C52BF39636C5BF66540C2A38D06D7964FD3299933636541F4B46",
+        "links": []
+    },
+    "sei14dfkjhvfgxqzwzv2gy6jxlt5wk30l7xaunuay9kuh6x2x7gne4dqfe25uf": {
+        "created_at": 1705313149,
+        "pool_address": "sei14dfkjhvfgxqzwzv2gy6jxlt5wk30l7xaunuay9kuh6x2x7gne4dqfe25uf",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei14dfkjhvfgxqzwzv2gy6jxlt5wk30l7xaunuay9kuh6x2x7gne4dqfe25uf",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "B352649136705C821678580D551E652F19A745E584330FB1F578AC30B8042DE2",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/B352649136705C821678580D551E652F19A745E584330FB1F578AC30B8042DE2",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705313100,
+                "open": "0.000000078857181907",
+                "high": "0.000000078857181907",
+                "low": "0.000000078857181907",
+                "close": "0.000000078857181907",
+                "volume": "0.72"
+            }
+        ]
+    },
+    "sei15uufyydfs8mak3xmt49z0t9mk2phej4vkpthzfaxnyv0mj9y96pskeuexe": {
+        "created_at": 1705313100,
+        "pool_address": "sei15uufyydfs8mak3xmt49z0t9mk2phej4vkpthzfaxnyv0mj9y96pskeuexe",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei15uufyydfs8mak3xmt49z0t9mk2phej4vkpthzfaxnyv0mj9y96pskeuexe",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "E6213A941DC3B58019E7D8B3359DC4BC3F815711647A5E181A20B2BE78971AF8",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/E6213A941DC3B58019E7D8B3359DC4BC3F815711647A5E181A20B2BE78971AF8",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705313100,
+                "open": "0.000000078885951441",
+                "high": "0.000000078885951441",
+                "low": "0.000000078885951441",
+                "close": "0.000000078885951441",
+                "volume": "0.72"
+            }
+        ]
+    },
+    "sei1ld2d06f0daq4jn4xf02l99q88s6prlpp2fmh7rjv4yx6ntjj7azs920c5n": {
+        "created_at": 1705312948,
+        "pool_address": "sei1ld2d06f0daq4jn4xf02l99q88s6prlpp2fmh7rjv4yx6ntjj7azs920c5n",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1ld2d06f0daq4jn4xf02l99q88s6prlpp2fmh7rjv4yx6ntjj7azs920c5n",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "12DC7F7242F674697DD887C37D03AB294A6901ECAE925B607CCAAEEC3D8C6CD1",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/12DC7F7242F674697DD887C37D03AB294A6901ECAE925B607CCAAEEC3D8C6CD1",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705312980,
+                "open": "0.000000072724091423",
+                "high": "0.000000072724091423",
+                "low": "0.000000072724091423",
+                "close": "0.000000072724091423",
+                "volume": "0.72"
+            }
+        ]
+    },
+    "sei1srn78pv49x49zkm6cky6y2tmukyd5kdtlg2k4kdmevqgtz445frqgzxn7a": {
+        "created_at": 1705312941,
+        "pool_address": "sei1srn78pv49x49zkm6cky6y2tmukyd5kdtlg2k4kdmevqgtz445frqgzxn7a",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1srn78pv49x49zkm6cky6y2tmukyd5kdtlg2k4kdmevqgtz445frqgzxn7a",
+        "disqualified": false,
+        "deployer_address": "sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1wvjmqmyt64qee5xnmzhap8aj45wkpanwzj3x3p",
+        "transaction_hash": "ADAAE6EB835EA2DFB48698D90640A5E2D369714A476E3DC649E6D453D66D2536",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/ADAAE6EB835EA2DFB48698D90640A5E2D369714A476E3DC649E6D453D66D2536",
+        "links": []
+    },
+    "sei107a4kk8e20wy4t7a9l0gmqj3tnl9d2l4upc2p5rn8a6a9aadsp2qvfs536": {
+        "created_at": 1705311761,
+        "pool_address": "sei107a4kk8e20wy4t7a9l0gmqj3tnl9d2l4upc2p5rn8a6a9aadsp2qvfs536",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei107a4kk8e20wy4t7a9l0gmqj3tnl9d2l4upc2p5rn8a6a9aadsp2qvfs536",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "E0B4DB192DE2FD41214E0EF6DA97293960CC3234C574A571853883981A5CE67E",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/E0B4DB192DE2FD41214E0EF6DA97293960CC3234C574A571853883981A5CE67E",
+        "links": []
+    },
+    "sei16992d4y04z49kswdguedtmlvtvn7jhjyh9qq728c5ex73t8fvzjs6vk4wz": {
+        "created_at": 1705311711,
+        "pool_address": "sei16992d4y04z49kswdguedtmlvtvn7jhjyh9qq728c5ex73t8fvzjs6vk4wz",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei16992d4y04z49kswdguedtmlvtvn7jhjyh9qq728c5ex73t8fvzjs6vk4wz",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "C01873BBD26F1B0DCDD174EB26A0EEF3C5F24B52035F6015B8FF476572D004CE",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/C01873BBD26F1B0DCDD174EB26A0EEF3C5F24B52035F6015B8FF476572D004CE",
+        "links": []
+    },
+    "sei1w5vmj4l7uw0tatjqhl6vruxfe2gf4lmxgaldjky6ahf8326uugks9gyptf": {
+        "created_at": 1705311455,
+        "pool_address": "sei1w5vmj4l7uw0tatjqhl6vruxfe2gf4lmxgaldjky6ahf8326uugks9gyptf",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1w5vmj4l7uw0tatjqhl6vruxfe2gf4lmxgaldjky6ahf8326uugks9gyptf",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "17D13C20CFED030E95F63C59A001641777CA840F1930147DC1EE19E4353AAB28",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/17D13C20CFED030E95F63C59A001641777CA840F1930147DC1EE19E4353AAB28",
+        "links": []
+    },
+    "sei1wjnspphpxh03c7wmqgc9raum53flqff74xxhx3mvjgvekegqfs8qpa34qg": {
+        "created_at": 1705311174,
+        "pool_address": "sei1wjnspphpxh03c7wmqgc9raum53flqff74xxhx3mvjgvekegqfs8qpa34qg",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1wjnspphpxh03c7wmqgc9raum53flqff74xxhx3mvjgvekegqfs8qpa34qg",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "2EF375531ED8A8E7361A0413C2488E6EE665572D40D9B2AFE169E36E12D701E5",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/2EF375531ED8A8E7361A0413C2488E6EE665572D40D9B2AFE169E36E12D701E5",
+        "links": []
+    },
+    "sei14ynzs7csrssgmwh5838cjrkcugfgmlezk0mlmh9zfmw5l2xk5r8sjfehnx": {
+        "created_at": 1705311124,
+        "pool_address": "sei14ynzs7csrssgmwh5838cjrkcugfgmlezk0mlmh9zfmw5l2xk5r8sjfehnx",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei14ynzs7csrssgmwh5838cjrkcugfgmlezk0mlmh9zfmw5l2xk5r8sjfehnx",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "21541C351811704A524456864A2F3338A8C00C760383875FDE751DE8D53A83FA",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/21541C351811704A524456864A2F3338A8C00C760383875FDE751DE8D53A83FA",
+        "links": []
+    },
+    "sei1mrwu7526w27ulexsr64rwegd5a2rgezz8upujd5pe8xt8mlhsm5qx5lcdd": {
+        "created_at": 1705311075,
+        "pool_address": "sei1mrwu7526w27ulexsr64rwegd5a2rgezz8upujd5pe8xt8mlhsm5qx5lcdd",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1mrwu7526w27ulexsr64rwegd5a2rgezz8upujd5pe8xt8mlhsm5qx5lcdd",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "02A2AF25635621465069B5BE4C0BFE30A438324A5370307FDE69962BBE0E0446",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/02A2AF25635621465069B5BE4C0BFE30A438324A5370307FDE69962BBE0E0446",
+        "links": []
+    },
+    "sei1pcwgct7xtezn99fmtvgkl0yjnhee5797kdm6ce60wqgl08cv8y2qly8awh": {
+        "created_at": 1705311026,
+        "pool_address": "sei1pcwgct7xtezn99fmtvgkl0yjnhee5797kdm6ce60wqgl08cv8y2qly8awh",
+        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1pcwgct7xtezn99fmtvgkl0yjnhee5797kdm6ce60wqgl08cv8y2qly8awh",
+        "disqualified": false,
+        "deployer_address": "sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1z50g2mugv2x28fcm7n03ussnzguec5a3hurhaa",
+        "transaction_hash": "E7BA1E160C897BFF04AEAC3094258FF9C0D040DBECF6B1C5E48E4D72CB343604",
+        "transaction_link": "https://www.seiscan.app/pacific-1/txs/E7BA1E160C897BFF04AEAC3094258FF9C0D040DBECF6B1C5E48E4D72CB343604",
+        "links": [],
+        "ohlcv": [
+            {
+                "timestamp": 1705311000,
+                "open": "0.000000078881919347",
+                "high": "0.000000078881919347",
+                "low": "0.000000078881919347",
+                "close": "0.000000078881919347",
+                "volume": "0.72"
+            }
+        ]
+    },
     "sei10dx9wmfrpujmkqyultfn9agvhr8ktj2am8nhngy99u4s6fkud24q9h5gad": {
         "created_at": 1704831948,
         "pool_address": "sei10dx9wmfrpujmkqyultfn9agvhr8ktj2am8nhngy99u4s6fkud24q9h5gad",
         "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei10dx9wmfrpujmkqyultfn9agvhr8ktj2am8nhngy99u4s6fkud24q9h5gad",
-        "disqualified": false,
+        "disqualified": true,
         "deployer_address": "sei1nlha2n5qv0y49kcayyjwq52d346x2wvcz8qye4",
         "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1nlha2n5qv0y49kcayyjwq52d346x2wvcz8qye4",
         "transaction_hash": "C88755766EEEA1DAA6964285DCB6124E64C389C3B041FBC1881FE9EDA81098B8",
@@ -12,7 +2009,7 @@
         "ohlcv": [
             {
                 "timestamp": 1704831960,
-                "open": "0.000000230411125313",
+                "open": "0.000000230780656581",
                 "high": "0.000000230411125313",
                 "low": "0.000000230411125313",
                 "close": "0.000000230411125313",
@@ -20,7 +2017,7 @@
             },
             {
                 "timestamp": 1704832080,
-                "open": "0.000000230411125313",
+                "open": "0.000000227971724959",
                 "high": "0.000000230780656581",
                 "low": "0.000000230780656581",
                 "close": "0.000000230780656581",
@@ -28,1386 +2025,35 @@
             },
             {
                 "timestamp": 1704832260,
-                "open": "0.000000230780656581",
+                "open": "0.000000228463998235",
                 "high": "0.000000227971724959",
                 "low": "0.000000227971724959",
                 "close": "0.000000227971724959",
                 "volume": "3.36"
-            }
-        ]
-    },
-    "sei17ts7rr0e7lg6ye3uue5pxm4ayuzpm3z6658lz6kmznpnsrp4tmyq924svp": {
-        "created_at": 1704828571,
-        "pool_address": "sei17ts7rr0e7lg6ye3uue5pxm4ayuzpm3z6658lz6kmznpnsrp4tmyq924svp",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei17ts7rr0e7lg6ye3uue5pxm4ayuzpm3z6658lz6kmznpnsrp4tmyq924svp",
-        "disqualified": true,
-        "deployer_address": "sei1lwytqn9ng4tnn93zuqwqnv7m38vj3948nj8rdv",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1lwytqn9ng4tnn93zuqwqnv7m38vj3948nj8rdv",
-        "transaction_hash": "74CE52080381B8E9918A7D0ADC359D915733E8415C66F0F251463031E2590302",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/74CE52080381B8E9918A7D0ADC359D915733E8415C66F0F251463031E2590302",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/Sei_octopus"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704828660,
-                "open": "0.000000019014508651",
-                "high": "0.000000019187106165",
-                "low": "0.000000019014508651",
-                "close": "0.000000019187106165",
-                "volume": "13.69"
-            },
-            {
-                "timestamp": 1704828840,
-                "open": "0.000000019187106165",
-                "high": "0.000000019324832936",
-                "low": "0.000000019306494384",
-                "close": "0.000000019324832936",
-                "volume": "1.44"
-            },
-            {
-                "timestamp": 1704828960,
-                "open": "0.000000019324832936",
-                "high": "0.000000019181645400",
-                "low": "0.000000019181645400",
-                "close": "0.000000019181645400",
-                "volume": "3.42"
-            },
-            {
-                "timestamp": 1704829080,
-                "open": "0.000000019181645400",
-                "high": "0.000000018957395077",
-                "low": "0.000000018957395077",
-                "close": "0.000000018957395077",
-                "volume": "10.24"
-            }
-        ]
-    },
-    "sei1xy57az3272t4v4y6k03wzkq49ts7hx09ra6kt9ecyh3jf2c8s72q7pw9u4": {
-        "created_at": 1704827410,
-        "pool_address": "sei1xy57az3272t4v4y6k03wzkq49ts7hx09ra6kt9ecyh3jf2c8s72q7pw9u4",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1xy57az3272t4v4y6k03wzkq49ts7hx09ra6kt9ecyh3jf2c8s72q7pw9u4",
-        "disqualified": true,
-        "deployer_address": "sei1cglt0pauxg5006t3p56aywf0dzfh5whs7wp9ll",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1cglt0pauxg5006t3p56aywf0dzfh5whs7wp9ll",
-        "transaction_hash": "2A7A53B156647209260051860A76F198E134330ECD254C5EFD1E94D0FF16E396",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/2A7A53B156647209260051860A76F198E134330ECD254C5EFD1E94D0FF16E396",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/SeirberusOnSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704828600,
-                "open": "0.000750791791794262",
-                "high": "0.001742700070455850",
-                "low": "0.000686791374122367",
-                "close": "0.001742700070455850",
-                "volume": "334.70"
-            },
-            {
-                "timestamp": 1704828660,
-                "open": "0.001742700070455850",
-                "high": "0.001760278531790170",
-                "low": "0.001582794106381090",
-                "close": "0.001653065783743640",
-                "volume": "81.94"
-            },
-            {
-                "timestamp": 1704828720,
-                "open": "0.001653065783743640",
-                "high": "0.001683718409790580",
-                "low": "0.001658265233788280",
-                "close": "0.001658265233788280",
-                "volume": "16.56"
-            },
-            {
-                "timestamp": 1704828900,
-                "open": "0.001658265233788280",
-                "high": "0.001686219256222840",
-                "low": "0.001312241063250370",
-                "close": "0.001312241063250370",
-                "volume": "118.38"
-            },
-            {
-                "timestamp": 1704828960,
-                "open": "0.001312241063250370",
-                "high": "0.001742126059498350",
-                "low": "0.001336491078580550",
-                "close": "0.001742126059498350",
-                "volume": "129.29"
-            },
-            {
-                "timestamp": 1704829080,
-                "open": "0.001742126059498350",
-                "high": "0.001824410255164340",
-                "low": "0.001824410255164340",
-                "close": "0.001824410255164340",
-                "volume": "0.69"
-            },
-            {
-                "timestamp": 1704829140,
-                "open": "0.001824410255164340",
-                "high": "0.001811164948478150",
-                "low": "0.001811164948478150",
-                "close": "0.001811164948478150",
-                "volume": "1.15"
-            },
-            {
-                "timestamp": 1704829320,
-                "open": "0.001811164948478150",
-                "high": "0.001877071944409100",
-                "low": "0.001877071944409100",
-                "close": "0.001877071944409100",
-                "volume": "27.39"
-            },
-            {
-                "timestamp": 1704829500,
-                "open": "0.001877071944409100",
-                "high": "0.001765537949395330",
-                "low": "0.001765537949395330",
-                "close": "0.001765537949395330",
-                "volume": "74.04"
-            }
-        ]
-    },
-    "sei13zur6nwf0yp35nn9rwtac3rrw4ufdvk22kq5xc8chxq7eaqf7a2qxl5hpr": {
-        "created_at": 1704824992,
-        "pool_address": "sei13zur6nwf0yp35nn9rwtac3rrw4ufdvk22kq5xc8chxq7eaqf7a2qxl5hpr",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei13zur6nwf0yp35nn9rwtac3rrw4ufdvk22kq5xc8chxq7eaqf7a2qxl5hpr",
-        "disqualified": true,
-        "deployer_address": "sei1q4jqz7yqnl7xk9dt7y7jj37te52a4edp9w6760",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1q4jqz7yqnl7xk9dt7y7jj37te52a4edp9w6760",
-        "transaction_hash": "54DE78D87AFEB2384DB41574B15F9BCB8E66D5FC0A3C8C00E976D8F1AEAEF6E3",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/54DE78D87AFEB2384DB41574B15F9BCB8E66D5FC0A3C8C00E976D8F1AEAEF6E3",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/PoPoBotOnSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704825180,
-                "open": "0.000000007283357191",
-                "high": "0.000000008806955835",
-                "low": "0.000000007071624664",
-                "close": "0.000000008806955835",
-                "volume": "65.79"
-            },
-            {
-                "timestamp": 1704825240,
-                "open": "0.000000008806955835",
-                "high": "0.000000016825435406",
-                "low": "0.000000006275450524",
-                "close": "0.000000006749001082",
-                "volume": "579.56"
-            },
-            {
-                "timestamp": 1704825300,
-                "open": "0.000000006749001082",
-                "high": "0.000000007639789838",
-                "low": "0.000000007248572435",
-                "close": "0.000000007564215717",
-                "volume": "72.72"
-            },
-            {
-                "timestamp": 1704825360,
-                "open": "0.000000007564215717",
-                "high": "0.000000008344400824",
-                "low": "0.000000008254249596",
-                "close": "0.000000008344400824",
-                "volume": "17.65"
-            },
-            {
-                "timestamp": 1704825420,
-                "open": "0.000000008344400824",
-                "high": "0.000000008178887739",
-                "low": "0.000000007785653696",
-                "close": "0.000000007785653696",
-                "volume": "26.04"
-            },
-            {
-                "timestamp": 1704825480,
-                "open": "0.000000007785653696",
-                "high": "0.000000008512851032",
-                "low": "0.000000007519751216",
-                "close": "0.000000008512851032",
-                "volume": "39.16"
-            },
-            {
-                "timestamp": 1704825540,
-                "open": "0.000000008512851032",
-                "high": "0.000000008496477261",
-                "low": "0.000000008496477261",
-                "close": "0.000000008496477261",
-                "volume": "0.82"
-            },
-            {
-                "timestamp": 1704825600,
-                "open": "0.000000008496477261",
-                "high": "0.000000008860565024",
-                "low": "0.000000008587435597",
-                "close": "0.000000008860565024",
-                "volume": "17.51"
-            },
-            {
-                "timestamp": 1704825780,
-                "open": "0.000000008860565024",
-                "high": "0.000000008639791975",
-                "low": "0.000000007804638528",
-                "close": "0.000000007804638528",
-                "volume": "56.25"
-            },
-            {
-                "timestamp": 1704825840,
-                "open": "0.000000007804638528",
-                "high": "0.000000009265880270",
-                "low": "0.000000008297885986",
-                "close": "0.000000009265880270",
-                "volume": "67.13"
-            }
-        ]
-    },
-    "sei1wnl79yhs4yehuwq5qvhcn5xscds4772mvnacs08pz32y4uvcrdjq8l5uk8": {
-        "created_at": 1704822007,
-        "pool_address": "sei1wnl79yhs4yehuwq5qvhcn5xscds4772mvnacs08pz32y4uvcrdjq8l5uk8",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1wnl79yhs4yehuwq5qvhcn5xscds4772mvnacs08pz32y4uvcrdjq8l5uk8",
-        "disqualified": false,
-        "deployer_address": "sei19tv3aknuwa7dpuelmmt3fzzwfv4tgs6ec6jqnt",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei19tv3aknuwa7dpuelmmt3fzzwfv4tgs6ec6jqnt",
-        "transaction_hash": "28AEFDF6FE59C84E35536C252141ADF66ED0985AA758AF5A83BAF12D6A90DAC4",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/28AEFDF6FE59C84E35536C252141ADF66ED0985AA758AF5A83BAF12D6A90DAC4",
-        "links": []
-    },
-    "sei196x79gk5r6fn8su63lazjw6npn0tay8p6ylgjgz4nm0ztgkxt5dqmtal6v": {
-        "created_at": 1704821418,
-        "pool_address": "sei196x79gk5r6fn8su63lazjw6npn0tay8p6ylgjgz4nm0ztgkxt5dqmtal6v",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei196x79gk5r6fn8su63lazjw6npn0tay8p6ylgjgz4nm0ztgkxt5dqmtal6v",
-        "disqualified": true,
-        "deployer_address": "sei1x5v8vv7l33tj788xugmnxx68mgtg5jcelc3u8u",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1x5v8vv7l33tj788xugmnxx68mgtg5jcelc3u8u",
-        "transaction_hash": "3AD483BCD9F8490999D19BD5ED8BA86483B9239C64F64F43179A744567DAEDAF",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/3AD483BCD9F8490999D19BD5ED8BA86483B9239C64F64F43179A744567DAEDAF",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704821880,
-                "open": "0.000001602544883882",
-                "high": "0.000001602544883882",
-                "low": "0.000001602544883882",
-                "close": "0.000001602544883882",
-                "volume": "0.70"
-            },
-            {
-                "timestamp": 1704822000,
-                "open": "0.000001602544883882",
-                "high": "0.000001618969989160",
-                "low": "0.000001618969989160",
-                "close": "0.000001618969989160",
-                "volume": "9.30"
-            },
-            {
-                "timestamp": 1704822060,
-                "open": "0.000001618969989160",
-                "high": "0.000001839613882678",
-                "low": "0.000001839613882678",
-                "close": "0.000001839613882678",
-                "volume": "132.30"
-            },
-            {
-                "timestamp": 1704822120,
-                "open": "0.000001839613882678",
-                "high": "0.000002060939789881",
-                "low": "0.000002060939789881",
-                "close": "0.000002060939789881",
-                "volume": "0.90"
-            },
-            {
-                "timestamp": 1704822180,
-                "open": "0.000002060939789881",
-                "high": "0.000002602536577052",
-                "low": "0.000002298196731440",
-                "close": "0.000002602536577052",
-                "volume": "156.82"
-            },
-            {
-                "timestamp": 1704822240,
-                "open": "0.000002602536577052",
-                "high": "0.000002663692980315",
-                "low": "0.000002663692980315",
-                "close": "0.000002663692980315",
-                "volume": "2.10"
-            },
-            {
-                "timestamp": 1704822420,
-                "open": "0.000002663692980315",
-                "high": "0.000002797050085078",
-                "low": "0.000002711325468379",
-                "close": "0.000002711325468379",
-                "volume": "162.12"
-            },
-            {
-                "timestamp": 1704822480,
-                "open": "0.000002711325468379",
-                "high": "0.000002649214642339",
-                "low": "0.000002649214642339",
-                "close": "0.000002649214642339",
-                "volume": "55.97"
-            },
-            {
-                "timestamp": 1704822540,
-                "open": "0.000002649214642339",
-                "high": "0.000002931823799327",
-                "low": "0.000002792958302833",
-                "close": "0.000002808882799613",
-                "volume": "364.14"
-            }
-        ]
-    },
-    "sei1unje2gu9k224pg36urm4kn0572fq4t2kvn634gq9m76txss7lz0s3fv89t": {
-        "created_at": 1704818828,
-        "pool_address": "sei1unje2gu9k224pg36urm4kn0572fq4t2kvn634gq9m76txss7lz0s3fv89t",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1unje2gu9k224pg36urm4kn0572fq4t2kvn634gq9m76txss7lz0s3fv89t",
-        "disqualified": false,
-        "deployer_address": "sei1fde0tm59wx40zmzv4703udfyp9ku9l9uvp2qp3",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1fde0tm59wx40zmzv4703udfyp9ku9l9uvp2qp3",
-        "transaction_hash": "5BA87B0B6DDB56CE1D0E55C206B1041CDFB2E18EE25CCE2F540A60F34E915EE4",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/5BA87B0B6DDB56CE1D0E55C206B1041CDFB2E18EE25CCE2F540A60F34E915EE4",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704824400,
-                "open": "0.000280943997963028",
-                "high": "0.000280943997963028",
-                "low": "0.000280943997963028",
-                "close": "0.000280943997963028",
-                "volume": "0.01"
-            }
-        ]
-    },
-    "sei1gyfrl2jk6ekgkcl80fw9tcnfx3hzhtv52mew38lqdwuxkdy4xjts5kqdxf": {
-        "created_at": 1704818549,
-        "pool_address": "sei1gyfrl2jk6ekgkcl80fw9tcnfx3hzhtv52mew38lqdwuxkdy4xjts5kqdxf",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1gyfrl2jk6ekgkcl80fw9tcnfx3hzhtv52mew38lqdwuxkdy4xjts5kqdxf",
-        "disqualified": false,
-        "deployer_address": "sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1r6ecazl9u8yav43gk72taq6z7fsdw7vkrepfcp",
-        "transaction_hash": "1E511D68E87B17E295BF6E25611EBA31E0822E93B93BFD30EAA9CD4764B5F316",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1E511D68E87B17E295BF6E25611EBA31E0822E93B93BFD30EAA9CD4764B5F316",
-        "links": []
-    },
-    "sei1d88g6gk44jgx5wfqwlsc3cnw383c55d5wp2s34av9ekssvd2s9uq7qtrzj": {
-        "created_at": 1704816328,
-        "pool_address": "sei1d88g6gk44jgx5wfqwlsc3cnw383c55d5wp2s34av9ekssvd2s9uq7qtrzj",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1d88g6gk44jgx5wfqwlsc3cnw383c55d5wp2s34av9ekssvd2s9uq7qtrzj",
-        "disqualified": true,
-        "deployer_address": "sei1lphhxg54e6jw046dn6wsf7pu6ju93h6lgjqr3f",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1lphhxg54e6jw046dn6wsf7pu6ju93h6lgjqr3f",
-        "transaction_hash": "6B708808C8E359C4F1BBE9078E065CD9100AA7A6DFE0731E1DCC82569586C17F",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/6B708808C8E359C4F1BBE9078E065CD9100AA7A6DFE0731E1DCC82569586C17F",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/seibetcom"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704817080,
-                "open": "0.000000618979739218",
-                "high": "0.000000628635461491",
-                "low": "0.000000618979739218",
-                "close": "0.000000624484665255",
-                "volume": "90.44"
-            },
-            {
-                "timestamp": 1704817140,
-                "open": "0.000000624484665255",
-                "high": "0.000000669548995771",
-                "low": "0.000000645160872748",
-                "close": "0.000000669548995771",
-                "volume": "220.39"
-            },
-            {
-                "timestamp": 1704817200,
-                "open": "0.000000669548995771",
-                "high": "0.000000669968163759",
-                "low": "0.000000669968163759",
-                "close": "0.000000669968163759",
-                "volume": "3.59"
-            },
-            {
-                "timestamp": 1704817260,
-                "open": "0.000000669968163759",
-                "high": "0.000000671993609757",
-                "low": "0.000000671220057926",
-                "close": "0.000000671993609757",
-                "volume": "7.18"
-            },
-            {
-                "timestamp": 1704817380,
-                "open": "0.000000671993609757",
-                "high": "0.000000672903939243",
-                "low": "0.000000669920356843",
-                "close": "0.000000672903939243",
-                "volume": "3.87"
-            },
-            {
-                "timestamp": 1704817440,
-                "open": "0.000000672903939243",
-                "high": "0.000000673011944675",
-                "low": "0.000000673011944675",
-                "close": "0.000000673011944675",
-                "volume": "0.01"
-            },
-            {
-                "timestamp": 1704817620,
-                "open": "0.000000673011944675",
-                "high": "0.000000680795718164",
-                "low": "0.000000680795718164",
-                "close": "0.000000680795718164",
-                "volume": "78.98"
-            },
-            {
-                "timestamp": 1704817680,
-                "open": "0.000000680795718164",
-                "high": "0.000000691683183409",
-                "low": "0.000000676663942119",
-                "close": "0.000000676663942119",
-                "volume": "106.38"
-            },
-            {
-                "timestamp": 1704817740,
-                "open": "0.000000676663942119",
-                "high": "0.000000686019546707",
-                "low": "0.000000684124686884",
-                "close": "0.000000686019546707",
-                "volume": "68.34"
-            }
-        ]
-    },
-    "sei18mgc0latwmvx9dvq8dl7fqsf4y0lp0wfejct9mc38nt8gf757rhqlaahfa": {
-        "created_at": 1704815723,
-        "pool_address": "sei18mgc0latwmvx9dvq8dl7fqsf4y0lp0wfejct9mc38nt8gf757rhqlaahfa",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei18mgc0latwmvx9dvq8dl7fqsf4y0lp0wfejct9mc38nt8gf757rhqlaahfa",
-        "disqualified": false,
-        "deployer_address": "sei1dm3y80cr3u8h95u6lz4w735wmwpvghq0u0aqku",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1dm3y80cr3u8h95u6lz4w735wmwpvghq0u0aqku",
-        "transaction_hash": "0121B243ADF135D8D94BB7B26AF4E51CE768039E71941AAB9D2636035E3BD0BD",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/0121B243ADF135D8D94BB7B26AF4E51CE768039E71941AAB9D2636035E3BD0BD",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704815880,
-                "open": "0.000000004361368458",
-                "high": "0.000000005112605785",
-                "low": "0.000000004361368458",
-                "close": "0.000000005112605785",
-                "volume": "53.45"
-            },
-            {
-                "timestamp": 1704815940,
-                "open": "0.000000005112605785",
-                "high": "0.000000005378226919",
-                "low": "0.000000005378226919",
-                "close": "0.000000005378226919",
-                "volume": "13.28"
-            },
-            {
-                "timestamp": 1704816120,
-                "open": "0.000000005378226919",
-                "high": "0.000000004768903559",
-                "low": "0.000000004572945434",
-                "close": "0.000000004572945434",
-                "volume": "47.05"
-            },
-            {
-                "timestamp": 1704825420,
-                "open": "0.000000004572945434",
-                "high": "0.057112265534508697",
-                "low": "0.057112265534508697",
-                "close": "0.057112265534508697",
-                "volume": "0.70"
-            }
-        ]
-    },
-    "sei1ppqlpvx6tjm808w9kyay0rsly5fzte632hz8ll43f5vtxaxu3ddqeh0zxp": {
-        "created_at": 1704815426,
-        "pool_address": "sei1ppqlpvx6tjm808w9kyay0rsly5fzte632hz8ll43f5vtxaxu3ddqeh0zxp",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1ppqlpvx6tjm808w9kyay0rsly5fzte632hz8ll43f5vtxaxu3ddqeh0zxp",
-        "disqualified": true,
-        "deployer_address": "sei1kde9nvjmw6ef5z8gayr5msz79eyt4nswupvfp4",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1kde9nvjmw6ef5z8gayr5msz79eyt4nswupvfp4",
-        "transaction_hash": "434521680ADDB312808FD04722C772026279B19832CC319029444B9F244A77F4",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/434521680ADDB312808FD04722C772026279B19832CC319029444B9F244A77F4",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/ProjectXSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704815520,
-                "open": "0.000074487863590761",
-                "high": "0.000140202464671224",
-                "low": "0.000074487863590761",
-                "close": "0.000140202464671224",
-                "volume": "770.56"
-            },
-            {
-                "timestamp": 1704815580,
-                "open": "0.000140202464671224",
-                "high": "0.000139177494388920",
-                "low": "0.000117495015903009",
-                "close": "0.000117495015903009",
-                "volume": "292.60"
-            },
-            {
-                "timestamp": 1704815640,
-                "open": "0.000117495015903009",
-                "high": "0.000106225682928859",
-                "low": "0.000096582520365083",
-                "close": "0.000096582520365083",
-                "volume": "189.09"
-            },
-            {
-                "timestamp": 1704815700,
-                "open": "0.000096582520365083",
-                "high": "0.000165211631899660",
-                "low": "0.000158347598510428",
-                "close": "0.000164887528683681",
-                "volume": "113.20"
-            },
-            {
-                "timestamp": 1704815760,
-                "open": "0.000164887528683681",
-                "high": "0.000158210798847662",
-                "low": "0.000153657672013956",
-                "close": "0.000153657672013956",
-                "volume": "119.53"
-            },
-            {
-                "timestamp": 1704815820,
-                "open": "0.000153657672013956",
-                "high": "0.000172881768079572",
-                "low": "0.000161839671719419",
-                "close": "0.000172881768079572",
-                "volume": "183.82"
-            },
-            {
-                "timestamp": 1704815880,
-                "open": "0.000172881768079572",
-                "high": "0.000180819327358629",
-                "low": "0.000170676110352167",
-                "close": "0.000180819327358629",
-                "volume": "254.19"
-            },
-            {
-                "timestamp": 1704815940,
-                "open": "0.000180819327358629",
-                "high": "0.000291727069467825",
-                "low": "0.000238444520444247",
-                "close": "0.000285431092811328",
-                "volume": "399.86"
-            },
-            {
-                "timestamp": 1704816000,
-                "open": "0.000285431092811328",
-                "high": "0.000303204126940182",
-                "low": "0.000303204126940182",
-                "close": "0.000303204126940182",
-                "volume": "142.14"
-            }
-        ]
-    },
-    "sei1yp4avauzxvsjh22rgu92xtv9fz3uptfrlmandc063v8dpr8lcl7smvlnuc": {
-        "created_at": 1704814121,
-        "pool_address": "sei1yp4avauzxvsjh22rgu92xtv9fz3uptfrlmandc063v8dpr8lcl7smvlnuc",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1yp4avauzxvsjh22rgu92xtv9fz3uptfrlmandc063v8dpr8lcl7smvlnuc",
-        "disqualified": true,
-        "deployer_address": "sei1fjzqua782fp0q4g0hr94qxcqnykzygpmtwk5rr",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1fjzqua782fp0q4g0hr94qxcqnykzygpmtwk5rr",
-        "transaction_hash": "46D8DDA84B159BC406D50012B0F77536B1AA1CD66DE956127EBAB779BE275DE5",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/46D8DDA84B159BC406D50012B0F77536B1AA1CD66DE956127EBAB779BE275DE5",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/+3UwuzZIbc1cwNTUx"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704814140,
-                "open": "0.001263534869366770",
-                "high": "0.001263534869366770",
-                "low": "0.001263534869366770",
-                "close": "0.001263534869366770",
-                "volume": "3.59"
-            },
-            {
-                "timestamp": 1704814200,
-                "open": "0.001263534869366770",
-                "high": "0.001267822496949550",
-                "low": "0.001267822496949550",
-                "close": "0.001267822496949550",
-                "volume": "0.71"
-            },
-            {
-                "timestamp": 1704814260,
-                "open": "0.001267822496949550",
-                "high": "0.001298232994045520",
-                "low": "0.001276504462579290",
-                "close": "0.001298232994045520",
-                "volume": "14.37"
-            },
-            {
-                "timestamp": 1704814440,
-                "open": "0.001298232994045520",
-                "high": "0.001286039283771420",
-                "low": "0.001286039283771420",
-                "close": "0.001286039283771420",
-                "volume": "3.65"
-            }
-        ]
-    },
-    "sei1skasxpe6nhs5hw9v7g8890y0w5rd0ku39uxpkm9rqt690j5thj4smqhfsu": {
-        "created_at": 1704813963,
-        "pool_address": "sei1skasxpe6nhs5hw9v7g8890y0w5rd0ku39uxpkm9rqt690j5thj4smqhfsu",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1skasxpe6nhs5hw9v7g8890y0w5rd0ku39uxpkm9rqt690j5thj4smqhfsu",
-        "disqualified": false,
-        "deployer_address": "sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "transaction_hash": "1CF1834D0A484A2A0C8E8E13E7416BB7A9625B79EA6A84547330A0FCC4CEC7A1",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1CF1834D0A484A2A0C8E8E13E7416BB7A9625B79EA6A84547330A0FCC4CEC7A1",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/SEIDUCK/"
-            }
-        ]
-    },
-    "sei1gvpds3usg33mf8yl250vtqxl5aakxmfn70sdu9kvpzqss5mmkrfslc5mrm": {
-        "created_at": 1704812284,
-        "pool_address": "sei1gvpds3usg33mf8yl250vtqxl5aakxmfn70sdu9kvpzqss5mmkrfslc5mrm",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1gvpds3usg33mf8yl250vtqxl5aakxmfn70sdu9kvpzqss5mmkrfslc5mrm",
-        "disqualified": false,
-        "deployer_address": "sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1hmwkn2znenju9y9mdk4z84f760p4txhd4fgpk6",
-        "transaction_hash": "B80AFC19348CE2101267C897C8A52DEBDE796132414EAB9E2D9BB7DA9EDD2E0D",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/B80AFC19348CE2101267C897C8A52DEBDE796132414EAB9E2D9BB7DA9EDD2E0D",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/SEIRUTO"
-            }
-        ]
-    },
-    "sei1sz258j4ftrn7rc4y7fjxr2kzdrqamc4q9lnrwk7fyytrmsuav6tsjern24": {
-        "created_at": 1704811434,
-        "pool_address": "sei1sz258j4ftrn7rc4y7fjxr2kzdrqamc4q9lnrwk7fyytrmsuav6tsjern24",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1sz258j4ftrn7rc4y7fjxr2kzdrqamc4q9lnrwk7fyytrmsuav6tsjern24",
-        "disqualified": false,
-        "deployer_address": "sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "transaction_hash": "1D6EC70731978B710E584E1FFAA7BEE9CCD435E63727D4EE44A4BEF879E37606",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1D6EC70731978B710E584E1FFAA7BEE9CCD435E63727D4EE44A4BEF879E37606",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/SEIPIRATES/"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704813780,
-                "open": "0.000000213256541775",
-                "high": "0.000000224453326294",
-                "low": "0.000000213256541775",
-                "close": "0.000000224453326294",
-                "volume": "10.71"
-            }
-        ]
-    },
-    "sei14prv42eplqh2lasjdapw839hthg8rp3xvy4plck3a28td23lrlcsrvruhx": {
-        "created_at": 1704810633,
-        "pool_address": "sei14prv42eplqh2lasjdapw839hthg8rp3xvy4plck3a28td23lrlcsrvruhx",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei14prv42eplqh2lasjdapw839hthg8rp3xvy4plck3a28td23lrlcsrvruhx",
-        "disqualified": true,
-        "deployer_address": "sei1h58mxmhnn9jhx8d2wphgqyts0s20futa7fej34",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1h58mxmhnn9jhx8d2wphgqyts0s20futa7fej34",
-        "transaction_hash": "122DCEB483E8A303F8E4AF537712B0BF972FEC2B8176765D3F148E9415408FC4",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/122DCEB483E8A303F8E4AF537712B0BF972FEC2B8176765D3F148E9415408FC4",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/+Y8sqGbM1AK82ZWJh"
-            },
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/dagora_sei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704810660,
-                "open": "0.000000005928517553",
-                "high": "0.000000005928517553",
-                "low": "0.000000005928517553",
-                "close": "0.000000005928517553",
-                "volume": "7.30"
-            },
-            {
-                "timestamp": 1704810720,
-                "open": "0.000000005928517553",
-                "high": "0.000000005890714591",
-                "low": "0.000000005890714591",
-                "close": "0.000000005890714591",
-                "volume": "7.25"
-            },
-            {
-                "timestamp": 1704810780,
-                "open": "0.000000005890714591",
-                "high": "0.000000005842608351",
-                "low": "0.000000005842608351",
-                "close": "0.000000005842608351",
-                "volume": "0.36"
-            },
-            {
-                "timestamp": 1704811020,
-                "open": "0.000000005842608351",
-                "high": "0.000000005898223128",
-                "low": "0.000000005898223128",
-                "close": "0.000000005898223128",
-                "volume": "7.18"
-            }
-        ]
-    },
-    "sei1n9lad42tay2hak8j5h8yr0mwat62rmmcrtvsre5q50y0mru7pd5splg0yv": {
-        "created_at": 1704810520,
-        "pool_address": "sei1n9lad42tay2hak8j5h8yr0mwat62rmmcrtvsre5q50y0mru7pd5splg0yv",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1n9lad42tay2hak8j5h8yr0mwat62rmmcrtvsre5q50y0mru7pd5splg0yv",
-        "disqualified": true,
-        "deployer_address": "sei18tdw9n3dsactnd93ggc5agw3lnhz2mctjug3tn",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei18tdw9n3dsactnd93ggc5agw3lnhz2mctjug3tn",
-        "transaction_hash": "C91B2752719CD55CD79DC9972A86A17A7D17A2B15D51ED31DABF7D8AD438BC2D",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/C91B2752719CD55CD79DC9972A86A17A7D17A2B15D51ED31DABF7D8AD438BC2D",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/WojakSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704812340,
-                "open": "0.000006493207114047",
-                "high": "0.000008621878506386",
-                "low": "0.000004642110235707",
-                "close": "0.000008564461082102",
-                "volume": "405.50"
-            },
-            {
-                "timestamp": 1704812400,
-                "open": "0.000008564461082102",
-                "high": "0.000008239741876661",
-                "low": "0.000007198811204653",
-                "close": "0.000007198811204653",
-                "volume": "106.08"
-            },
-            {
-                "timestamp": 1704812460,
-                "open": "0.000007198811204653",
-                "high": "0.000006457153083367",
-                "low": "0.000006218877008832",
-                "close": "0.000006218877008832",
-                "volume": "99.20"
-            },
-            {
-                "timestamp": 1704812520,
-                "open": "0.000006218877008832",
-                "high": "0.000004871523526635",
-                "low": "0.000004871523526635",
-                "close": "0.000004871523526635",
-                "volume": "223.99"
-            },
-            {
-                "timestamp": 1704812580,
-                "open": "0.000004871523526635",
-                "high": "0.000003869178132172",
-                "low": "0.000003869178132172",
-                "close": "0.000003869178132172",
-                "volume": "24.84"
-            },
-            {
-                "timestamp": 1704812640,
-                "open": "0.000003869178132172",
-                "high": "0.000004054607211622",
-                "low": "0.000004054607211622",
-                "close": "0.000004054607211622",
-                "volume": "14.12"
-            },
-            {
-                "timestamp": 1704812700,
-                "open": "0.000004054607211622",
-                "high": "0.000004357999984404",
-                "low": "0.000004310586347779",
-                "close": "0.000004357999984404",
-                "volume": "43.59"
-            },
-            {
-                "timestamp": 1704812760,
-                "open": "0.000004357999984404",
-                "high": "0.000005078292265915",
-                "low": "0.000005078292265915",
-                "close": "0.000005078292265915",
-                "volume": "140.76"
-            },
-            {
-                "timestamp": 1704813060,
-                "open": "0.000005078292265915",
-                "high": "0.000006075134364258",
-                "low": "0.000006075134364258",
-                "close": "0.000006075134364258",
-                "volume": "15.60"
-            }
-        ]
-    },
-    "sei12xsvr47lpwajpmaf7pt3qemyukxgddu2kmx5aa4ek7mwrp0nhe5sx3kg6c": {
-        "created_at": 1704809613,
-        "pool_address": "sei12xsvr47lpwajpmaf7pt3qemyukxgddu2kmx5aa4ek7mwrp0nhe5sx3kg6c",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei12xsvr47lpwajpmaf7pt3qemyukxgddu2kmx5aa4ek7mwrp0nhe5sx3kg6c",
-        "disqualified": true,
-        "deployer_address": "sei1qk0gzn7tws62urqzvmkdutwfxq7mlqkwypkdh0",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1qk0gzn7tws62urqzvmkdutwfxq7mlqkwypkdh0",
-        "transaction_hash": "76D91CE3BA338324F235B58FAEF6A49A7EE8310AA69567A21B428065A28066CF",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/76D91CE3BA338324F235B58FAEF6A49A7EE8310AA69567A21B428065A28066CF",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704809580,
-                "open": "0.000423033935394170",
-                "high": "0.000423033935394170",
-                "low": "0.000423033935394170",
-                "close": "0.000423033935394170",
-                "volume": "3.69"
-            },
-            {
-                "timestamp": 1704809640,
-                "open": "0.000423033935394170",
-                "high": "0.000438129532519802",
-                "low": "0.000425586194967866",
-                "close": "0.000438129532519802",
-                "volume": "86.86"
-            },
-            {
-                "timestamp": 1704809820,
-                "open": "0.000438129532519802",
-                "high": "0.000483983271500905",
-                "low": "0.000466838090558839",
-                "close": "0.000483983271500905",
-                "volume": "161.17"
-            },
-            {
-                "timestamp": 1704809880,
-                "open": "0.000483983271500905",
-                "high": "0.000488316747710960",
-                "low": "0.000485098889350375",
-                "close": "0.000488316747710960",
-                "volume": "27.54"
-            },
-            {
-                "timestamp": 1704809940,
-                "open": "0.000488316747710960",
-                "high": "0.000494739984448274",
-                "low": "0.000486865002280309",
-                "close": "0.000494739984448274",
-                "volume": "53.74"
-            },
-            {
-                "timestamp": 1704810000,
-                "open": "0.000494739984448274",
-                "high": "0.000516230489212652",
-                "low": "0.000516230489212652",
-                "close": "0.000516230489212652",
-                "volume": "108.45"
-            },
-            {
-                "timestamp": 1704810060,
-                "open": "0.000516230489212652",
-                "high": "0.000524366642401654",
-                "low": "0.000524366642401654",
-                "close": "0.000524366642401654",
-                "volume": "37.79"
-            },
-            {
-                "timestamp": 1704810120,
-                "open": "0.000524366642401654",
-                "high": "0.000540907795191678",
-                "low": "0.000529778623153230",
-                "close": "0.000540907795191678",
-                "volume": "68.26"
-            },
-            {
-                "timestamp": 1704810180,
-                "open": "0.000540907795191678",
-                "high": "0.000564501125352229",
-                "low": "0.000564501125352229",
-                "close": "0.000564501125352229",
-                "volume": "86.75"
-            },
-            {
-                "timestamp": 1704810240,
-                "open": "0.000564501125352229",
-                "high": "0.000560929125687844",
-                "low": "0.000560929125687844",
-                "close": "0.000560929125687844",
-                "volume": "87.45"
-            }
-        ]
-    },
-    "sei16dw8q4vr32h60y3h8dpazjs6lqzae8v7qxvn055qv643gazdzq3qvf5lpu": {
-        "created_at": 1704809402,
-        "pool_address": "sei16dw8q4vr32h60y3h8dpazjs6lqzae8v7qxvn055qv643gazdzq3qvf5lpu",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei16dw8q4vr32h60y3h8dpazjs6lqzae8v7qxvn055qv643gazdzq3qvf5lpu",
-        "disqualified": false,
-        "deployer_address": "sei18pek5skwf3phf9elsfpscsffejwhl4k6ks7em2",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei18pek5skwf3phf9elsfpscsffejwhl4k6ks7em2",
-        "transaction_hash": "FD4F52AC26EBD6A6C5E32DBCE6C95417A3FE312A0DE0701B2FE835DF3C949D51",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/FD4F52AC26EBD6A6C5E32DBCE6C95417A3FE312A0DE0701B2FE835DF3C949D51",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/+N6mQQ6fpnLM1YzQx"
-            },
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/seitiny_"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704809400,
-                "open": "0.000000008156630291",
-                "high": "0.000000008156630291",
-                "low": "0.000000008156630291",
-                "close": "0.000000008156630291",
-                "volume": "73.26"
-            },
-            {
-                "timestamp": 1704809460,
-                "open": "0.000000008156630291",
-                "high": "0.000000013619441615",
-                "low": "0.000000009043939960",
-                "close": "0.000000013619441615",
-                "volume": "215.39"
-            },
-            {
-                "timestamp": 1704809640,
-                "open": "0.000000013619441615",
-                "high": "0.102717235846508007",
-                "low": "0.102210714915740006",
-                "close": "0.102210714915740006",
-                "volume": "1.47"
-            }
-        ]
-    },
-    "sei1rn3fr8hcxlmh9jsfkafre2234yk7vcdnze3r6uw4duqfnnvlgawqfgccwg": {
-        "created_at": 1704808815,
-        "pool_address": "sei1rn3fr8hcxlmh9jsfkafre2234yk7vcdnze3r6uw4duqfnnvlgawqfgccwg",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1rn3fr8hcxlmh9jsfkafre2234yk7vcdnze3r6uw4duqfnnvlgawqfgccwg",
-        "disqualified": true,
-        "deployer_address": "sei1j5hx63y9gmp98kgvxd7dlyyq47q9z7a5dtt5h8",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1j5hx63y9gmp98kgvxd7dlyyq47q9z7a5dtt5h8",
-        "transaction_hash": "1E64DA78F074E6F648DF28B97F8B491126DC41025B7EA67C8097DE1F1FBED8B3",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1E64DA78F074E6F648DF28B97F8B491126DC41025B7EA67C8097DE1F1FBED8B3",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704810960,
-                "open": "0.000000470611658505",
-                "high": "0.000000470611658505",
-                "low": "0.000000470611658505",
-                "close": "0.000000470611658505",
-                "volume": "36.26"
-            },
-            {
-                "timestamp": 1704811020,
-                "open": "0.000000470611658505",
-                "high": "0.000000656731278295",
-                "low": "0.000000524738723012",
-                "close": "0.000000656731278295",
-                "volume": "67.50"
-            },
-            {
-                "timestamp": 1704811080,
-                "open": "0.000000656731278295",
-                "high": "0.000001505700070612",
-                "low": "0.000000677838670893",
-                "close": "0.000001414865697657",
-                "volume": "318.05"
-            },
-            {
-                "timestamp": 1704811380,
-                "open": "0.000001414865697657",
-                "high": "0.000001573993809801",
-                "low": "0.000001404306478146",
-                "close": "0.000001573993809801",
-                "volume": "74.78"
-            },
-            {
-                "timestamp": 1704811440,
-                "open": "0.000001573993809801",
-                "high": "0.000001830403779365",
-                "low": "0.000001492578450626",
-                "close": "0.000001830403779365",
-                "volume": "141.56"
-            },
-            {
-                "timestamp": 1704811500,
-                "open": "0.000001830403779365",
-                "high": "0.000002589012959793",
-                "low": "0.000002007841041598",
-                "close": "0.000002589012959793",
-                "volume": "141.04"
-            },
-            {
-                "timestamp": 1704811560,
-                "open": "0.000002589012959793",
-                "high": "0.000002230507034758",
-                "low": "0.000001896337604801",
-                "close": "0.000002106342912016",
-                "volume": "195.95"
-            },
-            {
-                "timestamp": 1704811620,
-                "open": "0.000002106342912016",
-                "high": "0.000002204035789349",
-                "low": "0.000002128699830997",
-                "close": "0.000002204035789349",
-                "volume": "21.13"
-            },
-            {
-                "timestamp": 1704811680,
-                "open": "0.000002204035789349",
-                "high": "0.000002241120088165",
-                "low": "0.000002241120088165",
-                "close": "0.000002241120088165",
-                "volume": "7.04"
-            }
-        ]
-    },
-    "sei1xwc03q4226rf7ed6junltjftaflk749t2x25ts9w9udm5efwu2xqsx0mh6": {
-        "created_at": 1704804359,
-        "pool_address": "sei1xwc03q4226rf7ed6junltjftaflk749t2x25ts9w9udm5efwu2xqsx0mh6",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1xwc03q4226rf7ed6junltjftaflk749t2x25ts9w9udm5efwu2xqsx0mh6",
-        "disqualified": false,
-        "deployer_address": "sei102q7v6z5pmsyuzsr4pnnafm8u34xaf97mq6e9z",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei102q7v6z5pmsyuzsr4pnnafm8u34xaf97mq6e9z",
-        "transaction_hash": "43D2BA9DFB7DBE324756603387C495490B4E6DF44F7FF9C656272B8D5596B23A",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/43D2BA9DFB7DBE324756603387C495490B4E6DF44F7FF9C656272B8D5596B23A",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/+Z_heoKGcuSAxYjZh"
-            },
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/PantaBotOnSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704805140,
-                "open": "0.000000734317257253",
-                "high": "0.000000734317257253",
-                "low": "0.000000734317257253",
-                "close": "0.000000734317257253",
-                "volume": "3.66"
-            },
-            {
-                "timestamp": 1704805920,
-                "open": "0.000000734317257253",
-                "high": "7.346383283863880287",
-                "low": "7.346383283863880287",
-                "close": "7.346383283863880287",
-                "volume": "7.28"
-            }
-        ]
-    },
-    "sei1urxpxlhjgmqm7nlflvetpyc9pngrtfhcvp0rs6tfdkxsdcy4drfqgmt7ps": {
-        "created_at": 1704804274,
-        "pool_address": "sei1urxpxlhjgmqm7nlflvetpyc9pngrtfhcvp0rs6tfdkxsdcy4drfqgmt7ps",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1urxpxlhjgmqm7nlflvetpyc9pngrtfhcvp0rs6tfdkxsdcy4drfqgmt7ps",
-        "disqualified": true,
-        "deployer_address": "sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "transaction_hash": "1E7CB72E85561D590648DBC200EAD63128DC9564CEBE6BB780DE1C4377D8FA88",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1E7CB72E85561D590648DBC200EAD63128DC9564CEBE6BB780DE1C4377D8FA88",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/SeiFrogs/"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704804360,
-                "open": "0.000000214242773862",
-                "high": "0.000000214242773862",
-                "low": "0.000000214242773862",
-                "close": "0.000000214242773862",
-                "volume": "0.73"
             },
             {
-                "timestamp": 1704804840,
-                "open": "0.000000214242773862",
-                "high": "0.000000216177551175",
-                "low": "0.000000216177551175",
-                "close": "0.000000216177551175",
-                "volume": "0.73"
+                "timestamp": 1704832560,
+                "open": "0.000000228840921128",
+                "high": "0.000000229839449437",
+                "low": "0.000000228463998235",
+                "close": "0.000000228463998235",
+                "volume": "26.90"
             },
             {
-                "timestamp": 1704806100,
-                "open": "0.000000216177551175",
-                "high": "0.000000220814390903",
-                "low": "0.000000220814390903",
-                "close": "0.000000220814390903",
-                "volume": "7.27"
+                "timestamp": 1704832680,
+                "open": "0.000000225909399494",
+                "high": "0.000000228840921128",
+                "low": "0.000000228840921128",
+                "close": "0.000000228840921128",
+                "volume": "6.74"
             },
-            {
-                "timestamp": 1704806220,
-                "open": "0.000000220814390903",
-                "high": "0.000000294112557269",
-                "low": "0.000000294112557269",
-                "close": "0.000000294112557269",
-                "volume": "79.25"
-            }
-        ]
-    },
-    "sei1a9dt6qlq2jr0ulrgh4kw2adk4cdcl0z5pkqxrl6qqz74aksu2xhq4ye8sy": {
-        "created_at": 1704797620,
-        "pool_address": "sei1a9dt6qlq2jr0ulrgh4kw2adk4cdcl0z5pkqxrl6qqz74aksu2xhq4ye8sy",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1a9dt6qlq2jr0ulrgh4kw2adk4cdcl0z5pkqxrl6qqz74aksu2xhq4ye8sy",
-        "disqualified": false,
-        "deployer_address": "sei1vrtjqv5245ttt5m50qqfhyw4sl78dw55vwkr0p",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1vrtjqv5245ttt5m50qqfhyw4sl78dw55vwkr0p",
-        "transaction_hash": "1A7E3078081933AF6762D26F6CE739B6BDEFE0518EA45DBA886844050BA79D2A",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/1A7E3078081933AF6762D26F6CE739B6BDEFE0518EA45DBA886844050BA79D2A",
-        "links": []
-    },
-    "sei1mcdecju4hj7t2694knp97qvs0fa247dp0hqh3y7an7ygxxt482aqp7t363": {
-        "created_at": 1704797469,
-        "pool_address": "sei1mcdecju4hj7t2694knp97qvs0fa247dp0hqh3y7an7ygxxt482aqp7t363",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1mcdecju4hj7t2694knp97qvs0fa247dp0hqh3y7an7ygxxt482aqp7t363",
-        "disqualified": true,
-        "deployer_address": "sei13l5xp7kly76227xe4h2l4lqkzygahgg9tkrzsa",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei13l5xp7kly76227xe4h2l4lqkzygahgg9tkrzsa",
-        "transaction_hash": "BC1F24A08608202FA2FC7D339E36E98B99E4B40B6D0638EA96BB2497BBACECC5",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/BC1F24A08608202FA2FC7D339E36E98B99E4B40B6D0638EA96BB2497BBACECC5",
-        "links": [
-            {
-                "title": "t.me",
-                "url": "https://t.me/TrollFaceSei"
-            },
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/TrollFaceSei"
-            }
-        ],
-        "ohlcv": [
-            {
-                "timestamp": 1704797460,
-                "open": "0.000003717880853962",
-                "high": "0.000003717880853962",
-                "low": "0.000003717880853962",
-                "close": "0.000003717880853962",
-                "volume": "3.71"
-            },
-            {
-                "timestamp": 1704797520,
-                "open": "0.000003717880853962",
-                "high": "0.000003698542668488",
-                "low": "0.000003698542668488",
-                "close": "0.000003698542668488",
-                "volume": "3.69"
-            },
-            {
-                "timestamp": 1704797940,
-                "open": "0.000003698542668488",
-                "high": "0.000003696135057121",
-                "low": "0.000003696135057121",
-                "close": "0.000003696135057121",
-                "volume": "7.37"
-            },
-            {
-                "timestamp": 1704810720,
-                "open": "0.000003696135057121",
-                "high": "0.000003665344878085",
-                "low": "0.000003665344878085",
-                "close": "0.000003665344878085",
-                "volume": "32.82"
-            }
-        ]
-    },
-    "sei1uu4f5m9zjhwh73te3p9kn4nu9h0800l5dkyfjc903fxykyx3datq877f5a": {
-        "created_at": 1704795820,
-        "pool_address": "sei1uu4f5m9zjhwh73te3p9kn4nu9h0800l5dkyfjc903fxykyx3datq877f5a",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1uu4f5m9zjhwh73te3p9kn4nu9h0800l5dkyfjc903fxykyx3datq877f5a",
-        "disqualified": false,
-        "deployer_address": "sei1c8zzhtwqvznczcpa8dqteavu5a7xg58t9306q2",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1c8zzhtwqvznczcpa8dqteavu5a7xg58t9306q2",
-        "transaction_hash": "280598FE14EF9A2D35C150A9FC1B82A8C2C7484DCBF263B3D3C8264E06D7F18C",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/280598FE14EF9A2D35C150A9FC1B82A8C2C7484DCBF263B3D3C8264E06D7F18C",
-        "links": []
-    },
-    "sei1f4h4gcj5k79akzj62m942mvsmdmjusk0nj0medj027cy560k8zss7srhwz": {
-        "created_at": 1704795451,
-        "pool_address": "sei1f4h4gcj5k79akzj62m942mvsmdmjusk0nj0medj027cy560k8zss7srhwz",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1f4h4gcj5k79akzj62m942mvsmdmjusk0nj0medj027cy560k8zss7srhwz",
-        "disqualified": false,
-        "deployer_address": "sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1agq0vyzn03q33hk3ez0vq3pfsf8uw3ys9gckl8",
-        "transaction_hash": "B29A97B4BF20A6CCE578FC7413CF773DB42413C58788D22B0AB63E0E79051177",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/B29A97B4BF20A6CCE578FC7413CF773DB42413C58788D22B0AB63E0E79051177",
-        "links": [
-            {
-                "title": "twitter.com",
-                "url": "https://twitter.com/SEIPEPESEI/"
-            }
-        ]
-    },
-    "sei17y2g97x2yank7wg69tduelh7t4veh2eajf6c0t22yz54rwt8tvmqlxs2km": {
-        "created_at": 1704794972,
-        "pool_address": "sei17y2g97x2yank7wg69tduelh7t4veh2eajf6c0t22yz54rwt8tvmqlxs2km",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei17y2g97x2yank7wg69tduelh7t4veh2eajf6c0t22yz54rwt8tvmqlxs2km",
-        "disqualified": false,
-        "deployer_address": "sei1ujseuu80ykc0nyg6y6xu7xnj7g7arkcq49rthn",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1ujseuu80ykc0nyg6y6xu7xnj7g7arkcq49rthn",
-        "transaction_hash": "CE7346FDDD958144EB908DB125C6B86B05616F9F149225A0C3985EF2ACB76625",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/CE7346FDDD958144EB908DB125C6B86B05616F9F149225A0C3985EF2ACB76625",
-        "links": []
-    },
-    "sei17048hh7j0hlv6fgph00wmjewcr2690q22nlgapemp77seqp95hgsf7e8xf": {
-        "created_at": 1704794948,
-        "pool_address": "sei17048hh7j0hlv6fgph00wmjewcr2690q22nlgapemp77seqp95hgsf7e8xf",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei17048hh7j0hlv6fgph00wmjewcr2690q22nlgapemp77seqp95hgsf7e8xf",
-        "disqualified": true,
-        "deployer_address": "sei1g2jk4j0w4k5ddurgvk9r08q5gphjumr3vsx666",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1g2jk4j0w4k5ddurgvk9r08q5gphjumr3vsx666",
-        "transaction_hash": "17C9B07E636807EB2AA5FAC3A23A14635A5E47FC6F5CC27CE2B0825AA6A74634",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/17C9B07E636807EB2AA5FAC3A23A14635A5E47FC6F5CC27CE2B0825AA6A74634",
-        "links": [],
-        "ohlcv": [
-            {
-                "timestamp": 1704795000,
-                "open": "0.000001074281334868",
-                "high": "0.000001074281334868",
-                "low": "0.000001074281334868",
-                "close": "0.000001074281334868",
-                "volume": "64.95"
-            },
-            {
-                "timestamp": 1704795060,
-                "open": "0.000001074281334868",
-                "high": "0.000001221623111371",
-                "low": "0.000001213464261296",
-                "close": "0.000001213464261296",
-                "volume": "146.36"
-            },
-            {
-                "timestamp": 1704795120,
-                "open": "0.000001213464261296",
-                "high": "0.000001067553730954",
-                "low": "0.000001067553730954",
-                "close": "0.000001067553730954",
-                "volume": "63.79"
-            },
-            {
-                "timestamp": 1704796740,
-                "open": "0.000001067553730954",
-                "high": "0.000001020582299122",
-                "low": "0.000001020582299122",
-                "close": "0.000001020582299122",
-                "volume": "7.25"
-            },
-            {
-                "timestamp": 1704796800,
-                "open": "0.000001020582299122",
-                "high": "0.000001024762234447",
-                "low": "0.000001024762234447",
-                "close": "0.000001024762234447",
-                "volume": "7.21"
-            },
-            {
-                "timestamp": 1704798120,
-                "open": "0.000001024762234447",
-                "high": "0.000001035325034893",
-                "low": "0.000001035325034893",
-                "close": "0.000001035325034893",
-                "volume": "14.60"
-            },
-            {
-                "timestamp": 1704799080,
-                "open": "0.000001035325034893",
-                "high": "0.000001058369469773",
-                "low": "0.000001058369469773",
-                "close": "0.000001058369469773",
-                "volume": "7.38"
-            },
-            {
-                "timestamp": 1704801360,
-                "open": "0.000001058369469773",
-                "high": "0.000001061241252240",
-                "low": "0.000001061241252240",
-                "close": "0.000001061241252240",
-                "volume": "7.40"
-            },
-            {
-                "timestamp": 1704803100,
-                "open": "0.000001061241252240",
-                "high": "0.000001052881867926",
-                "low": "0.000001052881867926",
-                "close": "0.000001052881867926",
-                "volume": "3.68"
-            }
-        ]
-    },
-    "sei13605g8n3leavz6zhm379wzzl6ln0y7wqukdeye3lq9pvqdgdj0jsn3n2ru": {
-        "created_at": 1704794573,
-        "pool_address": "sei13605g8n3leavz6zhm379wzzl6ln0y7wqukdeye3lq9pvqdgdj0jsn3n2ru",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei13605g8n3leavz6zhm379wzzl6ln0y7wqukdeye3lq9pvqdgdj0jsn3n2ru",
-        "disqualified": false,
-        "deployer_address": "sei1g2jk4j0w4k5ddurgvk9r08q5gphjumr3vsx666",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1g2jk4j0w4k5ddurgvk9r08q5gphjumr3vsx666",
-        "transaction_hash": "C9EEDFD0A7535ED75CB9758C943A0F2B1E18974EEB3ABDE4C2C19BAFD3CF4D96",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/C9EEDFD0A7535ED75CB9758C943A0F2B1E18974EEB3ABDE4C2C19BAFD3CF4D96",
-        "links": []
-    },
-    "sei1e0sqgsf0r66y6drpem465vt68htqhfhkuua8aa7694qg4fcszmqq2juv6q": {
-        "created_at": 1704794061,
-        "pool_address": "sei1e0sqgsf0r66y6drpem465vt68htqhfhkuua8aa7694qg4fcszmqq2juv6q",
-        "pool_link": "https://www.seiscan.app/pacific-1/contracts/sei1e0sqgsf0r66y6drpem465vt68htqhfhkuua8aa7694qg4fcszmqq2juv6q",
-        "disqualified": false,
-        "deployer_address": "sei1zd778nhe3e8t9j8p29gqw32sgux08szzyhwc5j",
-        "deployer_link": "https://www.seiscan.app/pacific-1/accounts/sei1zd778nhe3e8t9j8p29gqw32sgux08szzyhwc5j",
-        "transaction_hash": "951FBFBE49EB0821B9A6BB6728ED2D32EF0F2B62BE9707023BB76EDD7E847729",
-        "transaction_link": "https://www.seiscan.app/pacific-1/txs/951FBFBE49EB0821B9A6BB6728ED2D32EF0F2B62BE9707023BB76EDD7E847729",
-        "links": [],
-        "ohlcv": [
             {
-                "timestamp": 1704824820,
-                "open": "0.000011727456363510",
-                "high": "0.000011727456363510",
-                "low": "0.000011727456363510",
-                "close": "0.000011727456363510",
-                "volume": "0.07"
+                "timestamp": 1704832920,
+                "open": "0.000000225909399494",
+                "high": "0.000000225909399494",
+                "low": "0.000000225909399494",
+                "close": "0.000000225909399494",
+                "volume": "6.65"
             }
         ]
     }
